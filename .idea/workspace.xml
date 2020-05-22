@@ -19,7 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Soups">
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Soups.html" beforeDir="false" afterPath="$PROJECT_DIR$/Soups.html" afterDir="false" />
     </list>
@@ -61,16 +61,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1590115976182</updated>
-      <workItem from="1590147529430" duration="6641000" />
+      <workItem from="1590147529430" duration="2918000" />
     </task>
-    <task id="LOCAL-00001" summary="Soups">
-      <created>1590150776106</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1590150776106</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,19 +79,19 @@
       </map>
     </option>
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Soups" />
-    <option name="LAST_COMMIT_MESSAGE" value="Soups" />
-  </component>
   <component name="WindowStateProjectService">
+    <state x="271" y="96" key="MergeDialog" timestamp="1590162114205">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="271" y="96" key="MergeDialog/0.23.1440.834@0.23.1440.834" timestamp="1590162114205" />
     <state x="341" y="155" key="SettingsEditor" timestamp="1590146103273">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590146103273" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590146049595" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590150792721">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="634" y="362" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590162096075">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590150792721" />
+    <state x="634" y="362" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.834@0.23.1440.834" timestamp="1590162096075" />
   </component>
 </project>
