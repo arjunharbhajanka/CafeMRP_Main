@@ -1586,7 +1586,7 @@ ol {
 
 .product__item__text {
 	margin-top: 5px;
-	border: 1px solid #ebebeb;
+	border-top: 1px solid #ebebeb;
 	text-align: center;
 	padding: 15px;
 
