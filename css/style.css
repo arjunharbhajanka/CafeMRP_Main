@@ -1586,7 +1586,7 @@ ol {
 
 .product__item__text {
 	margin-top: 5px;
-	border-top: 1px solid #ebebeb;
+	border-bottom: 1px solid #ebebeb;
 	text-align: center;
 	padding: 0px;
 
@@ -1712,7 +1712,7 @@ ol {
 }
 
 .product__details__text ul {
-	border-bottom: 1px solid #ebebeb;
+	border-top: 1px solid #ebebeb;
 	padding-top: 40px;
 	margin-top: 50px;
 }
