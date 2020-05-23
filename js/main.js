@@ -239,6 +239,18 @@
                 newVal = 0;
             }
         }
+
+        fs.writeFile('Output.txt', data, (err) => {
+
+            // In case of a error throw err.
+            if (err) throw err;
+        })
+        var data = {
+            fn: "filename",
+            str: "this_is_a_dummy_test_string"
+        };
+
+        $.post("test.php", data);
         $button.parent().find('input').val(newVal);
     });a
 

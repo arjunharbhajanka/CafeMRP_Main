@@ -19,7 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="minor appearance change 2">
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="identifies name of the dish">
+      <change afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Soups.html" beforeDir="false" afterPath="$PROJECT_DIR$/Soups.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
@@ -102,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590240246386</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="identifies name of the dish">
+      <created>1590249851681</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1590249851681</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,21 +132,26 @@
     <MESSAGE value="Soups" />
     <MESSAGE value="minor appearance change" />
     <MESSAGE value="minor appearance change 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor appearance change 2" />
+    <MESSAGE value="identifies name of the dish" />
+    <option name="LAST_COMMIT_MESSAGE" value="identifies name of the dish" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="610" y="269" key="#HTTP_Proxy" timestamp="1590253637319">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="610" y="269" key="#HTTP_Proxy/0.0.1680.1050@0.0.1680.1050" timestamp="1590253637319" />
     <state x="341" y="155" key="SettingsEditor" timestamp="1590243896760">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590243896760" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590146049595" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590240254108">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590255374749">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590240254108" />
-    <state x="628" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590163357021">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590255374749" />
+    <state x="628" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590249805727">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="628" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590163357021" />
+    <state x="628" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590249805727" />
   </component>
 </project>
