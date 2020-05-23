@@ -230,6 +230,6 @@
             }
         }
         $button.parent().find('input').val(newVal);
-    });
+    });a
 
 })(jQuery);
