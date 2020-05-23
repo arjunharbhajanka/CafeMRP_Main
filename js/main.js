@@ -206,7 +206,7 @@
 
 
 //    var value = proQty.parent().find('input').val();
-//    window.alert(value);
+
 
 //    if (value > 0) {
     proQty.prepend('<span class="dec qtybtn">-</span>');
@@ -219,6 +219,16 @@
         var $button = $(this);
 
         var oldValue = $button.parent().find('input').val();
+         // $button.parent().parent().parent().css({
+         //     "color": "green",
+         //     "border": "2px solid green"
+         // });
+        oldValue = $button.parent().find('input').val();
+        var itemName =$button.parent().parent().parent().find('.itemName').text();
+            window.alert(itemName);
+
+
+
         if ($button.hasClass('inc')) {
             var newVal = parseFloat(oldValue) + 1;
         } else {
