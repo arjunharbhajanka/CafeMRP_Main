@@ -203,6 +203,21 @@
 		Quantity change
 	--------------------- */
     var proQty = $('.pro-qty');
+    var tableNo = $('.tableNo');
+    var logNo = $('.logNo');
+
+    var no = tableNo.val();
+    logNo.css({
+            "color": "green",
+            "border": "2px solid green"
+        });
+
+    logNo.on('click', function () {
+        no = tableNo.val();
+        sessionStorage.setItem("tableNumber", no);
+        //window.alert(no);
+
+    })
 
 
 //    var value = proQty.parent().find('input').val();
@@ -239,11 +254,12 @@
                 newVal = 0;
             }
         }
+        var tableNumber = sessionStorage.getItem("tableNumber");
 
         $.ajax({
             type: 'POST',
             url: "test.php",
-            data: {name: itemName, qty: newVal},
+            data: {name: itemName, qty: newVal, tableNo: tableNumber},
             success: function(result) {
                 console.log('the data was successfully sent to the server');
             }
