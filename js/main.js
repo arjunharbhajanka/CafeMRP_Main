@@ -202,6 +202,38 @@
     /*-------------------
 		Quantity change
 	--------------------- */
+
+
+
+    var table = $('.table');
+    var order = $('.order');
+    var temp = $('.temp');
+
+    temp.css({
+        "color": "green",
+        "border": "2px solid green"
+    });
+
+
+    order.css({
+            "color": "green",
+            "border": "2px solid green"
+        });
+    var no = 0;
+    order.on('click', no, function () {
+
+        var tableNO = table.val();
+        var tab = $('.tab');
+        tab.val(tableNO);
+        //$(this).link("https://www.w3schools.com");
+        no = tableNO;
+        window.alert(no);
+
+
+    });
+
+    console.log(no);
+
     var proQty = $('.pro-qty');
 
 
@@ -215,7 +247,8 @@
 //    } else {
 //
 //    }
-    proQty.on('click', '.qtybtn', function () {
+    proQty.on('click', '.qtybtn', no, function () {
+        window.alert(no);
         var $button = $(this);
 
         var oldValue = $button.parent().find('input').val();
