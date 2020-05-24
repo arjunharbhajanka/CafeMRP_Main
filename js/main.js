@@ -280,6 +280,7 @@
             success: function(result) {
                 console.log('the data was successfully sent to the server');
             }
+
         })
         $button.parent().find('input').val(newVal);
     });
