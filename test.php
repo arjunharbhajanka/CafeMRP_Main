@@ -1,10 +1,8 @@
 <?php
-   $fn  = $_POST['fn'];
-   $str = $_POST['str'];
-   <script>
-       console.log(<?= json_encode("abc"); ?>);
-   </script>
-   $file = fopen("file.txt".$fn.".record","w");
-   echo fwrite($fn,$str);
-   fclose($file);
+    error_reporting(E_ALL);
+    $name  = $_POST['name'];
+    $qty = $_POST['qty']; // the key we sent was "something"
+    $f = fopen('file.txt', 'a');
+    fwrite($f, $name);
+    fclose($f);
 ?>

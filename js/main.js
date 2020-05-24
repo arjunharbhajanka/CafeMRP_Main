@@ -225,7 +225,7 @@
          // });
         oldValue = $button.parent().find('input').val();
         var itemName =$button.parent().parent().parent().find('.itemName').text();
-            window.alert(itemName);
+            // window.alert(itemName);
 
 
 
@@ -240,18 +240,15 @@
             }
         }
 
-        fs.writeFile('Output.txt', data, (err) => {
-
-            // In case of a error throw err.
-            if (err) throw err;
+        $.ajax({
+            type: 'POST',
+            url: "test.php",
+            data: {name: itemName, qty: newVal},
+            success: function(result) {
+                console.log('the data was successfully sent to the server');
+            }
         })
-        var data = {
-            fn: "filename",
-            str: "this_is_a_dummy_test_string"
-        };
-
-        $.post("test.php", data);
         $button.parent().find('input').val(newVal);
-    });a
+    });
 
 })(jQuery);
