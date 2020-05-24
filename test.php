@@ -2,7 +2,9 @@
     error_reporting(E_ALL);
     $name  = $_POST['name'];
     $qty = $_POST['qty']; // the key we sent was "something"
+    $tableNo = $_POST['tableNo'];
     $f = fopen('file.txt', 'a');
+
     fwrite($f, $name);
 
 
@@ -18,7 +20,7 @@
     echo "123";
     fwrite($f, "\npoint 2\n");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("INSERT INTO `cafedb`.`orders` (`Item name`, `qty`) VALUES ('$name', '$qty')");
+    $stmt = $conn->prepare("INSERT INTO cafedb.cafe_ord (item_name, qty, table_no) VALUES ('$name', $qty, $tableNo)");
     $stmt->execute();
     }
     catch(PDOException$e) {
