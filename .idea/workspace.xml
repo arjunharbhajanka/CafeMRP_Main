@@ -25,7 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ceb91a4-e04e-4940-937a-42fd55444682" name="Default Changelist" comment="Takes table number and inputs it with each order." />
+    <list default="true" id="4ceb91a4-e04e-4940-937a-42fd55444682" name="Default Changelist" comment="Takes table number and inputs it with each order.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,6 +54,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
   </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
@@ -92,7 +95,7 @@
       <workItem from="1590296620643" duration="5982000" />
       <workItem from="1590319420591" duration="671000" />
       <workItem from="1590320119934" duration="83000" />
-      <workItem from="1590320220890" duration="3153000" />
+      <workItem from="1590320220890" duration="3358000" />
     </task>
     <task id="LOCAL-00001" summary="Soups">
       <created>1590150776106</created>
@@ -245,10 +248,10 @@
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590243896760" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590146049595" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590325684377">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590326065782">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590325684377" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590326065782" />
     <state x="685" y="313" width="500" height="383" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1590321732533">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
