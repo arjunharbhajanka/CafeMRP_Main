@@ -278,7 +278,7 @@
             url: "test.php",
             data: {name: itemName, qty: newVal},
             success: function(result) {
-                console.log('the data was successfully sent to the server');
+                console.log('the data was successfully into sent to the server');
             }
 
         })
