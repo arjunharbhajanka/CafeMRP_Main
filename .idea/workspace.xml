@@ -25,12 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Changes price according to the database.">
-      <change afterPath="$PROJECT_DIR$/qty.php" afterDir="false" />
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Add button added and only creates one entry per item.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Soups.html" beforeDir="false" afterPath="$PROJECT_DIR$/Soups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/qty.php" beforeDir="false" afterPath="$PROJECT_DIR$/qty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590409148204</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add button added and only creates one entry per item.">
+      <created>1590419465622</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1590419465622</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +247,8 @@
     <MESSAGE value="errors resolved" />
     <MESSAGE value="hides according to db values" />
     <MESSAGE value="Changes price according to the database." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes price according to the database." />
+    <MESSAGE value="Add button added and only creates one entry per item." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add button added and only creates one entry per item." />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590298201439">
@@ -256,22 +263,22 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="189" y="361" key="#SQL_Dialects/0.0.1680.1050@0.0.1680.1050" timestamp="1590414058428" />
-    <state width="1126" height="268" key="GridCell.Tab.0.bottom" timestamp="1590416725835">
+    <state width="1126" height="268" key="GridCell.Tab.0.bottom" timestamp="1590422927533">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590416725835" />
-    <state width="1126" height="268" key="GridCell.Tab.0.center" timestamp="1590416725834">
+    <state width="1126" height="268" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590422927533" />
+    <state width="1126" height="268" key="GridCell.Tab.0.center" timestamp="1590422927529">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590416725834" />
-    <state width="1126" height="268" key="GridCell.Tab.0.left" timestamp="1590416725833">
+    <state width="1126" height="268" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590422927529" />
+    <state width="1126" height="268" key="GridCell.Tab.0.left" timestamp="1590422927526">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590416725833" />
-    <state width="1126" height="268" key="GridCell.Tab.0.right" timestamp="1590416725835">
+    <state width="1126" height="268" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590422927526" />
+    <state width="1126" height="268" key="GridCell.Tab.0.right" timestamp="1590422927531">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590416725835" />
+    <state width="1126" height="268" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590422927531" />
     <state x="168" y="94" key="MergeDialog" timestamp="1590397322208">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -289,15 +296,15 @@
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590243896760" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590146049595" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590409155683">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590419485896">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590326503261" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590409155683" />
-    <state x="685" y="353" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1590399432757">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590419485896" />
+    <state x="279" y="353" width="681" height="393" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1590423336590">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="685" y="353" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590399432757" />
+    <state x="279" y="353" width="681" height="393" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590423336590" />
     <state x="538" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590335350851">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

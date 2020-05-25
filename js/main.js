@@ -352,13 +352,17 @@
     var add = $('.add');
     add.on('click', function () {
     var temp = $(this).parent().parent().find(".itemName").text();
+    var price = $(this).parent().parent().find(".price").text();
+    price = price.substring(2);
+
+    //window.alert(price);
 
         var tableNumber = sessionStorage.getItem("tableNumber");
 
         $.ajax({
             type: 'POST',
             url: "test.php",
-            data: {name: temp, qty: 1, tableNo: tableNumber},
+            data: {name: temp, qty: 1, tableNo: tableNumber, price: price, amount: price},
             success: function(result) {
                 console.log('the data was successfully 123 into sent to the server');
             }
@@ -395,12 +399,9 @@
          // });
         oldValue = $button.parent().find('input').val();
         var itemName =$button.parent().parent().parent().find('.itemName').text();
-        // $button.parent().parent().parent().css({
-        //         "color": "green",
-        //         "border": "2px solid green"
-        //     });
-        // var price = $button.parent().parent().parent().find('.price').text();
-        //      window.alert(price);
+        var price =$button.parent().parent().parent().find('.price').text();
+        price = price.substring(2);
+              //window.alert(price);
 
 
 
@@ -419,7 +420,7 @@
         $.ajax({
             type: 'POST',
             url: "qty.php",
-            data: {name: itemName, qty: newVal, tableNo: tableNumber},
+            data: {name: itemName, qty: newVal, tableNo: tableNumber, price: price, amount: price*newVal},
             success: function(result) {
                 console.log('the data was successfully 123 change qt into sent to the server');
             }

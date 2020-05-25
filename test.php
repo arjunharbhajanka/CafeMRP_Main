@@ -3,6 +3,8 @@
     $name  = $_POST['name'];
     $qty = $_POST['qty']; // the key we sent was "something"
     $tableNo = $_POST['tableNo'];
+    $price = $_POST['price'];
+    $amount = $_POST['amount'];
     $f = fopen('file.txt', 'a');
 
     fwrite($f, $name);
@@ -20,7 +22,7 @@
     echo "YAYYYY";
     fwrite($f, "\npoint 2\n");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("INSERT INTO cafedb.cafe_ord (item_name, qty, table_no) VALUES ('$name', $qty, $tableNo)");
+    $stmt = $conn->prepare("INSERT INTO cafedb.cafe_orders (item_name, qty, table_no, price_per_item, amount) VALUES ('$name', $qty, $tableNo, $price, $amount)");
     $stmt->execute();
     }
     catch(PDOException$e) {
