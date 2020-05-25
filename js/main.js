@@ -263,6 +263,7 @@
         });
 
     });
+    console.log("hiiiii");
 
     // $.ajax({
     //     type: 'post',
@@ -296,13 +297,8 @@
 
 
     var table = $('.table');
-    var order = $('.order');
-    var temp = $('.temp');
 
-    temp.css({
-        "color": "green",
-        "border": "2px solid green"
-    });
+
 
 
 
@@ -312,9 +308,10 @@
 
 
     var tableNo = $('.tableNo');
-    var logNo = $('.logNo');
+    //var logNo = $('.logNo');
+    console.log("here");
 
-    var no = tableNo.val();
+
 
 
     // logNo.on('click', function () {
@@ -324,15 +321,35 @@
     //     //window.alert(no);
     //
     // });
-    var tableNumber;
-    document.querySelector('.button').addEventListener('click', function () {
-        tableNumber = document.querySelector('.tableNo').value;
+    var button = $('.button_button1');
+    button.css({
+            "color": "green",
+            "border": "2px solid green"
+        });
+    button.on('click', function () {
+        var no = tableNo.val();
+        //var tableNumber = document.querySelector('.tableNo').value;
+        sessionStorage.setItem("tableNumber", no);
         window.location.assign("http://3.23.241.214/main_menu.html");
+
+    });
+    var button2 = $('.button_button2');
+    button2.css({
+        "color": "green",
+        "border": "2px solid green"
+    });
+    button2.on('click', function () {
+        var no = tableNo.val();
+        //var tableNumber = document.querySelector('.tableNo').value;
+        //sessionStorage.setItem("tableNumber", no);
+        window.location.assign("http://3.23.241.214/checkout.html");
 
     });
 
 
     var add = $('.add');
+    console.log("abc");
+
     add.on('click', function () {
         var temp = $(this).parent().parent().find(".itemName").text();
         var price = $(this).parent().parent().find(".price").text();
@@ -340,7 +357,7 @@
 
         //window.alert(price);
 
-        //var tableNumber = sessionStorage.getItem("tableNumber");
+        var tableNumber = sessionStorage.getItem("tableNumber");
 
         $.ajax({
             type: 'POST',
@@ -397,7 +414,7 @@
                 newVal = 0;
             }
         }
-       // var tableNumber = sessionStorage.getItem("tableNumber");
+        var tableNumber = sessionStorage.getItem("tableNumber");
 
         $.ajax({
             type: 'POST',
@@ -411,7 +428,7 @@
         $button.parent().find('input').val(newVal);
     });
 
-    //var tableNumber = sessionStorage.getItem("tableNumber");
+    var tableNumber = sessionStorage.getItem("tableNumber");
 
     $.ajax({
         type: 'POST',
@@ -425,7 +442,7 @@
             console.log(len)
             var i = 0;
             var sum = 0;
-            for(i = 0; i < 5; i++) {
+            for(i = 0; i < len; i++) {
                  var checkout_items = $('.checkout_items');
                 // checkout_items.parent().find('.checkout__order__subtotal').find('span').html()
                 sum = sum + (values[i]['amount'])*1;
