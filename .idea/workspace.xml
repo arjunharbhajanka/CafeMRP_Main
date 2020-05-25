@@ -26,10 +26,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Adds price and amount to database">
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="EVERY THING WORKING">
+      <change afterPath="$PROJECT_DIR$/place_order.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Soups.html" beforeDir="false" afterPath="$PROJECT_DIR$/Soups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
@@ -196,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590424102299</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="EVERY THING WORKING">
+      <created>1590437172833</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1590437172833</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,7 +267,8 @@
     <MESSAGE value="Changes price according to the database." />
     <MESSAGE value="Add button added and only creates one entry per item." />
     <MESSAGE value="Adds price and amount to database" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adds price and amount to database" />
+    <MESSAGE value="EVERY THING WORKING" />
+    <option name="LAST_COMMIT_MESSAGE" value="EVERY THING WORKING" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590298201439">
@@ -274,22 +283,22 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="189" y="361" key="#SQL_Dialects/0.0.1680.1050@0.0.1680.1050" timestamp="1590414058428" />
-    <state width="1126" height="268" key="GridCell.Tab.0.bottom" timestamp="1590422927533">
+    <state width="1126" height="268" key="GridCell.Tab.0.bottom" timestamp="1590439649812">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590422927533" />
-    <state width="1126" height="268" key="GridCell.Tab.0.center" timestamp="1590422927529">
+    <state width="1126" height="268" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590439649812" />
+    <state width="1126" height="268" key="GridCell.Tab.0.center" timestamp="1590439649811">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590422927529" />
-    <state width="1126" height="268" key="GridCell.Tab.0.left" timestamp="1590422927526">
+    <state width="1126" height="268" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590439649811" />
+    <state width="1126" height="268" key="GridCell.Tab.0.left" timestamp="1590439649811">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590422927526" />
-    <state width="1126" height="268" key="GridCell.Tab.0.right" timestamp="1590422927531">
+    <state width="1126" height="268" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590439649811" />
+    <state width="1126" height="268" key="GridCell.Tab.0.right" timestamp="1590439649812">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590422927531" />
+    <state width="1126" height="268" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590439649812" />
     <state x="168" y="94" key="MergeDialog" timestamp="1590397322208">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -298,24 +307,28 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="604" y="258" key="NewPhpClassDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590412912800" />
-    <state x="659" y="455" key="NewPhpFileDialog" timestamp="1590412924383">
+    <state x="659" y="455" key="NewPhpFileDialog" timestamp="1590439649761">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="659" y="455" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590412924383" />
+    <state x="659" y="455" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590439649761" />
     <state x="341" y="155" key="SettingsEditor" timestamp="1590243896760">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590243896760" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590146049595" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590424108018">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590437192873">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590326503261" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590424108018" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590437192873" />
     <state x="279" y="353" width="681" height="393" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1590423336590">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="279" y="353" width="681" height="393" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590423336590" />
+    <state x="0" y="170" width="1345" height="643" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1590437982897">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="0" y="170" width="1345" height="643" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1680.1050@0.0.1680.1050" timestamp="1590437982897" />
     <state x="538" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590335350851">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

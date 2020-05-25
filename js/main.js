@@ -334,15 +334,38 @@
 
     });
     var button2 = $('.button_button2');
-    button2.css({
-        "color": "green",
-        "border": "2px solid green"
-    });
+    // button2.css({
+    //     "color": "green",
+    //     "border": "2px solid green"
+    // });
     button2.on('click', function () {
         var no = tableNo.val();
         //var tableNumber = document.querySelector('.tableNo').value;
         //sessionStorage.setItem("tableNumber", no);
         window.location.assign("http://3.23.241.214/checkout.html");
+
+    });
+
+    var place_order = $('.place_order');
+    place_order.css({
+            "color": "green",
+            "border": "2px solid green"
+        });
+    place_order.on('click', function () {
+        var tableNumber = sessionStorage.getItem("tableNumber");
+        $.ajax({
+            type: 'POST',
+            url: "place_order.php",
+            data: {tableNo: tableNumber},
+            success: function (result) {
+                window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
+
+
+            }
+
+        });
+
+
 
     });
 
@@ -453,6 +476,7 @@
             var checkout_items = $('.checkout_items');
             checkout_items.parent().find('.checkout__order__subtotal').find('span').html(" ₹ " + sum);
             checkout_items.parent().find('.checkout__order__total').find('span').html(" ₹ " + sum);
+            sessionStorage.setItem("total", sum);
 
         }
 
