@@ -325,12 +325,15 @@
     //
     // });
     var tableNumber;
-    document.querySelector('.button').addEventListener('click', function () {
+    document.getElementById('Go').addEventListener('click', function () {
         tableNumber = document.querySelector('.tableNo').value;
         window.location.assign("http://3.23.241.214/main_menu.html");
 
     });
 
+    // document.getElementById('Check_1').addEventListener('click', function () {
+    //     window.location.assign("http://3.23.241.214/main_menu.html");
+    // });
 
     var add = $('.add');
     add.on('click', function () {
