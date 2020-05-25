@@ -2211,6 +2211,7 @@ ol {
 }
 
 .checkout__order {
+	width: 160%;
 	background: #f5f5f5;
 	padding: 40px;
 	padding-top: 30px;
@@ -2240,7 +2241,7 @@ ol {
 }
 
 .checkout__order ul li {
-	font-size: 16px;
+	font-size: 15px;
 	color: #6f6f6f;
 	line-height: 40px;
 	list-style: none;

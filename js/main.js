@@ -421,6 +421,24 @@
         url: "checkout.php",
         data: {tableNo: tableNumber},
         success: function (result) {
+            console.log(result);
+            var values = JSON.parse(result);
+            console.log(values[0]['item_name']);
+            var len = values.length;
+            console.log(len)
+            var i = 0;
+            var sum = 0;
+            for(i = 0; i < 5; i++) {
+                 var checkout_items = $('.checkout_items');
+                // checkout_items.parent().find('.checkout__order__subtotal').find('span').html()
+                sum = sum + (values[i]['amount'])*1;
+
+                var list_item = "<li>"+values[i]['item_name']+" * "+values[i]['qty']+ "<span> ₹ "+values[i]['amount']+"</span></li>";
+                checkout_items.append(list_item);
+            }
+            var checkout_items = $('.checkout_items');
+            checkout_items.parent().find('.checkout__order__subtotal').find('span').html(" ₹ " + sum);
+            checkout_items.parent().find('.checkout__order__total').find('span').html(" ₹ " + sum);
 
         }
 
