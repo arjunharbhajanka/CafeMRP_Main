@@ -17,7 +17,7 @@
 
     try{
     $conn = new PDO("mysql:host=$servername;dbname=$dbname",$username, $password);
-    echo "123";
+    echo "YAYYYY";
     fwrite($f, "\npoint 2\n");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $stmt = $conn->prepare("INSERT INTO cafedb.cafe_ord (item_name, qty, table_no) VALUES ('$name', $qty, $tableNo)");

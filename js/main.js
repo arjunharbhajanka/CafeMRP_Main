@@ -203,6 +203,84 @@
 		Quantity change
 	--------------------- */
 
+    var proQty = $('.pro-qty');
+    //proQty.parent().parent().parent().find('.itemName').text();
+
+    // var temp = "Cream of Mushroom"
+    // console.log(temp);
+    // $.ajax({
+    //     type: 'post',
+    //     url: 'manage.php',
+    //     data: {name : "Cream of Mushroom"},
+    //     success: function(data) {
+    //         var t2 = temp + data;
+    //         console.log(t2);
+    //
+    //         if (data != 1) {
+    //             $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
+    //         }
+    //         else {
+    //             $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'green');
+    //         }
+    //
+    //     }
+    // });
+
+    var proQty = $('.pro-qty');
+    var itemName = proQty.parent().parent().parent().find('.itemName').each(function() {
+        $(this).css('background-color', 'teal');
+        var itemName = $(this).text();
+        console.log(itemName);
+        $("h6:contains("+ itemName +")").parent().css('background-color', 'orange');
+        $.ajax({
+            type: 'post',
+            url: 'manage.php',
+            data: {name : itemName},
+            success: function(data) {
+                console.log(itemName + " " + data);
+
+                if (data != 1) {
+                    $("h6:contains("+ itemName +")").parent().hide();
+                }
+                else {
+                    // $("h6:contains("+ itemName +")").parent().css('background-color', 'green');
+                }
+
+            }
+            });
+
+    });
+
+    // $.ajax({
+    //     type: 'post',
+    //     url: 'manage.php',
+    //     data: {no : no},
+    //     success: function(data) {
+    //         if(data == 102) {
+    //
+    //
+    //             window.alert("it is was 101");
+    //         } else {
+    //             //window.alert("removing veg hot and sour");
+    //             var proQty = $('.pro-qty');
+    //             var itemName = proQty.parent().parent().parent().find('.itemName').each(function() {
+    //                 $(this).css('background-color', 'yellow');
+    //                 var itemName = $(this).text();
+    //                 $("h6:contains("+ itemName +")").parent().css('background-color', 'blue');
+    //             });
+    //             // var itemName = "Hot N Sour Soup (Vegetables)";
+    //             // $("h6:contains("+ itemName +")").parent().css('background-color', 'yellow');
+    //             //window.alert(itemName[0].text());
+    //
+    //             //$("h6:contains("+ itemName +")").parent().css('background-color', 'green');
+    //             // $('h6:contains("Hot N Sour Soup (Vegetables)")')
+    //             //     .filter(function() { return $(this).children().length === 0;})
+    //             //     .parent().css('background-color', 'red');
+    //
+    //         }
+    //     }
+    // });
+
 
 
     var table = $('.table');
@@ -234,19 +312,24 @@
 
     console.log(no);
 
-    var proQty = $('.pro-qty');
+
     var tableNo = $('.tableNo');
     var logNo = $('.logNo');
 
     var no = tableNo.val();
     logNo.css({
-            "color": "green",
-            "border": "2px solid green"
+            "color": "blue",
+            "border": "2px solid red"
         });
 
     logNo.on('click', function () {
-        no = tableNo.val();
-        sessionStorage.setItem("tableNumber", no);
+         no = tableNo.val();
+
+
+
+
+        // no = tableNo.val();
+        // sessionStorage.setItem("tableNumber", no);
         //window.alert(no);
 
     })
@@ -294,7 +377,7 @@
             url: "test.php",
             data: {name: itemName, qty: newVal, tableNo: tableNumber},
             success: function(result) {
-                console.log('the data was successfully into sent to the server');
+                console.log('the data was successfully 123 into sent to the server');
             }
 
         })
