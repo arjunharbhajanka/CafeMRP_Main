@@ -96,7 +96,7 @@
     });
 
 
-    $('.hero__categories__all').on('click', function(){
+    $('.hero__categories__all').on('click', function () {
         $('.hero__categories ul').slideToggle(400);
     });
 
@@ -228,7 +228,7 @@
 
     var proQty = $('.pro-qty');
     proQty.hide();
-    var itemName = proQty.parent().parent().parent().find('.itemName').each(function() {
+    var itemName = proQty.parent().parent().parent().find('.itemName').each(function () {
         var price = $(this).parent().find('.price');
 
         //$(this).css('background-color', 'yellow');
@@ -238,27 +238,26 @@
         $.ajax({
             type: 'post',
             url: 'manage.php',
-            data: {name : itemName},
-            success: function(data) {
+            data: {name: itemName},
+            success: function (data) {
                 console.log(itemName + " " + data);
 
                 if (data != 1) {
-                    $("h6:contains("+ itemName +")").parent().hide();
-                }
-                else {
+                    $("h6:contains(" + itemName + ")").parent().hide();
+                } else {
                     // $("h6:contains("+ itemName +")").parent().css('background-color', 'green');
                 }
 
             }
-            });
+        });
         $.ajax({
             type: 'post',
             url: 'price.php',
-            data: {name : itemName},
-            success: function(data) {
+            data: {name: itemName},
+            success: function (data) {
                 console.log("new price" + " " + data);
 
-               price.html("₹ "+data);
+                price.html("₹ " + data);
 
             }
         });
@@ -296,7 +295,6 @@
     // });
 
 
-
     var table = $('.table');
     var order = $('.order');
     var temp = $('.temp');
@@ -307,42 +305,21 @@
     });
 
 
-    order.css({
-            "color": "green",
-            "border": "2px solid green"
-        });
+
     var no = 0;
-    order.on('click', no, function () {
 
-        var tableNO = table.val();
-        var tab = $('.tab');
-        tab.val(tableNO);
-        //$(this).link("https://www.w3schools.com");
-        no = tableNO;
-        window.alert(no);
-
-
-    });
-
-    console.log(no);
+    //console.log(no);
 
 
     var tableNo = $('.tableNo');
     var logNo = $('.logNo');
 
     var no = tableNo.val();
-    // logNo.css({
-    //         "color": "blue",
-    //         "border": "2px solid red"
-    //     });
+
 
     logNo.on('click', function () {
-         no = tableNo.val();
-
-
-
-
         no = tableNo.val();
+
         sessionStorage.setItem("tableNumber", no);
         //window.alert(no);
 
@@ -351,11 +328,11 @@
 
     var add = $('.add');
     add.on('click', function () {
-    var temp = $(this).parent().parent().find(".itemName").text();
-    var price = $(this).parent().parent().find(".price").text();
-    price = price.substring(2);
+        var temp = $(this).parent().parent().find(".itemName").text();
+        var price = $(this).parent().parent().find(".price").text();
+        price = price.substring(2);
 
-    //window.alert(price);
+        //window.alert(price);
 
         var tableNumber = sessionStorage.getItem("tableNumber");
 
@@ -363,7 +340,7 @@
             type: 'POST',
             url: "test.php",
             data: {name: temp, qty: 1, tableNo: tableNumber, price: price, amount: price},
-            success: function(result) {
+            success: function (result) {
                 console.log('the data was successfully 123 into sent to the server');
             }
 
@@ -372,7 +349,7 @@
         $(this).parent().find('.pro-qty').show();
 
 
-    //window.alert(temp);
+        //window.alert(temp);
 
 
     });
@@ -393,16 +370,15 @@
         var $button = $(this);
 
         var oldValue = $button.parent().find('input').val();
-         // $button.parent().parent().parent().css({
-         //     "color": "green",
-         //     "border": "2px solid green"
-         // });
+        // $button.parent().parent().parent().css({
+        //     "color": "green",
+        //     "border": "2px solid green"
+        // });
         oldValue = $button.parent().find('input').val();
-        var itemName =$button.parent().parent().parent().find('.itemName').text();
-        var price =$button.parent().parent().parent().find('.price').text();
+        var itemName = $button.parent().parent().parent().find('.itemName').text();
+        var price = $button.parent().parent().parent().find('.price').text();
         price = price.substring(2);
-              //window.alert(price);
-
+        //window.alert(price);
 
 
         if ($button.hasClass('inc')) {
@@ -420,13 +396,26 @@
         $.ajax({
             type: 'POST',
             url: "qty.php",
-            data: {name: itemName, qty: newVal, tableNo: tableNumber, price: price, amount: price*newVal},
-            success: function(result) {
+            data: {name: itemName, qty: newVal, tableNo: tableNumber, price: price, amount: price * newVal},
+            success: function (result) {
                 console.log('the data was successfully 123 change qt into sent to the server');
             }
 
-        })
+        });
         $button.parent().find('input').val(newVal);
     });
+
+    var tableNumber = sessionStorage.getItem("tableNumber");
+
+    $.ajax({
+        type: 'POST',
+        url: "checkout.php",
+        data: {tableNo: tableNumber},
+        success: function (result) {
+
+        }
+
+        });
+
 
 })(jQuery);
