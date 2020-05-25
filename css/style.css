@@ -1086,6 +1086,17 @@ ol {
 .sidebar__item.sidebar__item__color--option {
 	overflow: hidden;
 }
+.add {
+	border: 1px solid #ebebeb;
+	width: 120px;
+	height: 35px;
+	display: inline-block;
+	position: relative;
+	text-align: center;
+	background: #ffffff;
+	margin-bottom: 2px;
+
+}
 
 .sidebar__item h4 {
 	color: #1c1c1c;
@@ -1744,6 +1755,17 @@ ol {
 	color: #1c1c1c;
 	margin-right: 25px;
 }
+.logNo {
+	border: 1px solid #ebebeb;
+	width: 120px;
+	height: 35px;
+
+	position: relative;
+	text-align: center;
+	background: #ffffff;
+	margin-bottom: 2px;
+
+}
 
 .product__details__text ul li .share a:last-child {
 	margin-right: 0;
@@ -1755,11 +1777,10 @@ ol {
 }
 
 .pro-qty {
-	align-self: rig;
 
     border: 1px solid #ebebeb;
-	width: 100px;
-	height: 30px;
+	width: 120px;
+	height: 35px;
 	display: inline-block;
 	position: relative;
 	text-align: center;
@@ -1770,7 +1791,7 @@ ol {
 .pro-qty input {
 	height: 100%;
 	width: 100%;
-	font-size: 12px;
+	font-size: 14px;
 	color: #6f6f6f;
 	width: 30px;
 	border: none;
@@ -1780,7 +1801,7 @@ ol {
 
 .pro-qty .qtybtn {
 	width: 20px;
-	font-size: 16px;
+	font-size: 20px;
 	color: #6f6f6f;
 	cursor: pointer;
 	display: inline-block;

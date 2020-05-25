@@ -227,6 +227,7 @@
     // });
 
     var proQty = $('.pro-qty');
+    proQty.hide();
     var itemName = proQty.parent().parent().parent().find('.itemName').each(function() {
         var price = $(this).parent().find('.price');
 
@@ -330,10 +331,10 @@
     var logNo = $('.logNo');
 
     var no = tableNo.val();
-    logNo.css({
-            "color": "blue",
-            "border": "2px solid red"
-        });
+    // logNo.css({
+    //         "color": "blue",
+    //         "border": "2px solid red"
+    //     });
 
     logNo.on('click', function () {
          no = tableNo.val();
@@ -345,7 +346,32 @@
         sessionStorage.setItem("tableNumber", no);
         //window.alert(no);
 
-    })
+    });
+
+
+    var add = $('.add');
+    add.on('click', function () {
+    var temp = $(this).parent().parent().find(".itemName").text();
+
+        var tableNumber = sessionStorage.getItem("tableNumber");
+
+        $.ajax({
+            type: 'POST',
+            url: "test.php",
+            data: {name: temp, qty: 1, tableNo: tableNumber},
+            success: function(result) {
+                console.log('the data was successfully 123 into sent to the server');
+            }
+
+        })
+        $(this).hide();
+        $(this).parent().find('.pro-qty').show();
+
+
+    //window.alert(temp);
+
+
+    });
 
 
 //    var value = proQty.parent().find('input').val();
@@ -392,10 +418,10 @@
 
         $.ajax({
             type: 'POST',
-            url: "test.php",
+            url: "qty.php",
             data: {name: itemName, qty: newVal, tableNo: tableNumber},
             success: function(result) {
-                console.log('the data was successfully 123 into sent to the server');
+                console.log('the data was successfully 123 change qt into sent to the server');
             }
 
         })
