@@ -10,8 +10,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="testing git branches">
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="errors resolved">
+      <change afterPath="$PROJECT_DIR$/main_menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oriental.html" beforeDir="false" afterPath="$PROJECT_DIR$/Oriental.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Soups.html" beforeDir="false" afterPath="$PROJECT_DIR$/Soups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590305560658</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="errors resolved">
+      <created>1590326495436</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1590326495436</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,7 +189,8 @@
     <MESSAGE value="Passes name and quantity to the test.php which writes it into file.txt" />
     <MESSAGE value="testing git branches" />
     <MESSAGE value="WRITES TO DATBASE!!!!!" />
-    <option name="LAST_COMMIT_MESSAGE" value="WRITES TO DATBASE!!!!!" />
+    <MESSAGE value="errors resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="errors resolved" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590298201439">
@@ -194,13 +206,15 @@
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590243896760" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590146049595" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590312711431">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="377" y="227" key="Vcs.Push.Dialog.v2" timestamp="1590326503261">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590326503261" />
     <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590312711431" />
-    <state x="628" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590312657870">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="538" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590335350851">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
+    <state x="538" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1590335350851" />
     <state x="628" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590312657870" />
   </component>
 </project>
