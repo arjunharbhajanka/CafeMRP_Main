@@ -228,10 +228,12 @@
 
     var proQty = $('.pro-qty');
     var itemName = proQty.parent().parent().parent().find('.itemName').each(function() {
-        $(this).css('background-color', 'teal');
+        var price = $(this).parent().find('.price');
+
+        //$(this).css('background-color', 'yellow');
         var itemName = $(this).text();
         console.log(itemName);
-        $("h6:contains("+ itemName +")").parent().css('background-color', 'orange');
+        //$("h6:contains("+ itemName +")").parent().css('background-color', 'blue');
         $.ajax({
             type: 'post',
             url: 'manage.php',
@@ -248,6 +250,17 @@
 
             }
             });
+        $.ajax({
+            type: 'post',
+            url: 'price.php',
+            data: {name : itemName},
+            success: function(data) {
+                console.log("new price" + " " + data);
+
+               price.html("₹ "+data);
+
+            }
+        });
 
     });
 
@@ -328,8 +341,8 @@
 
 
 
-        // no = tableNo.val();
-        // sessionStorage.setItem("tableNumber", no);
+        no = tableNo.val();
+        sessionStorage.setItem("tableNumber", no);
         //window.alert(no);
 
     })
@@ -346,7 +359,7 @@
 //
 //    }
     proQty.on('click', '.qtybtn', no, function () {
-        window.alert(no);
+        //window.alert(no);
         var $button = $(this);
 
         var oldValue = $button.parent().find('input').val();
@@ -356,7 +369,12 @@
          // });
         oldValue = $button.parent().find('input').val();
         var itemName =$button.parent().parent().parent().find('.itemName').text();
-            // window.alert(itemName);
+        // $button.parent().parent().parent().css({
+        //         "color": "green",
+        //         "border": "2px solid green"
+        //     });
+        // var price = $button.parent().parent().parent().find('.price').text();
+        //      window.alert(price);
 
 
 
