@@ -317,11 +317,17 @@
     var no = tableNo.val();
 
 
-    logNo.on('click', function () {
-        no = tableNo.val();
-
-        sessionStorage.setItem("tableNumber", no);
-        //window.alert(no);
+    // logNo.on('click', function () {
+    //     no = tableNo.val();
+    //
+    //     sessionStorage.setItem("tableNumber", no);
+    //     //window.alert(no);
+    //
+    // });
+    var tableNumber;
+    document.querySelector('.button').addEventListener('click', function () {
+        tableNumber = document.querySelector('.tableNo').value;
+        window.location.assign("http://3.23.241.214/main_menu.html");
 
     });
 
@@ -334,7 +340,7 @@
 
         //window.alert(price);
 
-        var tableNumber = sessionStorage.getItem("tableNumber");
+        //var tableNumber = sessionStorage.getItem("tableNumber");
 
         $.ajax({
             type: 'POST',
@@ -391,7 +397,7 @@
                 newVal = 0;
             }
         }
-        var tableNumber = sessionStorage.getItem("tableNumber");
+       // var tableNumber = sessionStorage.getItem("tableNumber");
 
         $.ajax({
             type: 'POST',
@@ -405,7 +411,7 @@
         $button.parent().find('input').val(newVal);
     });
 
-    var tableNumber = sessionStorage.getItem("tableNumber");
+    //var tableNumber = sessionStorage.getItem("tableNumber");
 
     $.ajax({
         type: 'POST',
