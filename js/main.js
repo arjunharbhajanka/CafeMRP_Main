@@ -227,9 +227,10 @@
     // });
 
     var proQty = $('.pro-qty');
+    var add = $('.add');
+    add.hide();
     proQty.hide();
     console.log("bhlal");
-
 
 
     $('.itemName').each(function () {
@@ -239,9 +240,9 @@
         console.log(itemName);
         if ($(this).hasClass('can_drop')) {
             $(this).parent().find('li').each(function () {
-                    console.log("here");
-                    var selected = $(this).find('p').text();
-                    console.log("hello  "+ selected);
+                console.log("here");
+                var selected = $(this).find('p').text();
+                console.log("hello  " + selected);
                 var price = $(this).find('.price');
                 var name = itemName + " " + selected;
                 console.log(name);
@@ -258,17 +259,44 @@
                     }
                 });
 
+                var tableNumber = sessionStorage.getItem("tableNumber");
+
+                $.ajax({
+                    type: 'post',
+                    url: 'check_qty.php',
+                    data: {name: name, tableNumber: tableNumber},
+                    success: function (data) {
+                        console.log(tableNumber);
+                        console.log(data);
+                        if (data == "") {
+                            console.log("not cahnging");
+
+                            price.parent().find('.add_drop').show();
+                            price.parent().find('.pro-qty').hide();
+
+                        } else {
+                            price.parent().find('input').val(data);
+                            //price.html("₹ " + data);
+                            price.parent().find('.add_drop').hide();
+                            price.parent().find('.pro-qty').show();
+                            price.parent().parent().parent().slideDown(400);
+                            // proQty.show();
+                            console.log("changing "+itemName);
+                            //proQty.find('input').css('background-color', 'blue');
+
+                        }
 
 
+                    }
                 });
+
+
+            });
 
             console.log("can drop " + itemName);
 
 
-
-
-        }
-        else {
+        } else {
             var price = $(this).parent().find('.price');
 
             //$(this).css('background-color', 'yellow');
@@ -279,9 +307,13 @@
                 url: 'price.php',
                 data: {name: itemName},
                 success: function (data) {
-                    console.log("new price" + " " + data);
 
-                    price.html("₹ " + data);
+                    if (price.parent().hasClass('man')) {
+                        console.log("new price of man" + " " + data);
+                        price.val("₹" + data);
+                    }
+
+                    price.html("₹" + data);
 
                 }
             });
@@ -293,12 +325,29 @@
                 url: 'check_qty.php',
                 data: {name: itemName, tableNumber: tableNumber},
                 success: function (data) {
-                    console.log("new price" + " " + data);
+                    console.log(tableNumber);
+                    console.log(data);
+                    if (data == "") {
+                        console.log("not cahnging");
 
-                    price.html("₹ " + data);
+                        price.parent().find('.add').show();
+                        price.parent().find('.pro-qty').hide();
+
+                    } else {
+                        price.parent().find('input').val(data);
+                        //price.html("₹ " + data);
+                        price.parent().find('.add').hide();
+                        price.parent().find('.pro-qty').show();
+                        // proQty.show();
+                        console.log("changing "+itemName);
+                        //proQty.find('input').css('background-color', 'blue');
+
+                    }
+
 
                 }
             });
+
 
 
 
@@ -311,13 +360,74 @@
                 console.log(itemName + " " + data);
 
                 if (data != 1) {
-                    $("h6:contains(" + itemName + ")").parent().hide();
+                    if (price.parent().hasClass('man')) {
+                        //price.parent().css('background-color', 'blue');
+                        price.parent().find('.hide_item').hide();
+                    } else {
+                        $("h6:contains(" + itemName + ")").parent().hide();
+                    }
+
+
                 } else {
-                    // $("h6:contains("+ itemName +")").parent().css('background-color', 'green');
+                    if (price.parent().hasClass('man')) {
+                        //price.parent().css('background-color', 'green');
+                        price.parent().find('.show_item').hide();
+                    }
+
+                     //$("h6:contains("+ itemName +")").parent().css('background-color', 'green');
                 }
 
             }
         });
+
+
+
+
+
+    });
+
+    var hide_item = $('.hide_item');
+
+    hide_item.on('click', function () {
+
+        var itemName = $(this).parent().parent().find('.itemName').text();
+        window.alert(itemName);
+
+        $.ajax({
+            type: 'post',
+            url: 'hide_show.php',
+            data: {name: itemName, mode: 0},
+            success: function (data) {
+
+                console.log(data);
+
+            }
+        });
+        $(this).hide();
+        $(this).parent().find('.show_item').show();
+
+
+    });
+
+    var show_item = $('.show_item');
+
+    show_item.on('click', function () {
+
+        var itemName = $(this).parent().parent().find('.itemName').text();
+        window.alert(itemName);
+
+        $.ajax({
+            type: 'post',
+            url: 'hide_show.php',
+            data: {name: itemName, mode: 1},
+            success: function (data) {
+
+                console.log(data);
+
+            }
+        });
+        $(this).hide();
+        $(this).parent().find('.hide_item').show();
 
 
     });
@@ -357,9 +467,6 @@
     var table = $('.table');
 
 
-
-
-
     var no = 0;
 
     //console.log(no);
@@ -368,8 +475,6 @@
     var tableNo = $('.tableNo');
     //var logNo = $('.logNo');
     console.log("here");
-
-
 
 
     // logNo.on('click', function () {
@@ -403,9 +508,9 @@
 
     var place_order = $('.place_order');
     place_order.css({
-            "color": "green",
-            "border": "2px solid green"
-        });
+        "color": "green",
+        "border": "2px solid green"
+    });
     place_order.on('click', function () {
         var tableNumber = sessionStorage.getItem("tableNumber");
         $.ajax({
@@ -421,11 +526,9 @@
         });
 
 
-
     });
 
 
-    var add = $('.add');
     console.log("abc");
 
     add.on('click', function () {
@@ -518,16 +621,13 @@
             var price = $button.parent().parent().parent().find('h6').text();
 
             console.log(price);
-        }
-        else {
+        } else {
             var itemName = $button.parent().parent().parent().find('.itemName').text();
             var price = $button.parent().parent().parent().find('.price').text();
 
 
-            }
+        }
         price = price.substring(2);
-
-
 
 
         if ($button.hasClass('inc')) {
@@ -545,7 +645,7 @@
         console.log(newVal);
         console.log(tableNumber);
         console.log(price);
-        console.log(price*newVal);
+        console.log(price * newVal);
 
         $.ajax({
             type: 'POST',
@@ -624,12 +724,12 @@
             console.log(len)
             var i = 0;
             var sum = 0;
-            for(i = 0; i < len; i++) {
-                 var checkout_items = $('.checkout_items');
+            for (i = 0; i < len; i++) {
+                var checkout_items = $('.checkout_items');
                 // checkout_items.parent().find('.checkout__order__subtotal').find('span').html()
-                sum = sum + (values[i]['amount'])*1;
+                sum = sum + (values[i]['amount']) * 1;
 
-                var list_item = "<li>"+values[i]['item_name']+" * "+values[i]['qty']+ "<span> ₹ "+values[i]['amount']+"</span></li>";
+                var list_item = "<li>" + values[i]['item_name'] + " * " + values[i]['qty'] + "<span> ₹ " + values[i]['amount'] + "</span></li>";
                 checkout_items.append(list_item);
             }
             var checkout_items = $('.checkout_items');
@@ -639,7 +739,7 @@
 
         }
 
-        });
+    });
 
 
 })(jQuery);

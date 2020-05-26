@@ -32,15 +32,17 @@ try{
     fwrite($f, "\npoint 3\n");
     fwrite($f, "\npoint 4\n");
     $value = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    //echo ($value);
     fwrite($f, "\npoint 5\n");
     //$retVal = $value->qty;
-    print_r($value[0]['price']);
-    fwrite($f, $value['price']);
+    print_r($value[0]['qty']);
+    fwrite($f, $value['qty']);
 }
 catch(PDOException$e) {
     fwrite($f, $e ->getMessage());
     echo "Error: ".$e ->getMessage();
 }
 fwrite($f, "\npoint 7\n");
+//echo ("over");
 
 ?>
