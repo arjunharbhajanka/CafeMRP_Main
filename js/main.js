@@ -97,7 +97,7 @@
 
     $('.hero__categories ul').slideUp(400);
     $('.dropdown').on('click', function () {
-        $('.hero__categories ul').slideToggle(400);
+        $(this).parent().find('ul').slideToggle(400);
     });
 
     /*--------------------------
@@ -228,7 +228,12 @@
 
     var proQty = $('.pro-qty');
     proQty.hide();
-    var itemName = proQty.parent().parent().parent().find('.itemName').each(function () {
+    console.log("bhlal");
+
+
+
+    $('.itemName').each(function () {
+        console.log("bhlal");
         var itemName = $(this).text();
         //$(this).css('background-color', 'yellow');
         console.log(itemName);
@@ -280,6 +285,23 @@
 
                 }
             });
+
+            var tableNumber = sessionStorage.getItem("tableNumber");
+
+            $.ajax({
+                type: 'post',
+                url: 'check_qty.php',
+                data: {name: itemName, tableNumber: tableNumber},
+                success: function (data) {
+                    console.log("new price" + " " + data);
+
+                    price.html("₹ " + data);
+
+                }
+            });
+
+
+
         }
         $.ajax({
             type: 'post',

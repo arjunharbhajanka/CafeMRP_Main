@@ -1309,6 +1309,7 @@ ol {
 
 .product__discount {
 	padding-bottom: 50px;
+	text-align: -webkit-center;
 }
 
 .product__discount__title {
@@ -2291,7 +2292,7 @@ ol {
 }
 
 .checkout__order {
-	width: 160%;
+	width: 100%;
 	background: #f5f5f5;
 	padding: 40px;
 	padding-top: 30px;
