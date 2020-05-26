@@ -72,7 +72,7 @@
         navText: ["<span class='fa fa-angle-left'><span/>", "<span class='fa fa-angle-right'><span/>"],
         animateOut: 'fadeOut',
         animateIn: 'fadeIn',
-        smartSpeed: 1200,
+        smartSpeed: 2000,
         autoHeight: false,
         autoplay: true,
         responsive: {
@@ -95,8 +95,8 @@
         }
     });
 
-
-    $('.hero__categories__all').on('click', function () {
+    $('.hero__categories ul').slideUp(400);
+    $('.dropdown').on('click', function () {
         $('.hero__categories ul').slideToggle(400);
     });
 
@@ -229,12 +229,58 @@
     var proQty = $('.pro-qty');
     proQty.hide();
     var itemName = proQty.parent().parent().parent().find('.itemName').each(function () {
-        var price = $(this).parent().find('.price');
-
-        //$(this).css('background-color', 'yellow');
         var itemName = $(this).text();
+        //$(this).css('background-color', 'yellow');
         console.log(itemName);
-        //$("h6:contains("+ itemName +")").parent().css('background-color', 'blue');
+        if ($(this).hasClass('can_drop')) {
+            $(this).parent().find('li').each(function () {
+                    console.log("here");
+                    var selected = $(this).find('p').text();
+                    console.log("hello  "+ selected);
+                var price = $(this).find('.price');
+                var name = itemName + " " + selected;
+                console.log(name);
+
+                $.ajax({
+                    type: 'post',
+                    url: 'price.php',
+                    data: {name: name},
+                    success: function (data) {
+                        console.log("new price" + " " + data);
+
+                        price.html("₹ " + data);
+
+                    }
+                });
+
+
+
+                });
+
+            console.log("can drop " + itemName);
+
+
+
+
+        }
+        else {
+            var price = $(this).parent().find('.price');
+
+            //$(this).css('background-color', 'yellow');
+
+            //$("h6:contains("+ itemName +")").parent().css('background-color', 'blue');
+            $.ajax({
+                type: 'post',
+                url: 'price.php',
+                data: {name: itemName},
+                success: function (data) {
+                    console.log("new price" + " " + data);
+
+                    price.html("₹ " + data);
+
+                }
+            });
+        }
         $.ajax({
             type: 'post',
             url: 'manage.php',
@@ -250,17 +296,7 @@
 
             }
         });
-        $.ajax({
-            type: 'post',
-            url: 'price.php',
-            data: {name: itemName},
-            success: function (data) {
-                console.log("new price" + " " + data);
 
-                price.html("₹ " + data);
-
-            }
-        });
 
     });
     console.log("hiiiii");
@@ -322,10 +358,7 @@
     //
     // });
     var button = $('.button_button1');
-    button.css({
-            "color": "green",
-            "border": "2px solid green"
-        });
+
     button.on('click', function () {
         var no = tableNo.val();
         //var tableNumber = document.querySelector('.tableNo').value;
@@ -376,6 +409,7 @@
     add.on('click', function () {
         var temp = $(this).parent().parent().find(".itemName").text();
         var price = $(this).parent().parent().find(".price").text();
+        window.alert(price);
         price = price.substring(2);
 
         //window.alert(price);
@@ -386,6 +420,39 @@
             type: 'POST',
             url: "test.php",
             data: {name: temp, qty: 1, tableNo: tableNumber, price: price, amount: price},
+            success: function (result) {
+                console.log('the data was successfully 123 into sent to the server');
+            }
+
+        })
+        $(this).hide();
+        $(this).parent().find('.pro-qty').show();
+
+
+        //window.alert(temp);
+
+
+    });
+
+    var add_drop = $('.add_drop');
+    console.log("abc");
+
+    add_drop.on('click', function () {
+        var name = $(this).parent().parent().parent().parent().parent().parent().parent().find(".itemName").text();
+        var selected = $(this).parent().parent().find('p').text();
+        var price = $(this).parent().parent().find(".price").text();
+
+        price = price.substring(2);
+        name = name + " " + selected;
+        console.log(price);
+        console.log(name);
+
+        var tableNumber = sessionStorage.getItem("tableNumber");
+
+        $.ajax({
+            type: 'POST',
+            url: "test.php",
+            data: {name: name, qty: 1, tableNo: tableNumber, price: price, amount: price},
             success: function (result) {
                 console.log('the data was successfully 123 into sent to the server');
             }
@@ -421,10 +488,24 @@
         //     "border": "2px solid green"
         // });
         oldValue = $button.parent().find('input').val();
-        var itemName = $button.parent().parent().parent().find('.itemName').text();
-        var price = $button.parent().parent().parent().find('.price').text();
+
+        if ($button.parent().hasClass('pro_drop')) {
+            var itemName = $button.parent().parent().parent().parent().parent().parent().parent().parent().find('.itemName').text();
+            var selected = $button.parent().parent().parent().find('p').text();
+            itemName = itemName + " " + selected;
+            var price = $button.parent().parent().parent().find('h6').text();
+
+            console.log(price);
+        }
+        else {
+            var itemName = $button.parent().parent().parent().find('.itemName').text();
+            var price = $button.parent().parent().parent().find('.price').text();
+
+
+            }
         price = price.substring(2);
-        //window.alert(price);
+
+
 
 
         if ($button.hasClass('inc')) {
@@ -438,18 +519,74 @@
             }
         }
         var tableNumber = sessionStorage.getItem("tableNumber");
+        console.log(itemName);
+        console.log(newVal);
+        console.log(tableNumber);
+        console.log(price);
+        console.log(price*newVal);
 
         $.ajax({
             type: 'POST',
             url: "qty.php",
             data: {name: itemName, qty: newVal, tableNo: tableNumber, price: price, amount: price * newVal},
             success: function (result) {
-                console.log('the data was successfully 123 change qt into sent to the server');
+                console.log(result);
             }
 
         });
         $button.parent().find('input').val(newVal);
     });
+
+//     var proQty_drop = $('.po-qty_drop');
+//     proQty_drop.hide();
+//
+//
+//     proQty_drop.prepend('<span class="dec qtybtn_drop">-</span>');
+//     proQty_drop.append('<span class="inc qtybtn_drop">+</span>');
+//     //proQty.append('<span class="inc qtybtn">+</span>');
+// //    } else {
+// //
+// //    }
+//     proQty_drop.on('click', '.qtybtn_drop', no, function () {
+//         //window.alert(no);
+//         var $button = $(this);
+//
+//         var oldValue = 1;
+//         // $button.parent().parent().parent().css({
+//         //     "color": "green",
+//         //     "border": "2px solid green"
+//         // });
+//         oldValue = 1;
+//         var itemName = $button.parent().parent().parent().find('.itemName').text();
+//         var price = $button.parent().parent().parent().find('.price').text();
+//         price = price.substring(2);
+//         //window.alert(price);
+//
+//
+//         if ($button.hasClass('inc')) {
+//             var newVal = parseFloat(oldValue) + 1;
+//         } else {
+//             // Don't allow decrementing below zero
+//             if (oldValue > 0) {
+//                 var newVal = parseFloat(oldValue) - 1;
+//             } else {
+//                 newVal = 0;
+//             }
+//         }
+//         var tableNumber = sessionStorage.getItem("tableNumber");
+//
+//         $.ajax({
+//             type: 'POST',
+//             url: "qty.php",
+//             data: {name: itemName, qty: newVal, tableNo: tableNumber, price: price, amount: price * newVal},
+//             success: function (result) {
+//                 console.log('the data was successfully 123 change qt into sent to the server');
+//             }
+//
+//         });
+//         $button.parent().find('input').val(newVal);
+//     });
+
 
     var tableNumber = sessionStorage.getItem("tableNumber");
 
