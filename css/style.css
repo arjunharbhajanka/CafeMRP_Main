@@ -2404,6 +2404,11 @@ ol {
 .blog__item__text ul li:last-child {
 	margin-right: 0;
 }
+.man {
+	border-top: 2px solid #b2b2b2;
+	border-bottom: 2px solid #b2b2b2;
+
+}
 
 .blog__item__text h5 {
 	margin-bottom: 12px;

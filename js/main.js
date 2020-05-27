@@ -334,13 +334,18 @@
                         price.parent().find('.pro-qty').hide();
 
                     } else {
-                        price.parent().find('input').val(data);
-                        //price.html("₹ " + data);
-                        price.parent().find('.add').hide();
-                        price.parent().find('.pro-qty').show();
-                        // proQty.show();
-                        console.log("changing "+itemName);
-                        //proQty.find('input').css('background-color', 'blue');
+                        if (price.parent().find('input').hasClass('price') == 0) {
+
+
+                            price.parent().find('input').val(data);
+
+                            //price.html("₹ " + data);
+                            price.parent().find('.add').hide();
+                            price.parent().find('.pro-qty').show();
+                            // proQty.show();
+                            console.log("changing " + itemName);
+                            //proQty.find('input').css('background-color', 'blue');
+                        }
 
                     }
 
@@ -391,7 +396,7 @@
     hide_item.on('click', function () {
 
         var itemName = $(this).parent().parent().find('.itemName').text();
-        window.alert(itemName);
+        //window.alert(itemName);
 
         $.ajax({
             type: 'post',
@@ -414,7 +419,7 @@
     show_item.on('click', function () {
 
         var itemName = $(this).parent().parent().find('.itemName').text();
-        window.alert(itemName);
+        //window.alert(itemName);
 
         $.ajax({
             type: 'post',
@@ -428,6 +433,32 @@
         });
         $(this).hide();
         $(this).parent().find('.hide_item').show();
+
+
+    });
+    var change = $('.change');
+
+    change.on('click', function () {
+
+        var itemName = $(this).parent().find('.itemName').text();
+
+        var newPrice = $(this).parent().find('.price').val();
+        console.log(newPrice);
+        newPrice = newPrice.match(/(\d+)/);
+        window.alert(newPrice[0]);
+
+
+        $.ajax({
+            type: 'post',
+            url: 'price_change.php',
+            data: {name: itemName, price: newPrice[0]},
+            success: function (data) {
+
+                console.log(data);
+
+            }
+        });
+
 
 
     });
