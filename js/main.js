@@ -313,7 +313,7 @@
                         price.val("₹" + data);
                     }
 
-                    price.html("₹" + data);
+                    price.html("₹ " + data);
 
                 }
             });
@@ -537,11 +537,18 @@
 
     });
 
-    var place_order = $('.place_order');
-    place_order.css({
-        "color": "green",
-        "border": "2px solid green"
+    var retotal = $('.retotal');
+    retotal.hide();
+    retotal.on('click', function () {
+        window.location.assign("http://3.23.241.214/checkout.html");
+
     });
+
+    var place_order = $('.place_order');
+    // place_order.css({
+    //     "color": "green",
+    //     "border": "2px solid green"
+    // });
     place_order.on('click', function () {
         var tableNumber = sessionStorage.getItem("tableNumber");
         $.ajax({
@@ -549,12 +556,15 @@
             url: "place_order.php",
             data: {tableNo: tableNumber},
             success: function (result) {
-                //window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
+                console.log(result);
 
 
             }
 
+
         });
+
+        setTimeout(() => {
         $.ajax({
             type: 'POST',
             url: "delete_old.php",
@@ -566,7 +576,9 @@
 
             }
 
-        });
+        });}, 5000);
+
+         //window.location.assign("http://3.23.241.214/done.html");
 
 
     });
@@ -580,7 +592,7 @@
         //window.alert(price);
         price = price.substring(2);
 
-        ////window.alert(price);
+        //window.alert(price);
 
         var tableNumber = sessionStorage.getItem("tableNumber");
 
@@ -671,6 +683,7 @@
 
         }
         price = price.substring(2);
+        console.log("price is "+ price);
 
 
         if ($button.hasClass('inc')) {
@@ -695,6 +708,10 @@
             url: "qty.php",
             data: {name: itemName, qty: newVal, tableNo: tableNumber, price: price, amount: price * newVal},
             success: function (result) {
+                console.log("new qty is " + newVal);
+                console.log("new qty is " + price);
+                console.log("new qty is " + newVal);
+
                 console.log(result);
             }
 
@@ -772,15 +789,80 @@
                 // checkout_items.parent().find('.checkout__order__subtotal').find('span').html()
                 sum = sum + (values[i]['amount']) * 1;
 
-                var list_item = "<li>" + values[i]['item_name'] + " * " + values[i]['qty'] + "<span> ₹ " + values[i]['amount'] + "</span></li>";
+                var list_item = "<li style='border-top: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" +values[i]['item_name'] + "</div> " +
+                    "<div style='width: 100px; display: inline; vertical-align: top;' class=\"quantity\">\n" +
+                    "                                    <div class=\"pro-qty\" style='width: 75px; align-self: center; '>\n" +
+                    "<span style='font-size: 12px; padding: 0px;' class=\"dec qtybtn1\">-</span>" +
+                    "                                        <input style='font-size: 12px;  padding: 0px display: inline;' type=\"submit\" value=\""+ values[i]['qty'] +"\">\n" +
+                    "<span style='font-size: 12px;  padding: 0px;' class=\"inc qtybtn1\">+</span>" +
+                    "                                    </div>\n" +
+                    "                                </div>" +
+                    " <span class='pr'> ₹ " + values[i]['amount'] + "</span></li>";
+
+
                 checkout_items.append(list_item);
             }
+            var js = "<script>\n" +
+                "\n" +
+                "\n" +
+                "        var proQty = $('.pro-qty');\n" +
+
+                "        proQty.on('click', '.qtybtn1', 0, function () {\n" +
+                "            \n" +
+                "            var $button = $(this);\n" +
+                "\n" +
+                "            var oldValue;\n" +
+                "            oldValue = $button.parent().find('input').val();\n" +
+                "\n" +
+                "            var itemName = $button.parent().parent().parent().find('.name').text();\n" +
+
+                "            \n" +
+                "\n" +
+                "            if ($button.hasClass('inc')) {\n" +
+                "                var newVal = parseFloat(oldValue) + 1;\n" +
+                "            } else {\n" +
+                "                if (oldValue > 0) {\n" +
+                "                    var newVal = parseFloat(oldValue) - 1;\n" +
+                "                } else {\n" +
+                "                    newVal = 0;\n" +
+                "                }\n" +
+                "            }\n" +
+                "\n" +
+                "            var tableNumber = sessionStorage.getItem(\"tableNumber\");\n" +
+                "            console.log(tableNumber);\n" +
+                "\n" +
+                "            $.ajax({\n" +
+                "                type: 'POST',\n" +
+                "                url: \"qty_checkout.php\",\n" +
+                "                data: {name: itemName, qty: newVal, tableNo: tableNumber},\n" +
+                "                success: function (result) {\n" +
+                "                    console.log(\"new qty is \" + newVal);\n" +
+                "                    console.log(\"new qty is \" + newVal);\n" +
+                "\n" +
+                "                    console.log(result);\n" +
+                "                }\n" +
+                "\n" +
+                "            });\n" +
+                "" +
+                "$('.place_order').hide();" +
+                "$('.retotal').show();" +
+                "\n" +
+                "            $button.parent().find('input').val(newVal);\n" +
+                "        });\n" +
+                "\n" +
+                "</script>";
+
+
+
+            checkout_items.append(js);
             var checkout_items = $('.checkout_items');
             checkout_items.parent().find('.checkout__order__subtotal').find('span').html(" ₹ " + sum);
             checkout_items.parent().find('.checkout__order__total').find('span').html(" ₹ " + sum);
             sessionStorage.setItem("total", sum);
 
         }
+
+
 
     });
 

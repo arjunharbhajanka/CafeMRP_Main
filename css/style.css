@@ -2328,7 +2328,7 @@ ol {
 	list-style: none;
 }
 
-.checkout__order ul li span {
+.checkout__order ul li .pr {
 	font-weight: 700;
 	float: right;
 }
