@@ -396,7 +396,7 @@
     hide_item.on('click', function () {
 
         var itemName = $(this).parent().parent().find('.itemName').text();
-        //window.alert(itemName);
+        ////window.alert(itemName);
 
         $.ajax({
             type: 'post',
@@ -419,7 +419,7 @@
     show_item.on('click', function () {
 
         var itemName = $(this).parent().parent().find('.itemName').text();
-        //window.alert(itemName);
+        ////window.alert(itemName);
 
         $.ajax({
             type: 'post',
@@ -445,7 +445,7 @@
         var newPrice = $(this).parent().find('.price').val();
         console.log(newPrice);
         newPrice = newPrice.match(/(\d+)/);
-        window.alert(newPrice[0]);
+        //window.alert(newPrice[0]);
 
 
         $.ajax({
@@ -472,9 +472,9 @@
     //         if(data == 102) {
     //
     //
-    //             window.alert("it is was 101");
+    //             //window.alert("it is was 101");
     //         } else {
-    //             //window.alert("removing veg hot and sour");
+    //             ////window.alert("removing veg hot and sour");
     //             var proQty = $('.pro-qty');
     //             var itemName = proQty.parent().parent().parent().find('.itemName').each(function() {
     //                 $(this).css('background-color', 'yellow');
@@ -483,7 +483,7 @@
     //             });
     //             // var itemName = "Hot N Sour Soup (Vegetables)";
     //             // $("h6:contains("+ itemName +")").parent().css('background-color', 'yellow');
-    //             //window.alert(itemName[0].text());
+    //             ////window.alert(itemName[0].text());
     //
     //             //$("h6:contains("+ itemName +")").parent().css('background-color', 'green');
     //             // $('h6:contains("Hot N Sour Soup (Vegetables)")')
@@ -512,7 +512,7 @@
     //     no = tableNo.val();
     //
     //     sessionStorage.setItem("tableNumber", no);
-    //     //window.alert(no);
+    //     ////window.alert(no);
     //
     // });
     var button = $('.button_button1');
@@ -549,6 +549,18 @@
             url: "place_order.php",
             data: {tableNo: tableNumber},
             success: function (result) {
+                //window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
+
+
+            }
+
+        });
+        $.ajax({
+            type: 'POST',
+            url: "delete_old.php",
+            data: {tableNo: tableNumber},
+            success: function (result) {
+                console.log(result);
                 window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
 
 
@@ -565,10 +577,10 @@
     add.on('click', function () {
         var temp = $(this).parent().parent().find(".itemName").text();
         var price = $(this).parent().parent().find(".price").text();
-        window.alert(price);
+        //window.alert(price);
         price = price.substring(2);
 
-        //window.alert(price);
+        ////window.alert(price);
 
         var tableNumber = sessionStorage.getItem("tableNumber");
 
@@ -585,7 +597,7 @@
         $(this).parent().find('.pro-qty').show();
 
 
-        //window.alert(temp);
+        ////window.alert(temp);
 
 
     });
@@ -618,7 +630,7 @@
         $(this).parent().find('.pro-qty').show();
 
 
-        //window.alert(temp);
+        ////window.alert(temp);
 
 
     });
@@ -635,7 +647,7 @@
 //
 //    }
     proQty.on('click', '.qtybtn', no, function () {
-        //window.alert(no);
+        ////window.alert(no);
         var $button = $(this);
 
         var oldValue = $button.parent().find('input').val();
@@ -701,7 +713,7 @@
 // //
 // //    }
 //     proQty_drop.on('click', '.qtybtn_drop', no, function () {
-//         //window.alert(no);
+//         ////window.alert(no);
 //         var $button = $(this);
 //
 //         var oldValue = 1;
@@ -713,7 +725,7 @@
 //         var itemName = $button.parent().parent().parent().find('.itemName').text();
 //         var price = $button.parent().parent().parent().find('.price').text();
 //         price = price.substring(2);
-//         //window.alert(price);
+//         ////window.alert(price);
 //
 //
 //         if ($button.hasClass('inc')) {
@@ -771,6 +783,7 @@
         }
 
     });
+
 
 
 })(jQuery);
