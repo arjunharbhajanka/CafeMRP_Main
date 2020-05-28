@@ -26,146 +26,36 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="quantity and retotal button added at check out.">
-      <change afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.htpasswd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/beer_pint.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chakhna.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cocktails.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desserts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/iced_tea.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/international.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/CafeMRP_logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/GT-Bar-Banner-2-2016.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/Soups/hotnsour.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/Soups/mushroom.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/Soups/tomato.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/banner.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/banner/banner-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/banner/banner-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/black_back.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/blog/blog-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/blog/blog-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/blog/blog-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/blog/blog-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/blog/blog-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/blog/blog-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/blog/details/details-author.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/blog/details/details-hero.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/blog/details/details-pic.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/blog/sidebar/sr-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/blog/sidebar/sr-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/blog/sidebar/sr-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/breadcrumb.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/cafelogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/cafelogo.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/cart/cart-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/cart/cart-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/cart/cart-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/categories/cat-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/categories/cat-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/categories/cat-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/categories/cat-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/categories/cat-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/featured/feature-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/featured/feature-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/featured/feature-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/featured/feature-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/featured/feature-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/featured/feature-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/featured/feature-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/featured/feature-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/hero/banner.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/language.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/latest-product/lp-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/latest-product/lp-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/latest-product/lp-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/nonveg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/payment-item.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/details/product-details-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/details/product-details-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/details/product-details-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/details/product-details-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/details/product-details-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/details/thumb-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/details/thumb-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/details/thumb-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/details/thumb-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/discount/pd-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/discount/pd-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/discount/pd-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/discount/pd-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/discount/pd-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/discount/pd-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/product-1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/product-10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/product-11.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/product-12.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/product-2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/product-3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/product-4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/product-5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/product-6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/product-7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/product-8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/product/product-9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/img/veg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/liqueurs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_course.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/beer_pint.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/chakhna.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/cocktails.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/desserts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/iced_tea.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/international.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/liqueurs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/main_course.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/mocktails.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/pasta.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/pitcher_tower.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/quenchers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/rum_brandy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/salads.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/shakes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/shots.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/single_malt.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/starters_n.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/starters_v.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/super_5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/tequila.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/vodka_gin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/whiskey.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/menu/wines.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mocktails.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oriental.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pasta.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/prev_order.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pitcher_tower.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quenchers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rum_brandy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/salads.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shakes.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shots.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/single_malt.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/soups.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starters_n.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/starters_v.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super_5.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tequila.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vodka_gin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whiskey.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wines.html" afterDir="false" />
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="pitchers and towers fully functioning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dropdown_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/dropdown_test.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_menu.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/Oriental.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/oriental.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/Soups.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/soups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/draught_beer.html" beforeDir="false" afterPath="$PROJECT_DIR$/menu/draught_beer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soups_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/soups_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beer_pint.html" beforeDir="false" afterPath="$PROJECT_DIR$/beer_pint.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/beer_pint.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/chakhna.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/cocktails.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/desserts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/draught_beer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/iced_tea.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/international.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/liqueurs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/main_course.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/mocktails.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/oriental.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/pasta.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/pitcher_tower.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/quenchers.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/rum_brandy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/salads.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/shakes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/shots.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/single_malt.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/soups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/starters_n.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/starters_v.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/super_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/tequila.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/vodka_gin.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/whiskey.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/wines.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -412,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590668373529</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="pitchers and towers fully functioning">
+      <created>1590686008105</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1590686008105</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -484,7 +381,8 @@
     <MESSAGE value="soups_man.html fully functioning. &#10;hides and shows object. changes price." />
     <MESSAGE value="Deletes order from cafe_orders after checkout." />
     <MESSAGE value="quantity and retotal button added at check out." />
-    <option name="LAST_COMMIT_MESSAGE" value="quantity and retotal button added at check out." />
+    <MESSAGE value="pitchers and towers fully functioning" />
+    <option name="LAST_COMMIT_MESSAGE" value="pitchers and towers fully functioning" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590671211083">
