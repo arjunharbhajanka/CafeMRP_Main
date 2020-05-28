@@ -249,7 +249,7 @@
 
                 $.ajax({
                     type: 'post',
-                    url: 'price.php',
+                    url: 'php/price.php',
                     data: {name: name},
                     success: function (data) {
                         console.log("new price" + " " + data);
@@ -263,7 +263,7 @@
 
                 $.ajax({
                     type: 'post',
-                    url: 'check_qty.php',
+                    url: 'php/check_qty.php',
                     data: {name: name, tableNumber: tableNumber},
                     success: function (data) {
                         console.log(tableNumber);
@@ -304,7 +304,7 @@
             //$("h6:contains("+ itemName +")").parent().css('background-color', 'blue');
             $.ajax({
                 type: 'post',
-                url: 'price.php',
+                url: 'php/price.php',
                 data: {name: itemName},
                 success: function (data) {
 
@@ -322,7 +322,7 @@
 
             $.ajax({
                 type: 'post',
-                url: 'check_qty.php',
+                url: 'php/check_qty.php',
                 data: {name: itemName, tableNumber: tableNumber},
                 success: function (data) {
                     console.log(tableNumber);
@@ -359,7 +359,7 @@
         }
         $.ajax({
             type: 'post',
-            url: 'manage.php',
+            url: 'php/manage.php',
             data: {name: itemName},
             success: function (data) {
                 console.log(itemName + " " + data);
@@ -400,7 +400,7 @@
 
         $.ajax({
             type: 'post',
-            url: 'hide_show.php',
+            url: 'php/hide_show.php',
             data: {name: itemName, mode: 0},
             success: function (data) {
 
@@ -423,7 +423,7 @@
 
         $.ajax({
             type: 'post',
-            url: 'hide_show.php',
+            url: 'php/hide_show.php',
             data: {name: itemName, mode: 1},
             success: function (data) {
 
@@ -450,7 +450,7 @@
 
         $.ajax({
             type: 'post',
-            url: 'price_change.php',
+            url: 'php/price_change.php',
             data: {name: itemName, price: newPrice[0]},
             success: function (data) {
 
@@ -498,6 +498,8 @@
     var table = $('.table');
 
 
+
+
     var no = 0;
 
     //console.log(no);
@@ -521,7 +523,55 @@
         var no = tableNo.val();
         //var tableNumber = document.querySelector('.tableNo').value;
         sessionStorage.setItem("tableNumber", no);
-        window.location.assign("http://3.23.241.214/main_menu.html");
+
+
+
+        $.ajax({
+            type: 'POST',
+            url: "php/check_table.php",
+            data: {tableNo: no},
+            success: function (result) {
+                if (result == "") {
+
+                    window.alert("no order");
+                    window.location.assign("http://3.23.241.214/main_menu.html");
+
+
+                }
+                else {
+
+                    if (confirm('             DO YOU WANT TO START A NEW ORDER?\n\n\nAn incomplete order already exists for this table, \n\nPress CANCEL to complete that order or OKAY  to start a new order')) {
+                        //alert('Thanks for confirming');
+
+                        $.ajax({
+                            type: 'POST',
+                            url: "php/delete_old.php",
+                            data: {tableNo: no},
+                            success: function (result) {
+                                console.log(result);
+                                //window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
+                                window.location.assign("http://3.23.241.214/main_menu.html");
+
+
+                            }
+
+                        });
+
+
+                    } else {
+                        //alert('Why did you press cancel? You should have confirmed');
+                        window.location.assign("http://3.23.241.214/main_menu.html");
+                    }
+                    //window.alert("ORDER EXISTS");
+                    console.log(result);
+                }
+
+
+            }
+
+
+        });
+
 
     });
     var button2 = $('.button_button2');
@@ -553,7 +603,7 @@
         var tableNumber = sessionStorage.getItem("tableNumber");
         $.ajax({
             type: 'POST',
-            url: "place_order.php",
+            url: "php/place_order.php",
             data: {tableNo: tableNumber},
             success: function (result) {
                 console.log(result);
@@ -567,7 +617,7 @@
         setTimeout(() => {
         $.ajax({
             type: 'POST',
-            url: "delete_old.php",
+            url: "php/delete_old.php",
             data: {tableNo: tableNumber},
             success: function (result) {
                 console.log(result);
@@ -598,7 +648,7 @@
 
         $.ajax({
             type: 'POST',
-            url: "test.php",
+            url: "php/test.php",
             data: {name: temp, qty: 1, tableNo: tableNumber, price: price, amount: price},
             success: function (result) {
                 console.log('the data was successfully 123 into sent to the server');
@@ -631,7 +681,7 @@
 
         $.ajax({
             type: 'POST',
-            url: "test.php",
+            url: "php/test.php",
             data: {name: name, qty: 1, tableNo: tableNumber, price: price, amount: price},
             success: function (result) {
                 console.log('the data was successfully 123 into sent to the server');
@@ -705,7 +755,7 @@
 
         $.ajax({
             type: 'POST',
-            url: "qty.php",
+            url: "php/qty.php",
             data: {name: itemName, qty: newVal, tableNo: tableNumber, price: price, amount: price * newVal},
             success: function (result) {
                 console.log("new qty is " + newVal);
@@ -774,7 +824,7 @@
 
     $.ajax({
         type: 'POST',
-        url: "checkout.php",
+        url: "php/checkout.php",
         data: {tableNo: tableNumber},
         success: function (result) {
             console.log(result);
@@ -833,7 +883,7 @@
                 "\n" +
                 "            $.ajax({\n" +
                 "                type: 'POST',\n" +
-                "                url: \"qty_checkout.php\",\n" +
+                "                url: \"php/qty_checkout.php\",\n" +
                 "                data: {name: itemName, qty: newVal, tableNo: tableNumber},\n" +
                 "                success: function (result) {\n" +
                 "                    console.log(\"new qty is \" + newVal);\n" +

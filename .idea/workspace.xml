@@ -26,15 +26,47 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Deletes order from cafe_orders after checkout.">
-      <change afterPath="$PROJECT_DIR$/done.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/qty_checkout.php" afterDir="false" />
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="quantity and retotal button added at check out.">
+      <change afterPath="$PROJECT_DIR$/css/jquery-confirm.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/jquery-confirm.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menu/Oriental.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menu/Soups.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/menu/draught_beer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/check_qty.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/check_table.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/checkout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/delete_old.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/done.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/hide_show.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/manage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/place_order.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/price.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/price_change.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/qty.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/qty_checkout.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Oriental.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Soups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/check_qty.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/delete_old.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/done.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/draught_beer.html" beforeDir="false" afterPath="$PROJECT_DIR$/draught_beer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hide_show.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_checkout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_checkout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manage.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/place_order.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/price.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/price_change.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qty.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/qty_checkout.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,11 +100,15 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1cFEWzbIgvgJEl6yAoEucIJwPeA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -84,9 +120,17 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.3.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration>$USER_HOME$/.subversion</configuration>
@@ -255,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590565941411</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="quantity and retotal button added at check out.">
+      <created>1590597791352</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1590597791352</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +357,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Soups" />
     <MESSAGE value="minor appearance change" />
     <MESSAGE value="minor appearance change 2" />
@@ -325,7 +377,8 @@
     <MESSAGE value="soups_man.html hide show gui working." />
     <MESSAGE value="soups_man.html fully functioning. &#10;hides and shows object. changes price." />
     <MESSAGE value="Deletes order from cafe_orders after checkout." />
-    <option name="LAST_COMMIT_MESSAGE" value="Deletes order from cafe_orders after checkout." />
+    <MESSAGE value="quantity and retotal button added at check out." />
+    <option name="LAST_COMMIT_MESSAGE" value="quantity and retotal button added at check out." />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590298201439">
@@ -340,22 +393,22 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="189" y="361" key="#SQL_Dialects/0.0.1680.1050@0.0.1680.1050" timestamp="1590414058428" />
-    <state width="1126" height="268" key="GridCell.Tab.0.bottom" timestamp="1590595079229">
+    <state width="1126" height="268" key="GridCell.Tab.0.bottom" timestamp="1590659636239">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590595079229" />
-    <state width="1126" height="268" key="GridCell.Tab.0.center" timestamp="1590595079227">
+    <state width="1126" height="268" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590659636239" />
+    <state width="1126" height="268" key="GridCell.Tab.0.center" timestamp="1590659636238">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590595079227" />
-    <state width="1126" height="268" key="GridCell.Tab.0.left" timestamp="1590595079226">
+    <state width="1126" height="268" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590659636238" />
+    <state width="1126" height="268" key="GridCell.Tab.0.left" timestamp="1590659636237">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590595079226" />
-    <state width="1126" height="268" key="GridCell.Tab.0.right" timestamp="1590595079228">
+    <state width="1126" height="268" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590659636237" />
+    <state width="1126" height="268" key="GridCell.Tab.0.right" timestamp="1590659636238">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590595079228" />
+    <state width="1126" height="268" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590659636238" />
     <state x="168" y="94" key="MergeDialog" timestamp="1590397322208">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -368,20 +421,20 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="604" y="258" key="NewPhpClassDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590412912800" />
-    <state x="659" y="455" key="NewPhpFileDialog" timestamp="1590593420065">
+    <state x="659" y="455" key="NewPhpFileDialog" timestamp="1590659626470">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="659" y="455" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590593420065" />
+    <state x="659" y="455" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590659626470" />
     <state x="341" y="155" key="SettingsEditor" timestamp="1590243896760">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590243896760" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590146049595" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590565950496">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590597800550">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590326503261" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590565950496" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590597800550" />
     <state x="279" y="353" width="681" height="393" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1590423336590">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
