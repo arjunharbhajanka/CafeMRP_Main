@@ -10,6 +10,8 @@
 'use strict';
 
 (function ($) {
+    
+    var DEBUG = true;
 
     /*------------------
         Preloader
@@ -207,14 +209,14 @@
     //proQty.parent().parent().parent().find('.itemName').text();
 
     // var temp = "Cream of Mushroom"
-    // console.log(temp);
+    // DEBUG && console.log(temp);
     // $.ajax({
     //     type: 'post',
     //     url: 'manage.php',
     //     data: {name : "Cream of Mushroom"},
     //     success: function(data) {
     //         var t2 = temp + data;
-    //         console.log(t2);
+    //         DEBUG && console.log(t2);
     //
     //         if (data != 1) {
     //             $('h6:contains("Cream of Mushroom")').parent().css('background-color', 'red');
@@ -230,29 +232,37 @@
     var add = $('.add');
     add.hide();
     proQty.hide();
-    console.log("bhlal");
+    DEBUG && console.log("bhlal");
 
 
     $('.itemName').each(function () {
-        console.log("bhlal");
+        DEBUG && console.log("bhlal");
         var itemName = $(this).text();
+        var $itemName = $(this);
         //$(this).css('background-color', 'yellow');
-        console.log(itemName);
+        DEBUG && console.log(itemName);
         if ($(this).hasClass('can_drop')) {
             $(this).parent().find('li').each(function () {
-                console.log("here");
+                DEBUG && console.log("here");
                 var selected = $(this).find('p').text();
-                console.log("hello  " + selected);
+                DEBUG && console.log("hello  " + selected);
                 var price = $(this).find('.price');
                 var name = itemName + " " + selected;
-                console.log(name);
+                DEBUG && console.log(name);
+                DEBUG && console.log("nameis " + name);
 
                 $.ajax({
                     type: 'post',
                     url: 'php/price.php',
                     data: {name: name},
                     success: function (data) {
-                        console.log("new price" + " " + data);
+                        DEBUG && console.log("new price" + " " + data);
+
+                        if (price.parent().hasClass('man')) {
+                            DEBUG && console.log("new price of man" + " " + data);
+                            price.val("₹" + data);
+                        }
+
 
                         price.html("₹ " + data);
 
@@ -266,10 +276,10 @@
                     url: 'php/check_qty.php',
                     data: {name: name, tableNumber: tableNumber},
                     success: function (data) {
-                        console.log(tableNumber);
-                        console.log(data);
+                        DEBUG && console.log(tableNumber);
+                        DEBUG && console.log(data);
                         if (data == "") {
-                            console.log("not cahnging");
+                            DEBUG && console.log("not cahnging");
 
                             price.parent().find('.add_drop').show();
                             price.parent().find('.pro-qty').hide();
@@ -281,7 +291,7 @@
                             price.parent().find('.pro-qty').show();
                             price.parent().parent().parent().slideDown(400);
                             // proQty.show();
-                            console.log("changing "+itemName);
+                            DEBUG && console.log("changing "+itemName);
                             //proQty.find('input').css('background-color', 'blue');
 
                         }
@@ -293,11 +303,13 @@
 
             });
 
-            console.log("can drop " + itemName);
+            DEBUG && console.log("can drop " + itemName);
 
 
         } else {
             var price = $(this).parent().find('.price');
+
+
 
             //$(this).css('background-color', 'yellow');
 
@@ -309,7 +321,7 @@
                 success: function (data) {
 
                     if (price.parent().hasClass('man')) {
-                        console.log("new price of man" + " " + data);
+                        DEBUG && console.log("new price of man" + " " + data);
                         price.val("₹" + data);
                     }
 
@@ -325,10 +337,10 @@
                 url: 'php/check_qty.php',
                 data: {name: itemName, tableNumber: tableNumber},
                 success: function (data) {
-                    console.log(tableNumber);
-                    console.log(data);
+                    DEBUG && console.log(tableNumber);
+                    DEBUG && console.log(data);
                     if (data == "") {
-                        console.log("not cahnging");
+                        DEBUG && console.log("not cahnging");
 
                         price.parent().find('.add').show();
                         price.parent().find('.pro-qty').hide();
@@ -343,7 +355,7 @@
                             price.parent().find('.add').hide();
                             price.parent().find('.pro-qty').show();
                             // proQty.show();
-                            console.log("changing " + itemName);
+                            DEBUG && console.log("changing " + itemName);
                             //proQty.find('input').css('background-color', 'blue');
                         }
 
@@ -357,26 +369,28 @@
 
 
         }
+        DEBUG && console.log("LOGGGGGGING"+$itemName.text());
         $.ajax({
             type: 'post',
             url: 'php/manage.php',
             data: {name: itemName},
             success: function (data) {
-                console.log(itemName + " " + data);
+                DEBUG && console.log("THIS IS MANAGE" + itemName + " " + data);
 
                 if (data != 1) {
-                    if (price.parent().hasClass('man')) {
+                    if ($itemName.parent().hasClass('man')) {
                         //price.parent().css('background-color', 'blue');
-                        price.parent().find('.hide_item').hide();
+                        $itemName.parent().find('.hide_item').hide();
                     } else {
-                        $("h6:contains(" + itemName + ")").parent().hide();
+                        DEBUG && console.log("hining"+$itemName.text());
+                        $itemName.parent().hide();
                     }
 
 
                 } else {
-                    if (price.parent().hasClass('man')) {
+                    if ($itemName.parent().hasClass('man')) {
                         //price.parent().css('background-color', 'green');
-                        price.parent().find('.show_item').hide();
+                        $itemName .parent().find('.show_item').hide();
                     }
 
                      //$("h6:contains("+ itemName +")").parent().css('background-color', 'green');
@@ -404,7 +418,7 @@
             data: {name: itemName, mode: 0},
             success: function (data) {
 
-                console.log(data);
+                DEBUG && console.log(data);
 
             }
         });
@@ -427,7 +441,7 @@
             data: {name: itemName, mode: 1},
             success: function (data) {
 
-                console.log(data);
+                DEBUG && console.log(data);
 
             }
         });
@@ -440,11 +454,24 @@
 
     change.on('click', function () {
 
-        var itemName = $(this).parent().find('.itemName').text();
+        window.alert("Price Changed");
+
+
+        if ($(this).parent().hasClass('item_indrop')) {
+            var selected = $(this).parent().find('p').text();
+            var itemName = $(this).parent().parent().parent().parent().parent().parent().find('.itemName').text();
+            itemName = itemName + " " + selected;
+            //DEBUG && console.log(itemName+selected);
+
+        } else {
+            var itemName = $(this).parent().find('.itemName').text();
+            DEBUG && console.log(itemName);
+        }
 
         var newPrice = $(this).parent().find('.price').val();
-        console.log(newPrice);
+        //DEBUG && console.log(newPrice);
         newPrice = newPrice.match(/(\d+)/);
+        DEBUG && console.log(newPrice[0]);
         //window.alert(newPrice[0]);
 
 
@@ -454,7 +481,7 @@
             data: {name: itemName, price: newPrice[0]},
             success: function (data) {
 
-                console.log(data);
+                DEBUG && console.log(data);
 
             }
         });
@@ -462,7 +489,7 @@
 
 
     });
-    console.log("hiiiii");
+    DEBUG && console.log("hiiiii");
 
     // $.ajax({
     //     type: 'post',
@@ -502,12 +529,12 @@
 
     var no = 0;
 
-    //console.log(no);
+    //DEBUG && console.log(no);
 
 
     var tableNo = $('.tableNo');
     //var logNo = $('.logNo');
-    console.log("here");
+    DEBUG && console.log("here");
 
 
     // logNo.on('click', function () {
@@ -552,7 +579,7 @@
                             url: "php/delete_old.php",
                             data: {tableNo: no},
                             success: function (result) {
-                                console.log(result);
+                                DEBUG && console.log(result);
                                 //window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
                                 window.location.assign("http://3.23.241.214/main_menu.html");
 
@@ -567,7 +594,7 @@
                         window.location.assign("http://3.23.241.214/main_menu.html");
                     }
                     //window.alert("ORDER EXISTS");
-                    console.log(result);
+                    DEBUG && console.log(result);
                 }
 
 
@@ -612,13 +639,13 @@
             url: "php/place_order.php",
             data: {tableNo: tableNumber},
             success: function (result) {
-                console.log(result);
+                DEBUG && console.log(result);
                 $.ajax({
                     type: 'POST',
                     url: "php/delete_old.php",
                     data: {tableNo: tableNumber},
                     success: function (result) {
-                        console.log(result);
+                        DEBUG && console.log(result);
                         window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
 
 
@@ -638,7 +665,7 @@
                 url: "php/delete_old.php",
                 data: {tableNo: tableNumber},
                 success: function (result) {
-                    console.log(result);
+                    DEBUG && console.log(result);
                     //window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
 
 
@@ -652,7 +679,7 @@
     });
 
 
-    console.log("abc");
+    DEBUG && console.log("abc");
 
     add.on('click', function () {
         var temp = $(this).parent().parent().find(".itemName").text();
@@ -669,7 +696,7 @@
             url: "php/test.php",
             data: {name: temp, qty: 1, tableNo: tableNumber, price: price, amount: price},
             success: function (result) {
-                console.log('the data was successfully 123 into sent to the server');
+                DEBUG && console.log('the data was successfully 123 into sent to the server');
             }
 
         })
@@ -683,7 +710,7 @@
     });
 
     var add_drop = $('.add_drop');
-    console.log("abc");
+    DEBUG && console.log("abc");
 
     add_drop.on('click', function () {
         var name = $(this).parent().parent().parent().parent().parent().parent().parent().find(".itemName").text();
@@ -692,8 +719,8 @@
 
         price = price.substring(2);
         name = name + " " + selected;
-        console.log(price);
-        console.log(name);
+        DEBUG && console.log(price);
+        DEBUG && console.log(name);
 
         var tableNumber = sessionStorage.getItem("tableNumber");
 
@@ -702,7 +729,7 @@
             url: "php/test.php",
             data: {name: name, qty: 1, tableNo: tableNumber, price: price, amount: price},
             success: function (result) {
-                console.log('the data was successfully 123 into sent to the server');
+                DEBUG && console.log('the data was successfully 123 into sent to the server');
             }
 
         })
@@ -743,7 +770,7 @@
             itemName = itemName + " " + selected;
             var price = $button.parent().parent().parent().find('h6').text();
 
-            console.log(price);
+            DEBUG && console.log(price);
         } else {
             var itemName = $button.parent().parent().parent().find('.itemName').text();
             var price = $button.parent().parent().parent().find('.price').text();
@@ -751,7 +778,7 @@
 
         }
         price = price.substring(2);
-        console.log("price is "+ price);
+        DEBUG && console.log("price is "+ price);
 
 
         if ($button.hasClass('inc')) {
@@ -765,22 +792,22 @@
             }
         }
         var tableNumber = sessionStorage.getItem("tableNumber");
-        console.log(itemName);
-        console.log(newVal);
-        console.log(tableNumber);
-        console.log(price);
-        console.log(price * newVal);
+        DEBUG && console.log(itemName);
+        DEBUG && console.log(newVal);
+        DEBUG && console.log(tableNumber);
+        DEBUG && console.log(price);
+        DEBUG && console.log(price * newVal);
 
         $.ajax({
             type: 'POST',
             url: "php/qty.php",
             data: {name: itemName, qty: newVal, tableNo: tableNumber, price: price, amount: price * newVal},
             success: function (result) {
-                console.log("new qty is " + newVal);
-                console.log("new qty is " + price);
-                console.log("new qty is " + newVal);
+                DEBUG && console.log("new qty is " + newVal);
+                DEBUG && console.log("new qty is " + price);
+                DEBUG && console.log("new qty is " + newVal);
 
-                console.log(result);
+                DEBUG && console.log(result);
             }
 
         });
@@ -830,7 +857,7 @@
 //             url: "qty.php",
 //             data: {name: itemName, qty: newVal, tableNo: tableNumber, price: price, amount: price * newVal},
 //             success: function (result) {
-//                 console.log('the data was successfully 123 change qt into sent to the server');
+//                 DEBUG && console.log('the data was successfully 123 change qt into sent to the server');
 //             }
 //
 //         });
@@ -845,11 +872,11 @@
         url: "php/checkout.php",
         data: {tableNo: tableNumber},
         success: function (result) {
-            console.log(result);
+            DEBUG && console.log(result);
             var values = JSON.parse(result);
-            console.log(values[0]['item_name']);
+            DEBUG && console.log(values[0]['item_name']);
             var len = values.length;
-            console.log(len)
+            DEBUG && console.log(len)
             var i = 0;
             var sum = 0;
             for (i = 0; i < len; i++) {
@@ -873,6 +900,7 @@
             var js = "<script>\n" +
                 "\n" +
                 "\n" +
+                "DEBUG = true;" +
                 "        var proQty = $('.pro-qty');\n" +
 
                 "        proQty.on('click', '.qtybtn1', 0, function () {\n" +
@@ -897,17 +925,17 @@
                 "            }\n" +
                 "\n" +
                 "            var tableNumber = sessionStorage.getItem(\"tableNumber\");\n" +
-                "            console.log(tableNumber);\n" +
+                "            DEBUG && console.log(tableNumber);\n" +
                 "\n" +
                 "            $.ajax({\n" +
                 "                type: 'POST',\n" +
                 "                url: \"php/qty_checkout.php\",\n" +
                 "                data: {name: itemName, qty: newVal, tableNo: tableNumber},\n" +
                 "                success: function (result) {\n" +
-                "                    console.log(\"new qty is \" + newVal);\n" +
-                "                    console.log(\"new qty is \" + newVal);\n" +
+                "                    DEBUG && console.log(\"new qty is \" + newVal);\n" +
+                "                    DEBUG && console.log(\"new qty is \" + newVal);\n" +
                 "\n" +
-                "                    console.log(result);\n" +
+                "                    DEBUG && console.log(result);\n" +
                 "                }\n" +
                 "\n" +
                 "            });\n" +
@@ -921,7 +949,7 @@
                 "</script>";
 
 
-
+            var checkout_items = $('.checkout_items');
             checkout_items.append(js);
             var checkout_items = $('.checkout_items');
 
@@ -938,11 +966,11 @@
         url: "php/prev_order.php",
         data: {tableNo: tableNumber},
         success: function (result) {
-            console.log(result);
+            DEBUG && console.log(result);
             var values = JSON.parse(result);
-            console.log(values[0]['item_name']);
+            DEBUG && console.log(values[0]['item_name']);
             var len = values.length;
-            console.log(len)
+            DEBUG && console.log(len)
             var i = 0;
             var sum = 0;
             for (i = 0; i < len; i++) {

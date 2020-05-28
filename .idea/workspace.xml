@@ -26,36 +26,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="pitchers and towers fully functioning">
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Beer pint fully functioning">
+      <change afterPath="$PROJECT_DIR$/draught_beer_man.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beer_pint.html" beforeDir="false" afterPath="$PROJECT_DIR$/beer_pint.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/beer_pint.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/chakhna.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/cocktails.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/desserts.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/draught_beer.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/iced_tea.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/international.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/liqueurs.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/main_course.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/mocktails.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/oriental.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/pasta.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/pitcher_tower.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/quenchers.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/rum_brandy.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/salads.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/shakes.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/shots.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/single_malt.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/soups.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/starters_n.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/starters_v.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/super_5.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/tequila.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/vodka_gin.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/whiskey.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/wines.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -309,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590686008105</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Beer pint fully functioning">
+      <created>1590687221984</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1590687221984</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,7 +327,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="Abhi" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -382,7 +363,8 @@
     <MESSAGE value="Deletes order from cafe_orders after checkout." />
     <MESSAGE value="quantity and retotal button added at check out." />
     <MESSAGE value="pitchers and towers fully functioning" />
-    <option name="LAST_COMMIT_MESSAGE" value="pitchers and towers fully functioning" />
+    <MESSAGE value="Beer pint fully functioning" />
+    <option name="LAST_COMMIT_MESSAGE" value="Beer pint fully functioning" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590671211083">
@@ -393,6 +375,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="610" y="269" key="#HTTP_Proxy/0.0.1680.1050@0.0.1680.1050" timestamp="1590253637319" />
+    <state x="376" y="395" width="581" height="377" key="#Notifications" timestamp="1590687248000">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="376" y="395" width="581" height="377" key="#Notifications/0.0.1680.1050@0.0.1680.1050" timestamp="1590687248000" />
     <state x="189" y="361" key="#SQL_Dialects" timestamp="1590414058428">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -425,10 +411,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="168" y="94" key="MergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590397322208" />
-    <state x="99" y="399" width="853" height="436" key="MultipleFileMergeDialog" timestamp="1590499457430">
+    <state x="99" y="399" width="853" height="436" key="MultipleFileMergeDialog" timestamp="1590687304278">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="99" y="399" width="853" height="436" key="MultipleFileMergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590499457430" />
+    <state x="99" y="399" width="853" height="436" key="MultipleFileMergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590687304278" />
     <state x="604" y="258" key="NewPhpClassDialog" timestamp="1590412912800">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -442,11 +428,11 @@
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590243896760" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590146049595" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590669048296">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590687318815">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590326503261" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590669048296" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590687318815" />
     <state x="279" y="353" width="681" height="393" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1590423336590">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -460,5 +446,13 @@
     </state>
     <state x="538" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1590335350851" />
     <state x="628" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590312657870" />
+    <state x="100" y="100" width="1480" height="850" key="dock-window-1" timestamp="1590688155387">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="100" y="100" width="1480" height="850" key="dock-window-1/0.23.1680.1027@0.23.1680.1027" timestamp="1590688155387" />
+    <state x="100" y="100" width="1480" height="850" key="dock-window-2" timestamp="1590688155390">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="100" y="100" width="1480" height="850" key="dock-window-2/0.23.1680.1027@0.23.1680.1027" timestamp="1590688155390" />
   </component>
 </project>
