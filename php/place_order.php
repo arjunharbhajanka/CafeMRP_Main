@@ -26,7 +26,8 @@ try{
     //echo "YAYYYY";
     fwrite($f, "\npoint 2\n");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("insert into orders_final select * from cafe_orders where table_no = $tableNo and qty <> 0");
+    $stmt = $conn->prepare("insert into orders_final select * from cafe_orders where table_no = $tableNo and qty <> 0;
+                                      insert into display_orders select * from cafe_orders where table_no = $tableNo and qty <> 0;");
     $stmt->execute();
     fwrite($f, "\npoint 3\n");
     fwrite($f, "\npoint 4\n");

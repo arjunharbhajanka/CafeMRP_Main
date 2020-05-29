@@ -961,10 +961,13 @@
 
     });
 
+    var tabno = sessionStorage.getItem("tableNumber");
+    window.alert(tabno);
+
     $.ajax({
         type: 'POST',
         url: "php/prev_order.php",
-        data: {tableNo: tableNumber},
+        data: {tableNo: tabno},
         success: function (result) {
             DEBUG && console.log(result);
             var values = JSON.parse(result);
@@ -998,9 +1001,14 @@
     var checkout_items = $('.checkout_items');
 
     setTimeout(() => {
-        checkout_items.parent().find('.checkout__order__subtotal').find('span').html(" ₹ " + (sessionStorage.getItem("total")*1+sessionStorage.getItem("prev")*1));
+        checkout_items.parent().find('.checkout__order__subtotal').find('span').html(" ₹ " + (sessionStorage.getItem("total")*1));
         checkout_items.parent().find('.checkout__order__total').find('span').html(" ₹ " + (sessionStorage.getItem("total")*1+sessionStorage.getItem("prev")*1));
-       }, 500);
+       }, 1000);
+
+
+
+
+
 
 
 
