@@ -26,10 +26,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Beer pint fully functioning">
-      <change afterPath="$PROJECT_DIR$/draught_beer_man.html" afterDir="false" />
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="draught_beer_man.html working.&#10;draught_beer hid show working.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590687221984</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="draught_beer_man.html working.&#10;draught_beer hid show working.">
+      <created>1590694111993</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1590694111993</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -364,13 +369,14 @@
     <MESSAGE value="quantity and retotal button added at check out." />
     <MESSAGE value="pitchers and towers fully functioning" />
     <MESSAGE value="Beer pint fully functioning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Beer pint fully functioning" />
+    <MESSAGE value="draught_beer_man.html working.&#10;draught_beer hid show working." />
+    <option name="LAST_COMMIT_MESSAGE" value="draught_beer_man.html working.&#10;draught_beer hid show working." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="190" key="#Deployment" timestamp="1590671211083">
+    <state x="440" y="190" key="#Deployment" timestamp="1590760992528">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="190" key="#Deployment/0.0.1680.1050@0.0.1680.1050" timestamp="1590671211083" />
+    <state x="440" y="190" key="#Deployment/0.0.1680.1050@0.0.1680.1050" timestamp="1590760992528" />
     <state x="610" y="269" key="#HTTP_Proxy" timestamp="1590253637319">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -428,15 +434,19 @@
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590243896760" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590146049595" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590687318815">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590758722560">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590326503261" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590687318815" />
-    <state x="279" y="353" width="681" height="393" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1590423336590">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590758722560" />
+    <state x="428" y="187" key="com.intellij.database.dbimport.ImportDialog" timestamp="1590693936269">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="279" y="353" width="681" height="393" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590423336590" />
+    <state x="428" y="187" key="com.intellij.database.dbimport.ImportDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590693936269" />
+    <state x="279" y="353" width="825" height="552" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1590761636253">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="279" y="353" width="825" height="552" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590761636253" />
     <state x="0" y="170" width="1345" height="643" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1590437982897">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
