@@ -11,7 +11,7 @@
 
 (function ($) {
     
-    var DEBUG = true;
+    var DEBUG = false;
 
     /*------------------
         Preloader
@@ -961,22 +961,29 @@
 
     });
 
+    var tabno = sessionStorage.getItem("tableNumber");
+    //window.alert(tabno);
+
     $.ajax({
         type: 'POST',
         url: "php/prev_order.php",
-        data: {tableNo: tableNumber},
+        data: {tableNo: tabno},
         success: function (result) {
             DEBUG && console.log(result);
+            var sum = 0;
+            sessionStorage.setItem("prev", sum);
             var values = JSON.parse(result);
             DEBUG && console.log(values[0]['item_name']);
             var len = values.length;
             DEBUG && console.log(len)
             var i = 0;
-            var sum = 0;
+
             for (i = 0; i < len; i++) {
                 //var checkout_items = $('.checkout_items');
                 // checkout_items.parent().find('.checkout__order__subtotal').find('span').html()
                 sum = sum + (values[i]['amount']) * 1;
+                console.log("PREV IS HERE" + sum);
+
             }
             var checkout_items = $('.checkout_items');
             if (sum != 0) {
@@ -985,6 +992,10 @@
 
                 var prev = "<li style='border-top: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "Previous order" +"<span style='position: relative; left: 170px; float: right;' class='pr'> ₹ " + sum + "</span></li>";
                 checkout_items.append(prev);
+            }
+            else {
+                sum = 0;
+                sessionStorage.setItem("prev", sum);
             }
 
 
@@ -1000,7 +1011,12 @@
     setTimeout(() => {
         checkout_items.parent().find('.checkout__order__subtotal').find('span').html(" ₹ " + (sessionStorage.getItem("total")*1+sessionStorage.getItem("prev")*1));
         checkout_items.parent().find('.checkout__order__total').find('span').html(" ₹ " + (sessionStorage.getItem("total")*1+sessionStorage.getItem("prev")*1));
-       }, 500);
+       }, 1000);
+
+
+
+
+
 
 
 
