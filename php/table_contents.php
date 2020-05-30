@@ -26,17 +26,16 @@ try{
     //echo "YAYYYY";
     fwrite($f, "\npoint 2\n");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("insert into orders_final select * from cafe_orders where table_no = $tableNo and qty <> 0;
-                                      insert into display_orders select * from cafe_orders where table_no = $tableNo and qty <> 0;");
+    $stmt = $conn->prepare("SELECT * FROM display_orders where table_no = $tableNo");
     $stmt->execute();
     fwrite($f, "\npoint 3\n");
     fwrite($f, "\npoint 4\n");
-//    $value = $stmt->fetchAll(PDO::FETCH_ASSOC);
-//    fwrite($f, "\npoint 5\n");
-//    //$retVal = $value->qty;
-//    echo (json_encode($value));
-//    //print_r($value);
-//    fwrite($f, $value[0]['item_name']);
+    $value = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    fwrite($f, "\npoint 5\n");
+    //$retVal = $value->qty;
+    echo (json_encode($value));
+    //print_r($value);
+    fwrite($f, $value[0]['item_name']);
 }
 catch(PDOException$e) {
     fwrite($f, $e ->getMessage());
