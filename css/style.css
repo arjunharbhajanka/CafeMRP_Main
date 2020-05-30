@@ -2568,9 +2568,13 @@ ol {
 table.greenTable {
 	border: 7px solid #E6FFE2;
 	background-color: #D4EED1;
-	width: 100%;
 	text-align: center;
 }
+table.clear_green {
+	background-color: #FFFFFF;
+	border: 7px solid #FFFFFF;
+}
+
 table.greenTable td, table.greenTable th {
 	border: 1px solid #229442;
 	padding: 3px 2px;
@@ -2678,6 +2682,10 @@ table.greenTable tfoot .links a{
 	padding-bottom: 75px;
 	border-bottom: 1px solid #e1e1e1;
 }
+
+
+
+
 
 .blog__details__text {
 	margin-bottom: 45px;

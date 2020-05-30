@@ -647,6 +647,7 @@
                     success: function (result) {
                         DEBUG && console.log(result);
                         window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
+                        window.location.assign("http://3.23.241.214/done.html");
 
 
                     }

@@ -26,14 +26,23 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Now saves order to display_orders as well.">
-      <change afterPath="$PROJECT_DIR$/display_orders.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/display_orders.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/select_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/php/table_contents.php" afterDir="false" />
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="display_orders.html totally working">
+      <change afterPath="$PROJECT_DIR$/clear_table.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/img/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/clear_table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/clear_table_select_tables.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/order_complete.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/refresh.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/remove_table_final.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testspinner.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Soups_old.html" beforeDir="false" afterPath="$PROJECT_DIR$/Soups_old.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/display_orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/display_orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/display_orders.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whiskey.html" beforeDir="false" afterPath="$PROJECT_DIR$/whiskey.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,8 +58,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -309,7 +318,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590761999083</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="checkout total same tab fixed">
+      <created>1590771283052</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1590771283052</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +377,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Soups" />
     <MESSAGE value="minor appearance change" />
     <MESSAGE value="minor appearance change 2" />
     <MESSAGE value="identifies name of the dish" />
@@ -385,7 +400,9 @@
     <MESSAGE value="Beer pint fully functioning" />
     <MESSAGE value="draught_beer_man.html working.&#10;draught_beer hid show working." />
     <MESSAGE value="Now saves order to display_orders as well." />
-    <option name="LAST_COMMIT_MESSAGE" value="Now saves order to display_orders as well." />
+    <MESSAGE value="checkout total same tab fixed" />
+    <MESSAGE value="display_orders.html totally working" />
+    <option name="LAST_COMMIT_MESSAGE" value="display_orders.html totally working" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590760992528">
@@ -412,22 +429,22 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="556" y="334" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1590684078090" />
-    <state width="1126" height="268" key="GridCell.Tab.0.bottom" timestamp="1590769809795">
+    <state width="1126" height="268" key="GridCell.Tab.0.bottom" timestamp="1590831976284">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590769809795" />
-    <state width="1126" height="268" key="GridCell.Tab.0.center" timestamp="1590769809794">
+    <state width="1126" height="268" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590831976284" />
+    <state width="1126" height="268" key="GridCell.Tab.0.center" timestamp="1590831976281">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590769809794" />
-    <state width="1126" height="268" key="GridCell.Tab.0.left" timestamp="1590769809794">
+    <state width="1126" height="268" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590831976281" />
+    <state width="1126" height="268" key="GridCell.Tab.0.left" timestamp="1590831976280">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590769809794" />
-    <state width="1126" height="268" key="GridCell.Tab.0.right" timestamp="1590769809795">
+    <state width="1126" height="268" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590831976280" />
+    <state width="1126" height="268" key="GridCell.Tab.0.right" timestamp="1590831976283">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590769809795" />
+    <state width="1126" height="268" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590831976283" />
     <state x="168" y="94" key="MergeDialog" timestamp="1590397322208">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -440,20 +457,20 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="604" y="258" key="NewPhpClassDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590412912800" />
-    <state x="659" y="455" key="NewPhpFileDialog" timestamp="1590766942123">
+    <state x="659" y="585" key="NewPhpFileDialog" timestamp="1590833730935">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="659" y="455" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590766942123" />
+    <state x="659" y="585" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590833730935" />
     <state x="341" y="155" key="SettingsEditor" timestamp="1590243896760">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590243896760" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590146049595" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590761971099">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590789046612">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590326503261" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590761971099" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590789046612" />
     <state x="428" y="187" key="com.intellij.database.dbimport.ImportDialog" timestamp="1590693936269">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -479,5 +496,13 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="dock-window-2/0.23.1680.1027@0.23.1680.1027" timestamp="1590688155390" />
+    <state x="543" y="245" key="git4idea.branch.GitSmartOperationDialog" timestamp="1590789034812">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="543" y="245" key="git4idea.branch.GitSmartOperationDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590789034812" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1590784246883">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1590784246883" />
   </component>
 </project>
