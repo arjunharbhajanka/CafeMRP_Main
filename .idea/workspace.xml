@@ -26,12 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="pitcher_tower_man.html made">
-      <change afterPath="$PROJECT_DIR$/beer_pint_man.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/single_malt_man.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/super_5_man.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vodka_gin_man.html" afterDir="false" />
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Beer pint fully functioning">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shakes.html" beforeDir="false" afterPath="$PROJECT_DIR$/shakes.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -487,10 +484,10 @@
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590847854545" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590847953598" />
-    <state x="440" y="282" key="Vcs.Push.Dialog.v2" timestamp="1590849817231">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="377" y="227" key="Vcs.Push.Dialog.v2" timestamp="1590860387167">
+      <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590326503261" />
+    <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590860387167" />
     <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590837359384" />
     <state x="440" y="282" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1590849817231" />
     <state x="428" y="187" key="com.intellij.database.dbimport.ImportDialog" timestamp="1590693936269">
