@@ -97,66 +97,66 @@
             }
         });
 
-    // var oldContents = ""
-    // $.ajax({
-    //     type: 'POST',
-    //     url: "php/refresh.php",
-    //     data: {tableNo: 1},
-    //     success: function (result) {
-    //         console.log("First Time\n" + result);
-    //
-    //         oldContents = result;
-    //         //window.location.assign("http://3.23.241.214/display_orders.html");
-    //     }
-    //
-    // });
-    //
-    //
-    // setInterval(function () {
-    //     $.ajax({
-    //         type: 'POST',
-    //         url: "php/refresh.php",
-    //         data: {tableNo: 1},
-    //         success: function (result) {
-    //             //console.log("10 SECS\n" + result);
-    //
-    //             if (result != oldContents) {
-    //
-    //                 //window.alert("refreshing");
-    //                 oldContents = result;
-    //                 window.alert("NEW ORDER");
-    //                 window.location.assign("http://3.23.241.214/display_orders.html");
-    //             } else {
-    //                 console.log("same");
-    //             }
-    //
-    //
-    //         }
-    //     });
-    // }, 3000);
-    //
-    // $('.complete').on('click', function () {
-    //
-    //     //window.alert("working");
-    //
-    //     var tableNo = $(this).parent().find('.tab_no').text();
-    //
-    //     window.alert(tableNo);
-    //
-    //     $.ajax({
-    //         type: 'POST',
-    //         url: "php/delete_old.php",
-    //         data: {tableNo: tableNumber},
-    //         success: function (result) {
-    //             DEBUG && console.log(result);
-    //             window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
-    //
-    //
-    //         }
-    //
-    //     });
+    var oldContents = ""
+    $.ajax({
+        type: 'POST',
+        url: "php/clear_table_select_tables.php",
+        data: {tableNo: 1},
+        success: function (result) {
+            console.log("First Time\n" + result);
 
-    // });
+            oldContents = result;
+            //window.location.assign("http://3.23.241.214/display_orders.html");
+        }
+
+    });
+
+
+    setInterval(function () {
+        $.ajax({
+            type: 'POST',
+            url: "php/clear_table_select_tables.php",
+            data: {tableNo: 1},
+            success: function (result) {
+                //console.log("10 SECS\n" + result);
+
+                if (result != oldContents) {
+
+                    //window.alert("refreshing");
+                    oldContents = result;
+                    window.alert("NEW Table");
+                    window.location.assign("http://3.23.241.214/clear_table.html");
+                } else {
+                    console.log("same");
+                }
+
+
+            }
+        });
+    }, 3000);
+
+    $('.complete').on('click', function () {
+
+        //window.alert("working");
+
+        var tableNo = $(this).parent().find('.tab_no').text();
+
+        window.alert(tableNo);
+
+        $.ajax({
+            type: 'POST',
+            url: "php/delete_old.php",
+            data: {tableNo: tableNumber},
+            success: function (result) {
+                DEBUG && console.log(result);
+                window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
+
+
+            }
+
+        });
+
+    });
 
 
 })(jQuery);
