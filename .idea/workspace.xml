@@ -26,9 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Beer pint fully functioning">
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Iced Tea Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shakes.html" beforeDir="false" afterPath="$PROJECT_DIR$/shakes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quenchers.html" beforeDir="false" afterPath="$PROJECT_DIR$/quenchers.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -342,7 +342,21 @@
       <option name="project" value="LOCAL" />
       <updated>1590850280377</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="Shakes done">
+      <created>1590860751345</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1590860751345</updated>
+    </task>
+    <task id="LOCAL-00035" summary="Iced Tea Done">
+      <created>1590860918094</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1590860918094</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -394,8 +408,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="testing git branches" />
-    <MESSAGE value="WRITES TO DATBASE!!!!!" />
     <MESSAGE value="errors resolved" />
     <MESSAGE value="hides according to db values" />
     <MESSAGE value="Changes price according to the database." />
@@ -419,7 +431,9 @@
     <MESSAGE value="auto refresh working.&#10;All databases reset." />
     <MESSAGE value="whiskey_man.html made" />
     <MESSAGE value="pitcher_tower_man.html made" />
-    <option name="LAST_COMMIT_MESSAGE" value="pitcher_tower_man.html made" />
+    <MESSAGE value="Shakes done" />
+    <MESSAGE value="Iced Tea Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Iced Tea Done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
@@ -484,10 +498,10 @@
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590847854545" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590847953598" />
-    <state x="377" y="227" key="Vcs.Push.Dialog.v2" timestamp="1590860387167">
+    <state x="377" y="227" key="Vcs.Push.Dialog.v2" timestamp="1590860927196">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590860387167" />
+    <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590860927196" />
     <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590837359384" />
     <state x="440" y="282" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1590849817231" />
     <state x="428" y="187" key="com.intellij.database.dbimport.ImportDialog" timestamp="1590693936269">
