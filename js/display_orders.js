@@ -19,7 +19,7 @@
             console.log(result);
             if (result == "[]") {
 
-                $('.insert_table').append("<h1>NO ORDERS</h1>")
+                $('.insert_table').append("<h2 align='center'>NO ORDERS</h2>")
 
             }
             DEBUG && console.log(result);

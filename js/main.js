@@ -11,7 +11,7 @@
 
 (function ($) {
     
-    var DEBUG = false;
+    var DEBUG = true;
 
     /*------------------
         Preloader

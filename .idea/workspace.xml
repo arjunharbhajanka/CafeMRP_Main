@@ -26,9 +26,22 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Table clear page made but not auto refreshing.">
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="auto refresh working.&#10;All databases reset.">
+      <change afterPath="$PROJECT_DIR$/main_menu_man_p.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/protected_files/main_menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/whiskey_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_22_20,_9_30_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_22_20__9_30_PM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_23_20,_3_50_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_23_20,_6_41_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_23_20__3_50_PM__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_5_23_20__6_41_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/clear_table.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/clear_table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/display_orders.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/display_orders.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/super_5.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +57,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -85,7 +98,7 @@
     <property name="javascript.nodejs.core.library.configured.version" value="14.3.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="aws" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -107,6 +120,9 @@
       <updated>1590115976182</updated>
       <workItem from="1590147529430" duration="6641000" />
       <workItem from="1590296620643" duration="10215000" />
+      <workItem from="1590845941460" duration="395000" />
+      <workItem from="1590846468254" duration="373000" />
+      <workItem from="1590847879295" duration="1780000" />
     </task>
     <task id="LOCAL-00001" summary="Soups">
       <created>1590150776106</created>
@@ -318,7 +334,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590836511290</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="auto refresh working.&#10;All databases reset.">
+      <created>1590837348044</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1590837348044</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -370,7 +393,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="minor appearance change 2" />
     <MESSAGE value="identifies name of the dish" />
     <MESSAGE value="Passes name and quantity to the test.php which writes it into file.txt" />
     <MESSAGE value="testing git branches" />
@@ -395,13 +417,14 @@
     <MESSAGE value="checkout total same tab fixed" />
     <MESSAGE value="display_orders.html totally working" />
     <MESSAGE value="Table clear page made but not auto refreshing." />
-    <option name="LAST_COMMIT_MESSAGE" value="Table clear page made but not auto refreshing." />
+    <MESSAGE value="auto refresh working.&#10;All databases reset." />
+    <option name="LAST_COMMIT_MESSAGE" value="auto refresh working.&#10;All databases reset." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="190" key="#Deployment" timestamp="1590760992528">
+    <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="190" key="#Deployment/0.0.1680.1050@0.0.1680.1050" timestamp="1590760992528" />
+    <state x="440" y="190" key="#Deployment/0.0.1680.1050@0.0.1680.1050" timestamp="1590846387976" />
     <state x="610" y="269" key="#HTTP_Proxy" timestamp="1590253637319">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -454,16 +477,16 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="659" y="585" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590833730935" />
-    <state x="341" y="155" key="SettingsEditor" timestamp="1590243896760">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="341" y="175" key="SettingsEditor" timestamp="1590847953598">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590243896760" />
-    <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590146049595" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590836548084">
+    <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590847854545" />
+    <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590847953598" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590837359384">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590326503261" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590836548084" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590837359384" />
     <state x="428" y="187" key="com.intellij.database.dbimport.ImportDialog" timestamp="1590693936269">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

@@ -12,7 +12,7 @@
 
     $.ajax({
         type: 'POST',
-        url: "php/clear_table_select_tables.php",
+        url: "../../local/protected_files/php/clear_table_select_tables.php",
         data: {tableNo: 1},
         success: function (result) {
             console.log(result);
