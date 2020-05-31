@@ -26,8 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="cocktails example done">
-      <change afterPath="$PROJECT_DIR$/shots_man.html" afterDir="false" />
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="shots_man.html done">
+      <change afterPath="$PROJECT_DIR$/wines_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,7 @@
       <workItem from="1590845941460" duration="395000" />
       <workItem from="1590846468254" duration="373000" />
       <workItem from="1590847879295" duration="4608000" />
-      <workItem from="1590909360611" duration="6215000" />
+      <workItem from="1590909360611" duration="7395000" />
     </task>
     <task id="LOCAL-00001" summary="Soups">
       <created>1590150776106</created>
@@ -384,7 +385,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590938470999</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="shots_man.html done">
+      <created>1590939306692</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1590939306692</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -436,7 +444,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Adds price and amount to database" />
     <MESSAGE value="EVERY THING WORKING" />
     <MESSAGE value="EVERY THING WORKING part 2" />
     <MESSAGE value="dropdown working with live prices." />
@@ -461,7 +468,8 @@
     <MESSAGE value="quenchers_man.html and rum_brandy_man.html done." />
     <MESSAGE value="shakes_man.html done" />
     <MESSAGE value="cocktails example done" />
-    <option name="LAST_COMMIT_MESSAGE" value="cocktails example done" />
+    <MESSAGE value="shots_man.html done" />
+    <option name="LAST_COMMIT_MESSAGE" value="shots_man.html done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
@@ -526,11 +534,11 @@
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590847854545" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590847953598" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590938493893">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590939314376">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590326503261" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590938493893" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590939314376" />
     <state x="440" y="282" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1590851805988" />
     <state x="428" y="187" key="com.intellij.database.dbimport.ImportDialog" timestamp="1590693936269">
       <screen x="0" y="0" width="1680" height="1050" />

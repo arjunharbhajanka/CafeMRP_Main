@@ -271,34 +271,37 @@
 
                 var tableNumber = sessionStorage.getItem("tableNumber");
 
-                $.ajax({
-                    type: 'post',
-                    url: 'php/check_qty.php',
-                    data: {name: name, tableNumber: tableNumber},
-                    success: function (data) {
-                        DEBUG && console.log(tableNumber);
-                        DEBUG && console.log(data);
-                        if (data == "") {
-                            DEBUG && console.log("not cahnging");
+                if (price.parent().hasClass('man') == 0) {
 
-                            price.parent().find('.add_drop').show();
-                            price.parent().find('.pro-qty').hide();
+                    $.ajax({
+                        type: 'post',
+                        url: 'php/check_qty.php',
+                        data: {name: name, tableNumber: tableNumber},
+                        success: function (data) {
+                            DEBUG && console.log(tableNumber);
+                            DEBUG && console.log(data);
+                            if (data == "") {
+                                DEBUG && console.log("not cahnging");
 
-                        } else {
-                            price.parent().find('input').val(data);
-                            //price.html("₹ " + data);
-                            price.parent().find('.add_drop').hide();
-                            price.parent().find('.pro-qty').show();
-                            price.parent().parent().parent().slideDown(400);
-                            // proQty.show();
-                            DEBUG && console.log("changing "+itemName);
-                            //proQty.find('input').css('background-color', 'blue');
+                                price.parent().find('.add_drop').show();
+                                price.parent().find('.pro-qty').hide();
+
+                            } else {
+                                price.parent().find('input').val(data);
+                                //price.html("₹ " + data);
+                                price.parent().find('.add_drop').hide();
+                                price.parent().find('.pro-qty').show();
+                                price.parent().parent().parent().slideDown(400);
+                                // proQty.show();
+                                DEBUG && console.log("changing " + itemName);
+                                //proQty.find('input').css('background-color', 'blue');
+
+                            }
+
 
                         }
-
-
-                    }
-                });
+                    });
+                }
 
 
             });
