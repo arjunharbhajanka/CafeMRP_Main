@@ -271,34 +271,37 @@
 
                 var tableNumber = sessionStorage.getItem("tableNumber");
 
-                $.ajax({
-                    type: 'post',
-                    url: 'php/check_qty.php',
-                    data: {name: name, tableNumber: tableNumber},
-                    success: function (data) {
-                        DEBUG && console.log(tableNumber);
-                        DEBUG && console.log(data);
-                        if (data == "") {
-                            DEBUG && console.log("not cahnging");
+                if (price.parent().hasClass('man') == 0) {
 
-                            price.parent().find('.add_drop').show();
-                            price.parent().find('.pro-qty').hide();
+                    $.ajax({
+                        type: 'post',
+                        url: 'php/check_qty.php',
+                        data: {name: name, tableNumber: tableNumber},
+                        success: function (data) {
+                            DEBUG && console.log(tableNumber);
+                            DEBUG && console.log(data);
+                            if (data == "") {
+                                DEBUG && console.log("not cahnging");
 
-                        } else {
-                            price.parent().find('input').val(data);
-                            //price.html("₹ " + data);
-                            price.parent().find('.add_drop').hide();
-                            price.parent().find('.pro-qty').show();
-                            price.parent().parent().parent().slideDown(400);
-                            // proQty.show();
-                            DEBUG && console.log("changing "+itemName);
-                            //proQty.find('input').css('background-color', 'blue');
+                                price.parent().find('.add_drop').show();
+                                price.parent().find('.pro-qty').hide();
+
+                            } else {
+                                price.parent().find('input').val(data);
+                                //price.html("₹ " + data);
+                                price.parent().find('.add_drop').hide();
+                                price.parent().find('.pro-qty').show();
+                                price.parent().parent().parent().slideDown(400);
+                                // proQty.show();
+                                DEBUG && console.log("changing " + itemName);
+                                //proQty.find('input').css('background-color', 'blue');
+
+                            }
+
 
                         }
-
-
-                    }
-                });
+                    });
+                }
 
 
             });
@@ -647,6 +650,7 @@
                     success: function (result) {
                         DEBUG && console.log(result);
                         window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
+                        window.location.assign("http://3.23.241.214/done.html");
 
 
                     }
@@ -962,7 +966,7 @@
     });
 
     var tabno = sessionStorage.getItem("tableNumber");
-    window.alert(tabno);
+    //window.alert(tabno);
 
     $.ajax({
         type: 'POST',
@@ -970,16 +974,20 @@
         data: {tableNo: tabno},
         success: function (result) {
             DEBUG && console.log(result);
+            var sum = 0;
+            sessionStorage.setItem("prev", sum);
             var values = JSON.parse(result);
             DEBUG && console.log(values[0]['item_name']);
             var len = values.length;
             DEBUG && console.log(len)
             var i = 0;
-            var sum = 0;
+
             for (i = 0; i < len; i++) {
                 //var checkout_items = $('.checkout_items');
                 // checkout_items.parent().find('.checkout__order__subtotal').find('span').html()
                 sum = sum + (values[i]['amount']) * 1;
+                console.log("PREV IS HERE" + sum);
+
             }
             var checkout_items = $('.checkout_items');
             if (sum != 0) {
@@ -988,6 +996,10 @@
 
                 var prev = "<li style='border-top: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "Previous order" +"<span style='position: relative; left: 170px; float: right;' class='pr'> ₹ " + sum + "</span></li>";
                 checkout_items.append(prev);
+            }
+            else {
+                sum = 0;
+                sessionStorage.setItem("prev", sum);
             }
 
 
@@ -1001,7 +1013,7 @@
     var checkout_items = $('.checkout_items');
 
     setTimeout(() => {
-        checkout_items.parent().find('.checkout__order__subtotal').find('span').html(" ₹ " + (sessionStorage.getItem("total")*1));
+        checkout_items.parent().find('.checkout__order__subtotal').find('span').html(" ₹ " + (sessionStorage.getItem("total")*1+sessionStorage.getItem("prev")*1));
         checkout_items.parent().find('.checkout__order__total').find('span').html(" ₹ " + (sessionStorage.getItem("total")*1+sessionStorage.getItem("prev")*1));
        }, 1000);
 

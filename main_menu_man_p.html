@@ -24,26 +24,34 @@
 </head>
 
 <body>
-<!-- Page Preloder -->
 
+<SCRIPT>
+    function passWord() {
+        var testV = 1;
+        var pass1 = prompt('Please Enter Your Password',' ');
+        while (testV < 3) {
+            if (!pass1)
+                history.go(-1);
+            if (pass1.toLowerCase() == "letmein") {
+                alert('You Got it Right!');
+                window.open('../../local/protected_files/main_menu.html');
+                break;
+            }
+            testV+=1;
+            var pass1 =
+                prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+        }
+        if (pass1.toLowerCase()!="password" & testV ==3)
+            history.go(-1);
+        return " ";
+    }
+</SCRIPT>
+<CENTER>
+    <FORM>
+        <input type="button" value="Enter Protected Area" onClick="passWord()">
+    </FORM>
+</CENTER>
 
-<!-- Breadcrumb Section End -->
-
-<!-- Product Section Begin -->
-
-<div class="insert_table">
-
-</div>
-
-
-
-
-
-
-
-
-
-<!-- Js Plugins -->
 <script src="js/jquery-3.3.1.min.js"></script>
 
 <script src="js/bootstrap.min.js"></script>
@@ -53,7 +61,7 @@
 <script src="js/jquery.slicknav.js"></script>
 <script src="js/mixitup.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
-<script src="js/display_orders.js"></script>
+<script src="js/clear_table.js"></script>
 
 
 </body>

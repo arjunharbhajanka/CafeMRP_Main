@@ -26,10 +26,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Beer pint fully functioning">
-      <change afterPath="$PROJECT_DIR$/draught_beer_man.html" afterDir="false" />
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="shots_man.html done">
+      <change afterPath="$PROJECT_DIR$/wines_man.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +44,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
@@ -85,7 +85,7 @@
     <property name="javascript.nodejs.core.library.configured.version" value="14.3.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="aws" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -107,6 +107,10 @@
       <updated>1590115976182</updated>
       <workItem from="1590147529430" duration="6641000" />
       <workItem from="1590296620643" duration="10215000" />
+      <workItem from="1590845941460" duration="395000" />
+      <workItem from="1590846468254" duration="373000" />
+      <workItem from="1590847879295" duration="4608000" />
+      <workItem from="1590909360611" duration="7395000" />
     </task>
     <task id="LOCAL-00001" summary="Soups">
       <created>1590150776106</created>
@@ -290,7 +294,105 @@
       <option name="project" value="LOCAL" />
       <updated>1590687221984</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="draught_beer_man.html working.&#10;draught_beer hid show working.">
+      <created>1590694111993</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1590694111993</updated>
+    </task>
+    <task id="LOCAL-00028" summary="Now saves order to display_orders as well.">
+      <created>1590761999083</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1590761999083</updated>
+    </task>
+    <task id="LOCAL-00029" summary="checkout total same tab fixed">
+      <created>1590771283052</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1590771283052</updated>
+    </task>
+    <task id="LOCAL-00030" summary="Table clear page made but not auto refreshing.">
+      <created>1590836511290</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1590836511290</updated>
+    </task>
+    <task id="LOCAL-00031" summary="auto refresh working.&#10;All databases reset.">
+      <created>1590837348044</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1590837348044</updated>
+    </task>
+    <task id="LOCAL-00032" summary="whiskey_man.html made">
+      <created>1590849802827</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1590849802827</updated>
+    </task>
+    <task id="LOCAL-00033" summary="pitcher_tower_man.html made">
+      <created>1590850280377</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1590850280377</updated>
+    </task>
+    <task id="LOCAL-00034" summary="man pages up to date">
+      <created>1590851798561</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1590851798561</updated>
+    </task>
+    <task id="LOCAL-00035" summary="iced_tea_man.html done">
+      <created>1590910379680</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1590910379680</updated>
+    </task>
+    <task id="LOCAL-00036" summary="liqueurs_man.html done">
+      <created>1590910670171</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1590910670171</updated>
+    </task>
+    <task id="LOCAL-00037" summary="quenchers_man.html and rum_brandy_man.html done.">
+      <created>1590934592635</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1590934592635</updated>
+    </task>
+    <task id="LOCAL-00038" summary="shakes_man.html done">
+      <created>1590935046111</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1590935046111</updated>
+    </task>
+    <task id="LOCAL-00039" summary="cocktails example done">
+      <created>1590938470999</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1590938470999</updated>
+    </task>
+    <task id="LOCAL-00040" summary="shots_man.html done">
+      <created>1590939306692</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1590939306692</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -342,18 +444,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Soups" />
-    <MESSAGE value="minor appearance change" />
-    <MESSAGE value="minor appearance change 2" />
-    <MESSAGE value="identifies name of the dish" />
-    <MESSAGE value="Passes name and quantity to the test.php which writes it into file.txt" />
-    <MESSAGE value="testing git branches" />
-    <MESSAGE value="WRITES TO DATBASE!!!!!" />
-    <MESSAGE value="errors resolved" />
-    <MESSAGE value="hides according to db values" />
-    <MESSAGE value="Changes price according to the database." />
-    <MESSAGE value="Add button added and only creates one entry per item." />
-    <MESSAGE value="Adds price and amount to database" />
     <MESSAGE value="EVERY THING WORKING" />
     <MESSAGE value="EVERY THING WORKING part 2" />
     <MESSAGE value="dropdown working with live prices." />
@@ -364,13 +454,28 @@
     <MESSAGE value="quantity and retotal button added at check out." />
     <MESSAGE value="pitchers and towers fully functioning" />
     <MESSAGE value="Beer pint fully functioning" />
-    <option name="LAST_COMMIT_MESSAGE" value="Beer pint fully functioning" />
+    <MESSAGE value="draught_beer_man.html working.&#10;draught_beer hid show working." />
+    <MESSAGE value="Now saves order to display_orders as well." />
+    <MESSAGE value="checkout total same tab fixed" />
+    <MESSAGE value="display_orders.html totally working" />
+    <MESSAGE value="Table clear page made but not auto refreshing." />
+    <MESSAGE value="auto refresh working.&#10;All databases reset." />
+    <MESSAGE value="whiskey_man.html made" />
+    <MESSAGE value="pitcher_tower_man.html made" />
+    <MESSAGE value="man pages up to date" />
+    <MESSAGE value="iced_tea_man.html done" />
+    <MESSAGE value="liqueurs_man.html done" />
+    <MESSAGE value="quenchers_man.html and rum_brandy_man.html done." />
+    <MESSAGE value="shakes_man.html done" />
+    <MESSAGE value="cocktails example done" />
+    <MESSAGE value="shots_man.html done" />
+    <option name="LAST_COMMIT_MESSAGE" value="shots_man.html done" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="440" y="190" key="#Deployment" timestamp="1590671211083">
+    <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="190" key="#Deployment/0.0.1680.1050@0.0.1680.1050" timestamp="1590671211083" />
+    <state x="440" y="190" key="#Deployment/0.0.1680.1050@0.0.1680.1050" timestamp="1590846387976" />
     <state x="610" y="269" key="#HTTP_Proxy" timestamp="1590253637319">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -387,30 +492,31 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="628" y="310" key="#Web_Browsers/0.0.1680.1050@0.0.1680.1050" timestamp="1590678780634" />
-    <state x="556" y="334" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590684078090">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="556" y="350" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1590850716728">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="556" y="334" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1590684078090" />
-    <state width="1126" height="268" key="GridCell.Tab.0.bottom" timestamp="1590659636239">
+    <state x="556" y="350" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1590850716728" />
+    <state width="1126" height="268" key="GridCell.Tab.0.bottom" timestamp="1590831976284">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590659636239" />
-    <state width="1126" height="268" key="GridCell.Tab.0.center" timestamp="1590659636238">
+    <state width="1126" height="268" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1590831976284" />
+    <state width="1126" height="268" key="GridCell.Tab.0.center" timestamp="1590831976281">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590659636238" />
-    <state width="1126" height="268" key="GridCell.Tab.0.left" timestamp="1590659636237">
+    <state width="1126" height="268" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1590831976281" />
+    <state width="1126" height="268" key="GridCell.Tab.0.left" timestamp="1590831976280">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590659636237" />
-    <state width="1126" height="268" key="GridCell.Tab.0.right" timestamp="1590659636238">
+    <state width="1126" height="268" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1590831976280" />
+    <state width="1126" height="268" key="GridCell.Tab.0.right" timestamp="1590831976283">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590659636238" />
-    <state x="168" y="94" key="MergeDialog" timestamp="1590397322208">
+    <state width="1126" height="268" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590831976283" />
+    <state x="168" y="94" key="MergeDialog" timestamp="1590909885528">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="168" y="94" key="MergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590397322208" />
+    <state x="168" y="94" key="MergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590909885528" />
     <state x="99" y="399" width="853" height="436" key="MultipleFileMergeDialog" timestamp="1590687304278">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -419,33 +525,38 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="604" y="258" key="NewPhpClassDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590412912800" />
-    <state x="659" y="455" key="NewPhpFileDialog" timestamp="1590674309749">
+    <state x="659" y="585" key="NewPhpFileDialog" timestamp="1590833730935">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="659" y="455" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590674309748" />
-    <state x="341" y="155" key="SettingsEditor" timestamp="1590243896760">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="659" y="585" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590833730935" />
+    <state x="341" y="175" key="SettingsEditor" timestamp="1590847953598">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590243896760" />
-    <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590146049595" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590687318815">
+    <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590847854545" />
+    <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590847953598" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590939314376">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590326503261" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590687318815" />
-    <state x="279" y="353" width="681" height="393" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1590423336590">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590939314376" />
+    <state x="440" y="282" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1590851805988" />
+    <state x="428" y="187" key="com.intellij.database.dbimport.ImportDialog" timestamp="1590693936269">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="279" y="353" width="681" height="393" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590423336590" />
+    <state x="428" y="187" key="com.intellij.database.dbimport.ImportDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590693936269" />
+    <state x="279" y="353" width="825" height="552" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1590761636253">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="279" y="353" width="825" height="552" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590761636253" />
     <state x="0" y="170" width="1345" height="643" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1590437982897">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="0" y="170" width="1345" height="643" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1680.1050@0.0.1680.1050" timestamp="1590437982897" />
-    <state x="538" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590335350851">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="628" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590931855784">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="538" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1590335350851" />
-    <state x="628" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590312657870" />
+    <state x="628" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590931855784" />
     <state x="100" y="100" width="1480" height="850" key="dock-window-1" timestamp="1590688155387">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -454,5 +565,13 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="dock-window-2/0.23.1680.1027@0.23.1680.1027" timestamp="1590688155390" />
+    <state x="543" y="245" key="git4idea.branch.GitSmartOperationDialog" timestamp="1590909869891">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="543" y="245" key="git4idea.branch.GitSmartOperationDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590909869891" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1590784246883">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1590784246883" />
   </component>
 </project>
