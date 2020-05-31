@@ -26,9 +26,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Iced Tea Done">
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="man pages up to date">
+      <change afterPath="$PROJECT_DIR$/iced_tea_man.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/quenchers.html" beforeDir="false" afterPath="$PROJECT_DIR$/quenchers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/clear_table.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/clear_table.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +110,8 @@
       <workItem from="1590296620643" duration="10215000" />
       <workItem from="1590845941460" duration="395000" />
       <workItem from="1590846468254" duration="373000" />
-      <workItem from="1590847879295" duration="3592000" />
+      <workItem from="1590847879295" duration="4608000" />
+      <workItem from="1590909360611" duration="786000" />
     </task>
     <task id="LOCAL-00001" summary="Soups">
       <created>1590150776106</created>
@@ -342,21 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590850280377</updated>
     </task>
-    <task id="LOCAL-00034" summary="Shakes done">
-      <created>1590860751345</created>
+    <task id="LOCAL-00034" summary="man pages up to date">
+      <created>1590851798561</created>
       <option name="number" value="00034" />
       <option name="presentableId" value="LOCAL-00034" />
       <option name="project" value="LOCAL" />
-      <updated>1590860751345</updated>
+      <updated>1590851798561</updated>
     </task>
-    <task id="LOCAL-00035" summary="Iced Tea Done">
-      <created>1590860918094</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1590860918094</updated>
-    </task>
-    <option name="localTasksCounter" value="36" />
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -408,6 +403,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="WRITES TO DATBASE!!!!!" />
     <MESSAGE value="errors resolved" />
     <MESSAGE value="hides according to db values" />
     <MESSAGE value="Changes price according to the database." />
@@ -431,9 +427,8 @@
     <MESSAGE value="auto refresh working.&#10;All databases reset." />
     <MESSAGE value="whiskey_man.html made" />
     <MESSAGE value="pitcher_tower_man.html made" />
-    <MESSAGE value="Shakes done" />
-    <MESSAGE value="Iced Tea Done" />
-    <option name="LAST_COMMIT_MESSAGE" value="Iced Tea Done" />
+    <MESSAGE value="man pages up to date" />
+    <option name="LAST_COMMIT_MESSAGE" value="man pages up to date" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
@@ -477,10 +472,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="1126" height="268" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1590831976283" />
-    <state x="168" y="94" key="MergeDialog" timestamp="1590397322208">
+    <state x="168" y="94" key="MergeDialog" timestamp="1590909885528">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="168" y="94" key="MergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590397322208" />
+    <state x="168" y="94" key="MergeDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590909885528" />
     <state x="99" y="399" width="853" height="436" key="MultipleFileMergeDialog" timestamp="1590687304278">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -498,12 +493,12 @@
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590847854545" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590847953598" />
-    <state x="377" y="227" key="Vcs.Push.Dialog.v2" timestamp="1590860927196">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590909122888">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590860927196" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590837359384" />
-    <state x="440" y="282" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1590849817231" />
+    <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590326503261" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590909122888" />
+    <state x="440" y="282" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1590851805988" />
     <state x="428" y="187" key="com.intellij.database.dbimport.ImportDialog" timestamp="1590693936269">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -516,11 +511,11 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="0" y="170" width="1345" height="643" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1680.1050@0.0.1680.1050" timestamp="1590437982897" />
-    <state x="538" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590335350851">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="628" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590909840654">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="538" y="382" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.900@0.0.1440.900" timestamp="1590335350851" />
-    <state x="628" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590312657870" />
+    <state x="628" y="446" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590909840654" />
     <state x="100" y="100" width="1480" height="850" key="dock-window-1" timestamp="1590688155387">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -529,10 +524,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="dock-window-2/0.23.1680.1027@0.23.1680.1027" timestamp="1590688155390" />
-    <state x="543" y="245" key="git4idea.branch.GitSmartOperationDialog" timestamp="1590789034812">
+    <state x="543" y="245" key="git4idea.branch.GitSmartOperationDialog" timestamp="1590909869891">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="543" y="245" key="git4idea.branch.GitSmartOperationDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590789034812" />
+    <state x="543" y="245" key="git4idea.branch.GitSmartOperationDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590909869891" />
     <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1590784246883">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
