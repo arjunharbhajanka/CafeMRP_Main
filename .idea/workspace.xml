@@ -26,9 +26,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="shots_man.html done">
-      <change afterPath="$PROJECT_DIR$/wines_man.html" afterDir="false" />
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="wines_man.html done">
+      <change afterPath="$PROJECT_DIR$/js/make_db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/php/make_db.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cocktails.html" beforeDir="false" afterPath="$PROJECT_DIR$/cocktails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/header.js" beforeDir="false" afterPath="$PROJECT_DIR$/header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mocktails.html" beforeDir="false" afterPath="$PROJECT_DIR$/mocktails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soups.html" beforeDir="false" afterPath="$PROJECT_DIR$/soups.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +51,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -82,6 +89,7 @@
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
+    <property name="database.data.extractors.current.id" value="Excel (xlsx)" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.3.0" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -110,7 +118,7 @@
       <workItem from="1590845941460" duration="395000" />
       <workItem from="1590846468254" duration="373000" />
       <workItem from="1590847879295" duration="4608000" />
-      <workItem from="1590909360611" duration="7395000" />
+      <workItem from="1590909360611" duration="13753000" />
     </task>
     <task id="LOCAL-00001" summary="Soups">
       <created>1590150776106</created>
@@ -392,7 +400,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590939306692</updated>
     </task>
-    <option name="localTasksCounter" value="41" />
+    <task id="LOCAL-00041" summary="wines_man.html done">
+      <created>1590940614286</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1590940614286</updated>
+    </task>
+    <option name="localTasksCounter" value="42" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -444,7 +459,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="EVERY THING WORKING" />
     <MESSAGE value="EVERY THING WORKING part 2" />
     <MESSAGE value="dropdown working with live prices." />
     <MESSAGE value="Draught beer page created with dropdowns and live prices" />
@@ -469,7 +483,8 @@
     <MESSAGE value="shakes_man.html done" />
     <MESSAGE value="cocktails example done" />
     <MESSAGE value="shots_man.html done" />
-    <option name="LAST_COMMIT_MESSAGE" value="shots_man.html done" />
+    <MESSAGE value="wines_man.html done" />
+    <option name="LAST_COMMIT_MESSAGE" value="wines_man.html done" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
@@ -525,20 +540,20 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="604" y="258" key="NewPhpClassDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590412912800" />
-    <state x="659" y="585" key="NewPhpFileDialog" timestamp="1590833730935">
+    <state x="659" y="585" key="NewPhpFileDialog" timestamp="1590953022672">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="659" y="585" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590833730935" />
+    <state x="659" y="585" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590953022672" />
     <state x="341" y="175" key="SettingsEditor" timestamp="1590847953598">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590847854545" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590847953598" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590939314376">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1590940619653">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590326503261" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590939314376" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1590940619653" />
     <state x="440" y="282" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1590851805988" />
     <state x="428" y="187" key="com.intellij.database.dbimport.ImportDialog" timestamp="1590693936269">
       <screen x="0" y="0" width="1680" height="1050" />

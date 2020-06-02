@@ -431,6 +431,13 @@
 
     });
 
+    var test_button = $('.test_button');
+    test_button.on('click', function () {
+
+        window.alert("SHIVAM WAS RIGHT");
+
+    });
+
     var show_item = $('.show_item');
 
     show_item.on('click', function () {
@@ -457,7 +464,7 @@
 
     change.on('click', function () {
 
-        window.alert("Price Changed");
+
 
 
         if ($(this).parent().hasClass('item_indrop')) {
@@ -490,7 +497,7 @@
         });
 
 
-
+        window.alert("Price Changed");
     });
     DEBUG && console.log("hiiiii");
 
