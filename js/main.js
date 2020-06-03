@@ -697,6 +697,9 @@
         var price = $(this).parent().parent().find(".price").text();
         //window.alert(price);
         price = price.substring(2);
+        var category = $('.product').find('h3').text();
+        temp = temp + " (" + category + ")";
+        console.log(temp);
 
         //window.alert(price);
 
@@ -727,6 +730,9 @@
         var name = $(this).parent().parent().parent().parent().parent().parent().parent().find(".itemName").text();
         var selected = $(this).parent().parent().find('p').text();
         var price = $(this).parent().parent().find(".price").text();
+        var category = $('.product').find('h3').text();
+        name = name + " (" + category + ")";
+        console.log(name);
 
         price = price.substring(2);
         name = name + " " + selected;
@@ -778,13 +784,20 @@
         if ($button.parent().hasClass('pro_drop')) {
             var itemName = $button.parent().parent().parent().parent().parent().parent().parent().parent().find('.itemName').text();
             var selected = $button.parent().parent().parent().find('p').text();
+            var category = $('.product').find('h3').text();
+            itemName = itemName + " (" + category + ")";
             itemName = itemName + " " + selected;
+
+            console.log(itemName);
             var price = $button.parent().parent().parent().find('h6').text();
 
             DEBUG && console.log(price);
         } else {
             var itemName = $button.parent().parent().parent().find('.itemName').text();
             var price = $button.parent().parent().parent().find('.price').text();
+            var category = $('.product').find('h3').text();
+            itemName = itemName + " (" + category + ")";
+            console.log(itemName);
 
 
         }
