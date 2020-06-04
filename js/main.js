@@ -256,7 +256,7 @@
                     url: 'php/price.php',
                     data: {name: name},
                     success: function (data) {
-                        DEBUG && console.log("new price" + " " + data);
+                        DEBUG && console.log("new price" + " " + data + "nameis " + name);
 
                         if (price.parent().hasClass('man')) {
                             DEBUG && console.log("new price of man" + " " + data);
@@ -343,7 +343,7 @@
                     DEBUG && console.log(tableNumber);
                     DEBUG && console.log(data);
                     if (data == "") {
-                        DEBUG && console.log("not cahnging");
+                        DEBUG && console.log("not cahnging" + itemName);
 
                         price.parent().find('.add').show();
                         price.parent().find('.pro-qty').hide();
@@ -731,11 +731,12 @@
         var selected = $(this).parent().parent().find('p').text();
         var price = $(this).parent().parent().find(".price").text();
         var category = $('.product').find('h3').text();
-        name = name + " (" + category + ")";
+
         console.log(name);
 
         price = price.substring(2);
         name = name + " " + selected;
+        name = name + " (" + category + ")";
         DEBUG && console.log(price);
         DEBUG && console.log(name);
 
@@ -785,8 +786,9 @@
             var itemName = $button.parent().parent().parent().parent().parent().parent().parent().parent().find('.itemName').text();
             var selected = $button.parent().parent().parent().find('p').text();
             var category = $('.product').find('h3').text();
-            itemName = itemName + " (" + category + ")";
+
             itemName = itemName + " " + selected;
+            itemName = itemName + " (" + category + ")";
 
             console.log(itemName);
             var price = $button.parent().parent().parent().find('h6').text();

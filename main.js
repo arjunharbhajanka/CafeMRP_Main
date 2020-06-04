@@ -839,12 +839,12 @@
                 // checkout_items.parent().find('.checkout__order__subtotal').find('span').html()
                 sum = sum + (values[i]['amount']) * 1;
 
-                var list_item = "<li style='border-top: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" +values[i]['item_name'] + "</div> " +
+                var list_item = "<li style='border-top: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" +values[i]['item_name'] + "ahaha" + "</div> " +
                     "<div style='width: 100px; display: inline; vertical-align: top;' class=\"quantity\">\n" +
-                    "                                    <div class=\"pro-qty\" style='width: 75px; align-self: center; '>\n" +
-                    "<span style='font-size: 12px; padding: 0px;' class=\"dec qtybtn1\">-</span>" +
-                    "                                        <input style='font-size: 12px;  padding: 0px display: inline;' type=\"submit\" value=\""+ values[i]['qty'] +"\">\n" +
-                    "<span style='font-size: 12px;  padding: 0px;' class=\"inc qtybtn1\">+</span>" +
+                    "                                    <div class=\"pro-qty\" style='width: 200px; align-self: center; '>\n" +
+                    "<span style='font-size: 18px; padding: 0px;' class=\"dec qtybtn1\">-</span>" +
+                    "                                        <input style='font-size: 12px;  padding: 0px display: inline;' type=\"submit\" disabled=\"disabled\" value=\""+ values[i]['qty'] +"\">\n" +
+                    "<span style='font-size: 50px;  padding: 0px;' class=\"inc qtybtn1\">+</span>" +
                     "                                    </div>\n" +
                     "                                </div>" +
                     " <span class='pr'> ₹ " + values[i]['amount'] + "</span></li>";
