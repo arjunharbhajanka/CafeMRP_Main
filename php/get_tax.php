@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL);
-$tableNo  = $_POST['tableNo'];
+$name  = $_POST['name'];
 
 //    if ($no == 0) {
 //        echo ("It was zero");
@@ -10,7 +10,7 @@ $tableNo  = $_POST['tableNo'];
 //        echo ("it was not $no");
 //    }
 
-$f = fopen('checkout.txt', 'a');
+$f = fopen('manage.txt', 'a');
 
 fwrite($f, $name);
 
@@ -26,17 +26,15 @@ try{
     //echo "YAYYYY";
     fwrite($f, "\npoint 2\n");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("insert into orders_final select s_no, item_name, qty, table_no, price_per_item, amount from cafe_orders where table_no = $tableNo and qty <> 0;
-                                      insert into display_orders select s_no, item_name, qty, table_no, price_per_item, amount from cafe_orders where table_no = $tableNo and qty <> 0;");
+    $stmt = $conn->prepare("SELECT tax FROM cafe_management where item_name LIKE '$name'");
     $stmt->execute();
     fwrite($f, "\npoint 3\n");
     fwrite($f, "\npoint 4\n");
-//    $value = $stmt->fetchAll(PDO::FETCH_ASSOC);
-//    fwrite($f, "\npoint 5\n");
-//    //$retVal = $value->qty;
-//    echo (json_encode($value));
-//    //print_r($value);
-//    fwrite($f, $value[0]['item_name']);
+    $value = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    fwrite($f, "\npoint 5\n");
+    //$retVal = $value->qty;
+    print_r($value[0]['tax']);
+    fwrite($f, $value['tax']);
 }
 catch(PDOException$e) {
     fwrite($f, $e ->getMessage());

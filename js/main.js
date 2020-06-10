@@ -238,6 +238,23 @@
     DEBUG && console.log("bhlal");
 
 
+    var item = $('.itemName').eq(0).text();
+    var tax;
+
+    $.ajax({
+        type: 'post',
+        url: 'php/get_tax.php',
+        data: {name: item},
+        success: function (data) {
+            console.log("TAX IS\n\n\n\n\n" + data);
+          tax = data;
+
+        }
+    });
+    console.log(tax);
+
+
+
     $('.itemName').each(function () {
         DEBUG && console.log("bhlal");
         var itemName = $(this).text();
@@ -712,7 +729,7 @@
         $.ajax({
             type: 'POST',
             url: "php/test.php",
-            data: {name: temp, qty: 1, tableNo: tableNumber, price: price, amount: price},
+            data: {name: temp, qty: 1, tableNo: tableNumber, price: price, amount: price, tax: tax},
             success: function (result) {
                 DEBUG && console.log('the data was successfully 123 into sent to the server');
             }
@@ -749,7 +766,7 @@
         $.ajax({
             type: 'POST',
             url: "php/test.php",
-            data: {name: name, qty: 1, tableNo: tableNumber, price: price, amount: price},
+            data: {name: name, qty: 1, tableNo: tableNumber, price: price, amount: price, tax: tax},
             success: function (result) {
                 DEBUG && console.log('the data was successfully 123 into sent to the server');
             }
@@ -909,10 +926,19 @@
             DEBUG && console.log(len)
             var i = 0;
             var sum = 0;
+            var gst = 0;
+            var vat = 0;
             for (i = 0; i < len; i++) {
                 var checkout_items = $('.checkout_items');
                 // checkout_items.parent().find('.checkout__order__subtotal').find('span').html()
                 sum = sum + (values[i]['amount']) * 1;
+
+                if (values[i]['tax'] == "food") {
+                    gst =  gst + ((values[i]['amount'] * 1.1) * 0.025);
+                }
+                else {
+                    vat = vat + ((values[i]['amount'] * 1.1) * 0.2);
+                }
 
                 var list_item = "<li style='border-top: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" +values[i]['item_name'] + "</div> " +
                     "<div style='width: 100px; display: inline; vertical-align: top;' class=\"quantity\">\n" +
@@ -983,7 +1009,39 @@
             checkout_items.append(js);
             var checkout_items = $('.checkout_items');
 
+            var service_charge = sum * 0.1;
+
+            gst = gst.toFixed(2);
+            vat = vat.toFixed(2);
+            service_charge = service_charge.toFixed(2);
+
             sessionStorage.setItem("total", sum);
+            sessionStorage.setItem("gst", gst);
+            sessionStorage.setItem("vat", vat);
+            sessionStorage.setItem("service_charge", service_charge);
+
+            console.log("VAT IS \n\n\n" + vat);
+            console.log("gst IS \n\n\n" + gst);
+            list_item = "<li style='border-bottom: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "Service Charge" + "</div> " +
+
+                " <span class='pr'> ₹ " + service_charge + "</span></li>";
+
+            if (gst != 0) {
+                list_item = list_item + "<li style='border-bottom: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "CGST" + "</div> " +
+
+                    " <span class='pr'> ₹ " + gst + "</span></li>" + "<li style='border-bottom: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "SGST" + "</div> " +
+
+                    " <span class='pr'> ₹ " + gst + "</span></li>" ;
+            }
+            if (vat != 0) {
+                list_item = list_item + "<li style='border-bottom: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "VAT" + "</div> " +
+
+                    " <span class='pr'> ₹ " + vat + "</span></li>"
+            }
+
+            var tax_items = $('.tax_items');
+            tax_items.append(list_item);
+
 
         }
 
@@ -1038,9 +1096,12 @@
     });
     var checkout_items = $('.checkout_items');
 
+
+
+
     setTimeout(() => {
         checkout_items.parent().find('.checkout__order__subtotal').find('span').html(" ₹ " + (sessionStorage.getItem("total")*1+sessionStorage.getItem("prev")*1));
-        checkout_items.parent().find('.checkout__order__total').find('span').html(" ₹ " + (sessionStorage.getItem("total")*1+sessionStorage.getItem("prev")*1));
+        checkout_items.parent().find('.checkout__order__total').find('span').html(" ₹ " + (sessionStorage.getItem("total")*1+sessionStorage.getItem("gst")*2 + sessionStorage.getItem("service_charge")*1 + sessionStorage.getItem("vat")*1));
        }, 1000);
 
 
