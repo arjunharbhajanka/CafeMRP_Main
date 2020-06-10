@@ -26,69 +26,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="mentions category in data base">
-      <change afterPath="$PROJECT_DIR$/chakhna.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/clear_table.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/make_db_can_drop.js" afterDir="false" />
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="made the clickable area of + - buttons 10 px wider  ">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Soups_old.html" beforeDir="false" afterPath="$PROJECT_DIR$/Soups_old.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Super_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Super_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beer_pint.html" beforeDir="false" afterPath="$PROJECT_DIR$/beer_pint.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cocktails.html" beforeDir="false" afterPath="$PROJECT_DIR$/cocktails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desserts.html" beforeDir="false" afterPath="$PROJECT_DIR$/desserts.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/done.html" beforeDir="false" afterPath="$PROJECT_DIR$/done.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draught_beer.html" beforeDir="false" afterPath="$PROJECT_DIR$/draught_beer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draught_beer_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/draught_beer_man.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/footer.js" beforeDir="false" afterPath="$PROJECT_DIR$/footer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/international.html" beforeDir="false" afterPath="$PROJECT_DIR$/international.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main_course.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_course.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mocktails.html" beforeDir="false" afterPath="$PROJECT_DIR$/mocktails.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/oriental.html" beforeDir="false" afterPath="$PROJECT_DIR$/oriental.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pasta.html" beforeDir="false" afterPath="$PROJECT_DIR$/pasta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/check_qty.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/check_qty.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/checkout.txt" beforeDir="false" afterPath="$PROJECT_DIR$/php/checkout.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/file.txt" beforeDir="false" afterPath="$PROJECT_DIR$/php/file.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/manage.txt" beforeDir="false" afterPath="$PROJECT_DIR$/php/manage.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pitcher_tower.html" beforeDir="false" afterPath="$PROJECT_DIR$/pitcher_tower.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/salads.html" beforeDir="false" afterPath="$PROJECT_DIR$/salads.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_base.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_base.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_blog-details.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_blog-details.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_blog-sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_blog-sidebar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_blog.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_blog.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_breadcrumb.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_breadcrumb.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_checkout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_checkout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_contact.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_contact.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_hero.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_hero.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_home-page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_home-page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_mixins.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_mixins.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_responsive.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_shop-details.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_shop-details.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_shop-grid.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_shop-grid.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_shoping-cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_shoping-cart.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_sidebar.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_sidebar.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/_variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/_variable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sass/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/sass/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-details.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-details.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shop-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/shop-grid.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shoping-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/shoping-cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single_malt.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_malt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starters_n.html" beforeDir="false" afterPath="$PROJECT_DIR$/starters_n.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/starters_v.html" beforeDir="false" afterPath="$PROJECT_DIR$/starters_v.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tequila.html" beforeDir="false" afterPath="$PROJECT_DIR$/tequila.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodka_gin.html" beforeDir="false" afterPath="$PROJECT_DIR$/vodka_gin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodka_gin_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/vodka_gin_man.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whiskey.html" beforeDir="false" afterPath="$PROJECT_DIR$/whiskey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wines_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/wines_man.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +114,8 @@
       <workItem from="1590847879295" duration="4608000" />
       <workItem from="1590909360611" duration="13753000" />
       <workItem from="1591120456615" duration="253000" />
-      <workItem from="1591187011087" duration="14213000" />
+      <workItem from="1591187011087" duration="18453000" />
+      <workItem from="1591807503270" duration="214000" />
     </task>
     <task id="LOCAL-00001" summary="Soups">
       <created>1590150776106</created>
@@ -476,7 +418,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591200936173</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="made the clickable area of + - buttons 10 px wider">
+      <created>1591272714696</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1591272714696</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,7 +477,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="dropdown working with live prices." />
     <MESSAGE value="Draught beer page created with dropdowns and live prices" />
     <MESSAGE value="soups_man.html hide show gui working." />
     <MESSAGE value="soups_man.html fully functioning. &#10;hides and shows object. changes price." />
@@ -553,7 +501,8 @@
     <MESSAGE value="shots_man.html done" />
     <MESSAGE value="wines_man.html done" />
     <MESSAGE value="mentions category in data base" />
-    <option name="LAST_COMMIT_MESSAGE" value="mentions category in data base" />
+    <MESSAGE value="made the clickable area of + - buttons 10 px wider" />
+    <option name="LAST_COMMIT_MESSAGE" value="made the clickable area of + - buttons 10 px wider" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
@@ -618,11 +567,11 @@
     </state>
     <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590847854545" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590847953598" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1591200999095">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1591272728078">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590326503261" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1591200999095" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1591272728078" />
     <state x="440" y="282" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1590851805988" />
     <state x="428" y="187" key="com.intellij.database.dbimport.ImportDialog" timestamp="1590693936269">
       <screen x="0" y="0" width="1680" height="1050" />
