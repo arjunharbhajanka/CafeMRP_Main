@@ -99,7 +99,10 @@
 
     $('.hero__categories ul').slideUp(400);
     $('.dropdown').on('click', function () {
-        $(this).parent().find('ul').slideToggle(400);
+        $('ul').slideUp(400);
+        if($(this).parent().find('ul').is(":hidden")) {
+            $(this).parent().find('ul').slideToggle(400);
+        }
     });
 
     /*--------------------------
@@ -291,6 +294,7 @@
                                 //price.html("₹ " + data);
                                 price.parent().find('.add_drop').hide();
                                 price.parent().find('.pro-qty').show();
+
                                 price.parent().parent().parent().slideDown(400);
                                 // proQty.show();
                                 DEBUG && console.log("changing " + itemName);

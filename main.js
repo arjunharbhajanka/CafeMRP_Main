@@ -279,6 +279,7 @@
                             //price.html("₹ " + data);
                             price.parent().find('.add_drop').hide();
                             price.parent().find('.pro-qty').show();
+                            $('.hero__categories ul').slideUp(400);
                             price.parent().parent().parent().slideDown(400);
                             // proQty.show();
                             console.log("changing "+itemName);
