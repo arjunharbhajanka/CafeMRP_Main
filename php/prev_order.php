@@ -10,9 +10,8 @@ $tableNo  = $_POST['tableNo'];
 //        echo ("it was not $no");
 //    }
 
-$f = fopen('checkout.txt', 'a');
+$f = fopen('manage.txt', 'a');
 
-fwrite($f, $name);
 
 $servername = "cafedb.ciecljyjxudo.us-east-2.rds.amazonaws.com";
 $username = "cafeMRP";
@@ -26,7 +25,8 @@ try{
     //echo "YAYYYY";
     fwrite($f, "\npoint 2\n");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT * FROM orders_final where table_no = $tableNo and qty <> 0");
+    $stmt = $conn->prepare("SELECT total FROM prev_totals_1 where table_no = $tableNo");
+
     $stmt->execute();
     fwrite($f, "\npoint 3\n");
     fwrite($f, "\npoint 4\n");

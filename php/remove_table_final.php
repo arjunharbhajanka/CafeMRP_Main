@@ -19,7 +19,8 @@ try{
     echo "YAYYYY";
     fwrite($f, "\npoint 2\n");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("DELETE FROM orders_final where table_no = $tableNo");
+    $stmt = $conn->prepare("DELETE FROM orders_final where table_no = $tableNo;
+                                      DELETE FROM prev_totals_1 where table_no = $tableNo");
     $stmt->execute();
 }
 catch(PDOException$e) {

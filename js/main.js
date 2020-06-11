@@ -657,58 +657,7 @@
 
     });
 
-    var place_order = $('.place_order');
-    // place_order.css({
-    //     "color": "green",
-    //     "border": "2px solid green"
-    // });
-    place_order.on('click', function () {
-        //window.alert("hello");
-        var tableNumber = sessionStorage.getItem("tableNumber");
-        $.ajax({
-            type: 'POST',
-            url: "php/place_order.php",
-            data: {tableNo: tableNumber},
-            success: function (result) {
-                DEBUG && console.log(result);
-                $.ajax({
-                    type: 'POST',
-                    url: "php/delete_old.php",
-                    data: {tableNo: tableNumber},
-                    success: function (result) {
-                        DEBUG && console.log(result);
-                        window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
-                        window.location.assign("http://3.23.241.214/done.html");
 
-
-                    }
-
-                });
-
-
-            }
-
-
-        });
-
-        setTimeout(() => {
-            $.ajax({
-                type: 'POST',
-                url: "php/delete_old.php",
-                data: {tableNo: tableNumber},
-                success: function (result) {
-                    DEBUG && console.log(result);
-                    //window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
-
-
-                }
-
-        });}, 500);
-        //
-        //  //window.location.assign("http://3.23.241.214/done.html");
-
-
-    });
 
 
     DEBUG && console.log("abc");
@@ -1057,11 +1006,12 @@
         url: "php/prev_order.php",
         data: {tableNo: tabno},
         success: function (result) {
-            DEBUG && console.log(result);
+            console.log(result);
+
             var sum = 0;
             sessionStorage.setItem("prev", sum);
             var values = JSON.parse(result);
-            DEBUG && console.log(values[0]['item_name']);
+            DEBUG && console.log(values[0]['total']);
             var len = values.length;
             DEBUG && console.log(len)
             var i = 0;
@@ -1069,21 +1019,21 @@
             for (i = 0; i < len; i++) {
                 //var checkout_items = $('.checkout_items');
                 // checkout_items.parent().find('.checkout__order__subtotal').find('span').html()
-                sum = sum + (values[i]['amount']) * 1;
+                sum = sum + (values[i]['total']) * 1;
                 console.log("PREV IS HERE" + sum);
 
             }
-            var checkout_items = $('.checkout_items');
+
             if (sum != 0) {
-
                 sessionStorage.setItem("prev", sum);
 
-                var prev = "<li style='border-top: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "Previous order" +"<span style='position: relative; left: 170px; float: right;' class='pr'> ₹ " + sum + "</span></li>";
-                checkout_items.append(prev);
-            }
-            else {
-                sum = 0;
-                sessionStorage.setItem("prev", sum);
+                var tax_items = $('.tax_items');
+
+
+                    var prev = "<li style='border-bottom: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "Previous order" +"<span style='position: relative; left: 170px; float: right;' class='pr'> ₹ " + sum + "</span></li>";
+                    tax_items.append(prev);
+            } else {
+                sessionStorage.setItem("prev", 0);
             }
 
 
@@ -1100,14 +1050,66 @@
 
 
     setTimeout(() => {
-        checkout_items.parent().find('.checkout__order__subtotal').find('span').html(" ₹ " + (sessionStorage.getItem("total")*1+sessionStorage.getItem("prev")*1));
-        checkout_items.parent().find('.checkout__order__total').find('span').html(" ₹ " + (sessionStorage.getItem("total")*1+sessionStorage.getItem("gst")*2 + sessionStorage.getItem("service_charge")*1 + sessionStorage.getItem("vat")*1));
+        sessionStorage.setItem("final_total", (sessionStorage.getItem("total")*1+sessionStorage.getItem("gst")*2 + sessionStorage.getItem("service_charge")*1 + sessionStorage.getItem("vat")*1));
+        checkout_items.parent().find('.checkout__order__subtotal').find('span').html(" ₹ " + (sessionStorage.getItem("total")*1).toFixed(2));
+        checkout_items.parent().find('.checkout__order__total').find('span').html(" ₹ " + (sessionStorage.getItem("final_total")*1 + sessionStorage.getItem("prev")*1).toFixed(2));
        }, 1000);
 
 
 
 
+    var place_order = $('.place_order');
+    // place_order.css({
+    //     "color": "green",
+    //     "border": "2px solid green"
+    // });
+    place_order.on('click', function () {
+        //window.alert("hello");
+        var tableNumber = sessionStorage.getItem("tableNumber");
+        $.ajax({
+            type: 'POST',
+            url: "php/place_order.php",
+            data: {tableNo: tableNumber, total: sessionStorage.getItem('final_total')},
+            success: function (result) {
+                DEBUG && console.log(result);
+                $.ajax({
+                    type: 'POST',
+                    url: "php/delete_old.php",
+                    data: {tableNo: tableNumber},
+                    success: function (result) {
+                        DEBUG && console.log(result);
+                        window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("final_total"));
+                        window.location.assign("http://3.23.241.214/done.html");
 
+
+                    }
+
+                });
+
+
+            }
+
+
+        });
+
+        setTimeout(() => {
+            $.ajax({
+                type: 'POST',
+                url: "php/delete_old.php",
+                data: {tableNo: tableNumber},
+                success: function (result) {
+                    DEBUG && console.log(result);
+                    //window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
+
+
+                }
+
+            });}, 500);
+        //
+        //  //window.location.assign("http://3.23.241.214/done.html");
+
+
+    });
 
 
 
