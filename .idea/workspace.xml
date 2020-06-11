@@ -26,13 +26,12 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Shows taxes">
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Previous order repaired">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Super_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Super_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/place_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/place_order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/prev_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/prev_order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/remove_table_final.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/remove_table_final.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +118,7 @@
       <workItem from="1591120456615" duration="253000" />
       <workItem from="1591187011087" duration="18453000" />
       <workItem from="1591807503270" duration="214000" />
-      <workItem from="1591808049636" duration="14074000" />
+      <workItem from="1591808049636" duration="17130000" />
     </task>
     <task id="LOCAL-00001" summary="Soups">
       <created>1590150776106</created>
@@ -450,7 +449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591823387524</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="Previous order repaired">
+      <created>1591890306284</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1591890306284</updated>
+    </task>
+    <option name="localTasksCounter" value="49" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -502,7 +508,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Deletes order from cafe_orders after checkout." />
     <MESSAGE value="quantity and retotal button added at check out." />
     <MESSAGE value="pitchers and towers fully functioning" />
     <MESSAGE value="Beer pint fully functioning" />
@@ -527,7 +532,8 @@
     <MESSAGE value="starters_v.html repaired." />
     <MESSAGE value="Dropdown fixed." />
     <MESSAGE value="Shows taxes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Shows taxes" />
+    <MESSAGE value="Previous order repaired" />
+    <option name="LAST_COMMIT_MESSAGE" value="Previous order repaired" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
@@ -555,22 +561,22 @@
     </state>
     <state x="556" y="334" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1590684078090" />
     <state x="556" y="350" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1680.1027@0.23.1680.1027" timestamp="1590850716728" />
-    <state width="1126" height="268" key="GridCell.Tab.0.bottom" timestamp="1591888787203">
+    <state width="1126" height="268" key="GridCell.Tab.0.bottom" timestamp="1591917012798">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591888787203" />
-    <state width="1126" height="268" key="GridCell.Tab.0.center" timestamp="1591888787202">
+    <state width="1126" height="268" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1591917012798" />
+    <state width="1126" height="268" key="GridCell.Tab.0.center" timestamp="1591917012793">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591888787202" />
-    <state width="1126" height="268" key="GridCell.Tab.0.left" timestamp="1591888787201">
+    <state width="1126" height="268" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1591917012793" />
+    <state width="1126" height="268" key="GridCell.Tab.0.left" timestamp="1591917012788">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591888787201" />
-    <state width="1126" height="268" key="GridCell.Tab.0.right" timestamp="1591888787202">
+    <state width="1126" height="268" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1591917012788" />
+    <state width="1126" height="268" key="GridCell.Tab.0.right" timestamp="1591917012797">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1126" height="268" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591888787202" />
+    <state width="1126" height="268" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1591917012797" />
     <state x="168" y="94" key="MergeDialog" timestamp="1590909885528">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

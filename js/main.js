@@ -11,7 +11,7 @@
 
 (function ($) {
     
-    var DEBUG = true;
+    var DEBUG = false;
 
     /*------------------
         Preloader
@@ -246,12 +246,12 @@
         url: 'php/get_tax.php',
         data: {name: item},
         success: function (data) {
-            console.log("TAX IS\n\n\n\n\n" + data);
+            DEBUG && console.log("TAX IS\n\n\n\n\n" + data);
           tax = data;
 
         }
     });
-    console.log(tax);
+    DEBUG && console.log(tax);
 
 
 
@@ -669,7 +669,7 @@
         price = price.substring(2);
         var category = $('.product').find('h3').text();
         temp = temp + " (" + category + ")";
-        console.log(temp);
+        DEBUG && console.log(temp);
 
         //window.alert(price);
 
@@ -702,7 +702,7 @@
         var price = $(this).parent().parent().find(".price").text();
         var category = $('.product').find('h3').text();
 
-        console.log(name);
+        DEBUG && console.log(name);
 
         price = price.substring(2);
         name = name + " " + selected;
@@ -760,7 +760,7 @@
             itemName = itemName + " " + selected;
             itemName = itemName + " (" + category + ")";
 
-            console.log(itemName);
+            DEBUG && console.log(itemName);
             var price = $button.parent().parent().parent().find('h6').text();
 
             DEBUG && console.log(price);
@@ -769,7 +769,7 @@
             var price = $button.parent().parent().parent().find('.price').text();
             var category = $('.product').find('h3').text();
             itemName = itemName + " (" + category + ")";
-            console.log(itemName);
+            DEBUG && console.log(itemName);
 
 
         }
@@ -889,11 +889,11 @@
                     vat = vat + ((values[i]['amount'] * 1.1) * 0.2);
                 }
 
-                var list_item = "<li style='border-top: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" +values[i]['item_name'] + "</div> " +
+                var list_item = "<li style='border-top: 1px solid #ebebeb;'><div style='width: 46%; display: inline-block;' class='name'>" +values[i]['item_name'] + "</div> " +
                     "<div style='width: 100px; display: inline; vertical-align: top;' class=\"quantity\">\n" +
                     "                                    <div class=\"pro-qty\" style='width: 75px; align-self: center; '>\n" +
                     "<span style='font-size: 12px; padding: 0px;' class=\"dec qtybtn1\">-</span>" +
-                    "                                        <input style='font-size: 12px;  padding: 0px display: inline;' type=\"submit\" value=\""+ values[i]['qty'] +"\">\n" +
+                    "                                        <input style='font-size: 12px;  padding: 0px display: inline;' type=\"submit\" value=\""+ values[i]['qty'] +"\" disabled=\"disabled\">\n" +
                     "<span style='font-size: 12px;  padding: 0px;' class=\"inc qtybtn1\">+</span>" +
                     "                                    </div>\n" +
                     "                                </div>" +
@@ -969,8 +969,8 @@
             sessionStorage.setItem("vat", vat);
             sessionStorage.setItem("service_charge", service_charge);
 
-            console.log("VAT IS \n\n\n" + vat);
-            console.log("gst IS \n\n\n" + gst);
+            DEBUG && console.log("VAT IS \n\n\n" + vat);
+            DEBUG && console.log("gst IS \n\n\n" + gst);
             list_item = "<li style='border-bottom: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "Service Charge" + "</div> " +
 
                 " <span class='pr'> ₹ " + service_charge + "</span></li>";
@@ -1006,7 +1006,7 @@
         url: "php/prev_order.php",
         data: {tableNo: tabno},
         success: function (result) {
-            console.log(result);
+            DEBUG && console.log(result);
 
             var sum = 0;
             sessionStorage.setItem("prev", sum);
@@ -1020,7 +1020,7 @@
                 //var checkout_items = $('.checkout_items');
                 // checkout_items.parent().find('.checkout__order__subtotal').find('span').html()
                 sum = sum + (values[i]['total']) * 1;
-                console.log("PREV IS HERE" + sum);
+                DEBUG && console.log("PREV IS HERE" + sum);
 
             }
 
@@ -1029,8 +1029,7 @@
 
                 var tax_items = $('.tax_items');
 
-
-                    var prev = "<li style='border-bottom: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "Previous order" +"<span style='position: relative; left: 170px; float: right;' class='pr'> ₹ " + sum + "</span></li>";
+                    var prev = "<li style='border-bottom: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "Previous Order" + "</div><span class='pr'> ₹ " + sum + "</span></li>";
                     tax_items.append(prev);
             } else {
                 sessionStorage.setItem("prev", 0);
