@@ -14,8 +14,8 @@ document.write('<div class="container">\n' +
     '                <div class="footer__copyright">\n' +
     '                    <div class="footer__copyright__text">\n' +
     '                        <p>\n' +
-    '                            Copyright &copy;<script>document.write(new Date().getFullYear());</script>\n' +
-    '                            ,Cafe MRP | Designed and Developed by Abhi Sharma, Arjun Harbhajanka, Shivam Bairoliya\n' +
+    '                            Copyright&copy;<script>document.write(new Date().getFullYear());</script>\n' +
+    '                            , Cafe MRP | Designed and Developed by Abhi Sharma, Arjun Harbhajanka, Shivam Bairoliya\n' +
     '                        </p>\n' +
     '                    </div>\n' +
     '\n' +

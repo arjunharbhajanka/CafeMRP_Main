@@ -889,15 +889,31 @@
                     vat = vat + ((values[i]['amount'] * 1.1) * 0.2);
                 }
 
-                var list_item = "<li style='border-top: 1px solid #ebebeb;'><div style='width: 46%; display: inline-block;' class='name'>" +values[i]['item_name'] + "</div> " +
-                    "<div style='width: 100px; display: inline; vertical-align: top;' class=\"quantity\">\n" +
-                    "                                    <div class=\"pro-qty\" style='width: 75px; align-self: center; '>\n" +
+                // var list_item = "<li style='border-top: 1px solid #ebebeb;'><div style='width: 46%; display: inline-block;' class='name'>" +values[i]['item_name'] + "</div> " +
+                //     "<div style='width: 100px; display: inline; vertical-align: top;' class=\"quantity\">\n" +
+                //     "                                    <div class=\"pro-qty\" style='width: 75px; align-self: center; '>\n" +
+                //     "<span style='font-size: 12px; padding: 0px;' class=\"dec qtybtn1\">-</span>" +
+                //     "                                        <input style='font-size: 12px;  padding: 0px display: inline;' type=\"submit\" value=\""+ values[i]['qty'] +"\" disabled=\"disabled\">\n" +
+                //     "<span style='font-size: 12px;  padding: 0px;' class=\"inc qtybtn1\">+</span>" +
+                //     "                                    </div>\n" +
+                //     "                                </div>" +
+                //     " <span class='pr'> ₹ " + values[i]['amount'] + "</span></li>";
+
+                var list_item = "<li style='border-top: 1px solid #ebebeb;'><div class='name'>" +values[i]['item_name'] + "</div> " +
+
+                    " <span class='pr'> ₹ " + values[i]['amount'] + "</span>" +
+                    "<div style='width: 78px;\n" +
+                    "display: inline;\n" +
+                    "vertical-align: top;\n" +
+                    "float: right;\n" +
+                    "line-height: 5;' class=\"quantity\">\n" +
+                    "                                    <div class=\"pro-qty\" style='width: 75px; align-self: center; line-height: 2; '>\n" +
                     "<span style='font-size: 12px; padding: 0px;' class=\"dec qtybtn1\">-</span>" +
                     "                                        <input style='font-size: 12px;  padding: 0px display: inline;' type=\"submit\" value=\""+ values[i]['qty'] +"\" disabled=\"disabled\">\n" +
                     "<span style='font-size: 12px;  padding: 0px;' class=\"inc qtybtn1\">+</span>" +
                     "                                    </div>\n" +
                     "                                </div>" +
-                    " <span class='pr'> ₹ " + values[i]['amount'] + "</span></li>";
+                    "</li>";
 
 
                 checkout_items.append(list_item);
@@ -971,19 +987,19 @@
 
             DEBUG && console.log("VAT IS \n\n\n" + vat);
             DEBUG && console.log("gst IS \n\n\n" + gst);
-            list_item = "<li style='border-bottom: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "Service Charge" + "</div> " +
+            list_item = "<li style='border-bottom: 1px solid #ebebeb;'><div  class='name'>" + "Service Charge" + "</div> " +
 
                 " <span class='pr'> ₹ " + service_charge + "</span></li>";
 
             if (gst != 0) {
-                list_item = list_item + "<li style='border-bottom: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "CGST" + "</div> " +
+                list_item = list_item + "<li style='border-bottom: 1px solid #ebebeb;'><div  class='name'>" + "CGST" + "</div> " +
 
-                    " <span class='pr'> ₹ " + gst + "</span></li>" + "<li style='border-bottom: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "SGST" + "</div> " +
+                    " <span class='pr'> ₹ " + gst + "</span></li>" + "<li style='border-bottom: 1px solid #ebebeb;'><div  class='name'>" + "SGST" + "</div> " +
 
                     " <span class='pr'> ₹ " + gst + "</span></li>" ;
             }
             if (vat != 0) {
-                list_item = list_item + "<li style='border-bottom: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "VAT" + "</div> " +
+                list_item = list_item + "<li style='border-bottom: 1px solid #ebebeb;'><div  class='name'>" + "VAT" + "</div> " +
 
                     " <span class='pr'> ₹ " + vat + "</span></li>"
             }
@@ -1038,7 +1054,7 @@
 
                 var tax_items = $('.tax_items');
 
-                    var prev = "<li style='border-bottom: 1px solid #ebebeb;'><div style='width: 150px; display: inline-block;' class='name'>" + "Previous Order" + "</div><span class='pr'> ₹ " + sum + "</span></li>";
+                    var prev = "<li style='border-bottom: 1px solid #ebebeb;'><div  class='name'>" + "Previous Order" + "</div><span class='pr'> ₹ " + sum + "</span></li>";
                     tax_items.append(prev);
             } else {
                 sessionStorage.setItem("prev", 0);
