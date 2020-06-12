@@ -95,6 +95,7 @@ span {
 
 img {
 	max-width: 100%;
+	margin-right: 5px;
 }
 
 input:focus,
@@ -181,7 +182,7 @@ ol {
 	margin: 4px 2px;
 	cursor: pointer;
 }
-.button1 {background-color: black;}
+.button1 {background-color: #2b2b2b;}
 
 .primary-btn {
 	display: inline-block;
@@ -190,7 +191,7 @@ ol {
 	color: #ffffff;
 	text-transform: uppercase;
 	font-weight: 700;
-	background: black;
+	background: #2b2b2b;
 	letter-spacing: 2px;
 }
 
@@ -201,8 +202,9 @@ ol {
 	text-transform: uppercase;
 	display: inline-block;
 	padding: 13px 30px 12px;
-	background: black;
+	background: #2b2b2b;
 	border: none;
+	cursor: pointer;
 }
 
 /* Preloder */
@@ -617,7 +619,7 @@ ol {
 }
 
 .hero__categories__all {
-	background: black;
+	background: #2b2b2b;
 	position: relative;
 	padding: 10px 25px 10px 40px;
 	cursor: pointer;
@@ -1120,7 +1122,7 @@ ol {
 .add {
 	border: 1px solid #ebebeb;
 	width: 120px;
-	height: 35px;
+	line-height: 35px;
 	display: inline-block;
 	position: relative;
 	text-align: center;
@@ -1252,7 +1254,7 @@ ol {
 	background: #D62D2D;
 }
 
-.sidebar__item__color.sidebar__item__color--black label:after {
+.sidebar__item__color.sidebar__item__color--#2b2b2b label:after {
 	background: #252525;
 }
 

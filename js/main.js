@@ -998,6 +998,15 @@
 
     });
 
+    $('.tableNo').keypress(function (e) {
+        var key = e.which;
+        if(key == 13)  // the enter key code
+        {
+            $('.button_button1').click();
+            return false;
+        }
+    });
+
     var tabno = sessionStorage.getItem("tableNumber");
     //window.alert(tabno);
 
