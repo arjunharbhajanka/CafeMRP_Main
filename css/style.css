@@ -36,6 +36,8 @@ body {
 	font-family: "Cairo", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
+	overflow: auto;
+	-webkit-overflow-scrolling: unset;
 
 
 }
@@ -173,6 +175,22 @@ ol {
 .text-white a {
 	color: #fff;
 }
+
+li .spad {
+	width: calc(100% + 52px);
+	position: relative;
+	right: 57px;
+	padding-bottom: 0;
+	padding-top: 40px;
+	border: 1.5px solid lightgray;
+}
+.main_drop {
+	margin: 10px;
+	color: aliceblue;
+	min-width: 100px;
+	width: 200px;
+}
+
 
 /* buttons */
 .button {
@@ -599,8 +617,7 @@ ol {
 
 .hero__categories {
 	position: relative;
-	left: 50px;
-	width: 150px;
+	max-width: 250px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -1147,17 +1164,31 @@ ol {
 	text-align: center;
 	background: #ffffff;
 	margin-bottom: 2px;
+	font-weight: 600;
+	font-size: 16px;
 
+}
+
+.menu_pic {
+	width: 40%;
+	margin-left: 30%;
+	margin-bottom: 50px;
+}
+
+b, strong {
+	font-weight: 600;
 }
 .add_drop {
 	border: 1px solid #ebebeb;
-	width: 100px;
-	height: 30px;
+	width: 120px;
+	line-height: 35px;
 	display: inline-block;
 	position: relative;
 	text-align: center;
 	background: #ffffff;
 	margin-bottom: 2px;
+	font-weight: 600;
+	font-size: 16px;
 
 }
 .item_indrop {
@@ -1166,6 +1197,18 @@ ol {
 	position: relative;
 	right: 10px;
 
+}
+
+iframe {
+	height: 100vh;
+	width: 110%;
+	position: relative;
+	right: 78px;
+	border: 1px solid #ebebeb;
+}
+
+.h_iframe {
+ scroll-behavior: unset;
 }
 
 .sidebar__item h4 {

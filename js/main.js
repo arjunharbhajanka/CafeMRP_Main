@@ -18,7 +18,7 @@
     --------------------*/
     $(window).on('load', function () {
         $(".loader").fadeOut();
-        $("#preloder").delay(200).fadeOut("slow");
+        $("#preloder").delay(300).fadeOut("slow");
 
         /*------------------
             Gallery filter
@@ -99,11 +99,25 @@
 
     $('.hero__categories ul').slideUp(400);
     $('.dropdown').on('click', function () {
-        $('ul').slideUp(400);
+        $('.hero__categories ul').slideUp(400);
         if($(this).parent().find('ul').is(":hidden")) {
             $(this).parent().find('ul').slideToggle(400);
         }
     });
+
+    $('.main_drop').parent().find('.h_iframe').slideUp(400);
+
+    $('.main_drop').on('click', function () {
+        $('.main_drop').parent().find('.h_iframe').slideUp(400);
+        if ($(this).parent().find('.h_iframe').is(":hidden")) {
+            $(this).parent().find('.h_iframe').slideToggle(400);
+            $([document.documentElement, document.body]).animate({
+                scrollTop: $(this).offset().top
+            }, 200);
+        }
+    });
+
+
 
     /*--------------------------
         Latest Product Slider
@@ -252,6 +266,8 @@
         }
     });
     DEBUG && console.log(tax);
+
+    var doc = document.implementation.createHTMLDocument("soups.html").documentElement;
 
 
 
