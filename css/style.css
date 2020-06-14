@@ -37,7 +37,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
 	overflow: auto;
-	-webkit-overflow-scrolling: unset;
 
 
 }

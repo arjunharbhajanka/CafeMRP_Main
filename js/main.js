@@ -1066,7 +1066,7 @@
             }
 
             if (sum != 0) {
-                sessionStorage.setItem("prev", sum);
+                sessionStorage.setItem("prev", sum.toFixed(2));
 
                 var tax_items = $('.tax_items');
 
@@ -1118,7 +1118,8 @@
                     data: {tableNo: tableNumber},
                     success: function (result) {
                         DEBUG && console.log(result);
-                        window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("final_total"));
+                        var amount = ((sessionStorage.getItem("final_total") * 1) + sessionStorage.getItem("prev")*1).toFixed(2)
+                        window.alert("Thankyou for placing your order for ₹ " + amount);
                         window.location.assign("http://3.23.241.214/done.html");
 
 
