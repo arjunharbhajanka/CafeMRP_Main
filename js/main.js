@@ -1070,7 +1070,7 @@
 
                 var tax_items = $('.tax_items');
 
-                    var prev = "<li style='border-bottom: 1px solid #ebebeb;'><div  class='name'>" + "Previous Order" + "</div><span class='pr'> ₹ " + sum + "</span></li>";
+                    var prev = "<li style='border-bottom: 1px solid #ebebeb;'><div  class='name'>" + "Previous Order" + "</div><span class='pr'> ₹ " + sum.toFixed(2) + "</span></li>";
                     tax_items.append(prev);
             } else {
                 sessionStorage.setItem("prev", 0);
