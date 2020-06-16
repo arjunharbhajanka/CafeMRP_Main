@@ -36,12 +36,20 @@ body {
 	font-family: "Cairo", sans-serif;
 	-webkit-font-smoothing: antialiased;
 	font-smoothing: antialiased;
-	overflow: auto;
+	overflow: scroll;
 
 
 }
+
+.main_body {
+	overflow: hidden;
+}
 .main_menu {
 	background-color: #fff;
+	margin-top: 100px;
+	padding-top: 70px;
+	height: calc(100% - 170px);
+	overflow: scroll;
 }
 
 h1,
@@ -137,6 +145,9 @@ ol {
 	font-weight: 700;
 	position: relative;
 }
+
+
+
 
 
 .section-title h2:after {
@@ -672,7 +683,7 @@ li .spad {
 	color: #ffffff;
 }
 
-.hero__categories__all:after {
+.after {
 	position: absolute;
 	right: 18px;
 	top: 9px;
@@ -1918,6 +1929,7 @@ iframe {
 	color: #6f6f6f;
 	cursor: pointer;
 	display: inline-block;
+	position: relative;
 }
 
 .pro-qty_drop {
@@ -1949,6 +1961,7 @@ iframe {
 	color: #6f6f6f;
 	cursor: pointer;
 	display: inline-block;
+	position: relative;
 }
 
 .product__details__tab {
@@ -2148,6 +2161,13 @@ iframe {
 	width: 15px;
 }
 
+.tiny h2 {
+	font-size: 30px;
+}
+.header h2 {
+	transition: font-size 500ms;
+}
+
 .primary-btn.cart-btn {
 	color: #6f6f6f;
 	padding: 14px 30px 12px;
@@ -2325,6 +2345,8 @@ iframe {
 	cursor: pointer;
 }
 
+
+
 .qtybtn1 {
 	position:relative;
 }
@@ -2333,6 +2355,13 @@ iframe {
 	position:absolute;
 	top:-10px; bottom:-10px;
 	left:-10px; right:-10px;
+}
+
+.qtybtn:after {
+	content:'';
+	position:absolute;
+	top:-15px; bottom:-15px;
+	left:-15px; right:-15px;
 }
 
 .checkout__input__checkbox label input {
@@ -3719,4 +3748,33 @@ table.greenTable tfoot .links a{
 	.blog__details__hero__text h2 {
 		font-size: 24px;
 	}
+}
+
+.header {
+	width:100%;
+	height:150px;
+	background: #26b;
+	color: #fff;
+	position:fixed;
+	top:0;
+	left:0;
+	transition: font-size 500ms, height 500ms, background 500ms, padding-bottom 400ms;
+}
+.header.tiny {
+	height:30px;
+	background: #aaa;
+	padding-top: 40px;
+	padding-bottom: 10px;
+}
+.tab_item {
+	display: grid;
+	margin-left: 18%;
+	margin-right: 17%;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+}
+.tab_bar {
+	display: flex;
+	background-color: #fefefe;
 }
