@@ -26,21 +26,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="done.html made">
-      <change afterPath="$PROJECT_DIR$/chakhna_man.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desserts_man.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/international_man.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main_course_man.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mocktails_man.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/oriental_man.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pasta_man.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/salads_man.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tequila_man.html" afterDir="false" />
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="food man pages completed">
+      <change afterPath="$PROJECT_DIR$/starters_n_man.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/starters_v_man.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Super_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Super_5.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pasta.html" beforeDir="false" afterPath="$PROJECT_DIR$/pasta.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soups_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/soups_man.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,11 +91,12 @@
     <property name="settings.editor.selected.configurable" value="aws" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/js" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/css" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/js" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -129,14 +120,7 @@
       <workItem from="1591807503270" duration="214000" />
       <workItem from="1591808049636" duration="29739000" />
       <workItem from="1592005437860" duration="17049000" />
-      <workItem from="1592100842052" duration="6268000" />
-    </task>
-    <task id="LOCAL-00006" summary="identifies name of the dish">
-      <created>1590255529152</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1590255529152</updated>
+      <workItem from="1592100842052" duration="7704000" />
     </task>
     <task id="LOCAL-00007" summary="Passes name and quantity to the test.php which writes it into file.txt">
       <created>1590299294093</created>
@@ -474,7 +458,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592105710509</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="food man pages completed">
+      <created>1592237569784</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1592237569785</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -526,7 +517,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="display_orders.html totally working" />
     <MESSAGE value="Table clear page made but not auto refreshing." />
     <MESSAGE value="auto refresh working.&#10;All databases reset." />
     <MESSAGE value="whiskey_man.html made" />
@@ -551,7 +541,8 @@
     <MESSAGE value="collapsible main menu" />
     <MESSAGE value="changed back to normal" />
     <MESSAGE value="done.html made" />
-    <option name="LAST_COMMIT_MESSAGE" value="done.html made" />
+    <MESSAGE value="food man pages completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="food man pages completed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
@@ -620,11 +611,11 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="570" y="275" width="540" height="524" key="StructurePopup/0.0.1680.1050@0.0.1680.1050" timestamp="1591888044265" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1591919368995">
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2" timestamp="1592237578120">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="377" y="227" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1590326503261" />
-    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1591919368995" />
+    <state x="440" y="265" key="Vcs.Push.Dialog.v2/0.0.1680.1050@0.0.1680.1050" timestamp="1592237578120" />
     <state x="440" y="282" key="Vcs.Push.Dialog.v2/0.23.1680.1027@0.23.1680.1027" timestamp="1590851805988" />
     <state x="718" y="419" width="346" height="232" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1591888918323">
       <screen x="0" y="0" width="1680" height="1050" />
