@@ -23,14 +23,15 @@
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
-<body>
+<body class="main_body">
+
 <!-- Page Preloder -->
 <div id="preloder">
     <div class="loader"></div>
 </div>
 
 <!-- Breadcrumb Section Begin -->
-<header class="breadcrumb-section set-bg" data-setbg="img/black_back.jpg">
+<header id="header_nav" class="header breadcrumb-section set-bg" data-setbg="img/black_back.jpg">
     <script type="text/javascript" src="./header.js"></script>
 </header>
 <!-- Breadcrumb Section End -->
@@ -38,8 +39,7 @@
 <!-- Product Section Begin -->
 
 <p id="demo"></p>
-
-<button style="border: none"><a href="main_menu.html" class="site-btn">Go Back</a> </button>
+<div class="main_menu"><button style="border: none"><a href="main_menu.html" class="site-btn">Go Back</a> </button>
 
 
 
@@ -804,10 +804,17 @@
 <footer class="footer spad">
     <script type="text/javascript" src="./footer.js"></script>
 </footer>
-
-
-
-<!-- Js Plugins -->
+</div>
+<div class="tab_bar">
+    <div href = "main_menu.html" style="color: lightgray" class="tab_item">
+        <img  style="width: 40px;" src="img/menu_grey.png">
+        Menu
+    </div>
+    <div href = "checkout.html" class="tab_item">
+        <img style="width: 40px;" src="img/cart_black.png">
+        Cart
+    </div>
+</div><!-- Js Plugins -->
 <script src="js/jquery-3.3.1.min.js"></script>
 
 <script src="js/bootstrap.min.js"></script>
