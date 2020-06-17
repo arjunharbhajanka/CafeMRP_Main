@@ -44,11 +44,12 @@ body {
 .main_body {
 	overflow: hidden;
 }
+
 .main_menu {
 	background-color: #fff;
-	margin-top: 100px;
-	padding-top: 70px;
-	height: calc(100% - 170px);
+	margin-top: 50px;
+	padding-top: 130px;
+	height: calc(100% - 120px);
 	overflow: scroll;
 }
 

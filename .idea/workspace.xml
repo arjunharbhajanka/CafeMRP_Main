@@ -26,9 +26,68 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="tabbed and header shrinks to all">
-      <change beforePath="$PROJECT_DIR$/Super_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/Super_5.html" afterDir="false" />
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="rum brandy repaired">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Source/draught_beer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Source/draught_beer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Super_5.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backup/main_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/backup/main_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beer_pint.html" beforeDir="false" afterPath="$PROJECT_DIR$/beer_pint.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beer_pint_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/beer_pint_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chakhna.html" beforeDir="false" afterPath="$PROJECT_DIR$/chakhna.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chakhna_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/chakhna_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cocktails.html" beforeDir="false" afterPath="$PROJECT_DIR$/cocktails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cocktails_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/cocktails_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desserts.html" beforeDir="false" afterPath="$PROJECT_DIR$/desserts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desserts_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/desserts_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/draught_beer.html" beforeDir="false" afterPath="$PROJECT_DIR$/draught_beer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/draught_beer_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/draught_beer_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dropdown_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/dropdown_test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/iced_tea_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/iced_tea_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/international.html" beforeDir="false" afterPath="$PROJECT_DIR$/international.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/international_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/international_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liqueurs.html" beforeDir="false" afterPath="$PROJECT_DIR$/liqueurs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liqueurs_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/liqueurs_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_course.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_course.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_course_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_course_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mocktails.html" beforeDir="false" afterPath="$PROJECT_DIR$/mocktails.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mocktails_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/mocktails_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oriental.html" beforeDir="false" afterPath="$PROJECT_DIR$/oriental.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/oriental_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/oriental_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pasta.html" beforeDir="false" afterPath="$PROJECT_DIR$/pasta.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pasta_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/pasta_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pitcher_tower.html" beforeDir="false" afterPath="$PROJECT_DIR$/pitcher_tower.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pitcher_tower_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/pitcher_tower_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/protected_files/main_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/protected_files/main_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quenchers.html" beforeDir="false" afterPath="$PROJECT_DIR$/quenchers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/quenchers_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/quenchers_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rum_brandy.html" beforeDir="false" afterPath="$PROJECT_DIR$/rum_brandy.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rum_brandy_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/rum_brandy_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salads.html" beforeDir="false" afterPath="$PROJECT_DIR$/salads.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/salads_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/salads_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shakes.html" beforeDir="false" afterPath="$PROJECT_DIR$/shakes.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shakes_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/shakes_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shots.html" beforeDir="false" afterPath="$PROJECT_DIR$/shots.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shots_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/shots_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_malt.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_malt.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single_malt_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_malt_man.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/soups.html" beforeDir="false" afterPath="$PROJECT_DIR$/soups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soups_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/soups_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starters_n.html" beforeDir="false" afterPath="$PROJECT_DIR$/starters_n.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starters_n_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/starters_n_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starters_v.html" beforeDir="false" afterPath="$PROJECT_DIR$/starters_v.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/starters_v_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/starters_v_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super_5.html" beforeDir="false" afterPath="$PROJECT_DIR$/super_5.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/super_5_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/super_5_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tequila.html" beforeDir="false" afterPath="$PROJECT_DIR$/tequila.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tequila_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/tequila_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodka_gin.html" beforeDir="false" afterPath="$PROJECT_DIR$/vodka_gin.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vodka_gin_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/vodka_gin_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whiskey.html" beforeDir="false" afterPath="$PROJECT_DIR$/whiskey.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whiskey_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/whiskey_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wines.html" beforeDir="false" afterPath="$PROJECT_DIR$/wines.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wines_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/wines_man.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,14 +177,7 @@
       <workItem from="1591807503270" duration="214000" />
       <workItem from="1591808049636" duration="29739000" />
       <workItem from="1592005437860" duration="17049000" />
-      <workItem from="1592100842052" duration="24301000" />
-    </task>
-    <task id="LOCAL-00010" summary="errors resolved">
-      <created>1590326495436</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1590326495436</updated>
+      <workItem from="1592100842052" duration="27029000" />
     </task>
     <task id="LOCAL-00011" summary="hides according to db values">
       <created>1590404618209</created>
@@ -463,7 +515,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592412295521</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="soups.html repaired">
+      <created>1592412600069</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1592412600069</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -515,9 +574,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="pitcher_tower_man.html made" />
-    <MESSAGE value="man pages up to date" />
-    <MESSAGE value="iced_tea_man.html done" />
     <MESSAGE value="liqueurs_man.html done" />
     <MESSAGE value="quenchers_man.html and rum_brandy_man.html done." />
     <MESSAGE value="shakes_man.html done" />
@@ -540,7 +596,10 @@
     <MESSAGE value="all man pages done" />
     <MESSAGE value="tabbed and header shrinks" />
     <MESSAGE value="tabbed and header shrinks to all" />
-    <option name="LAST_COMMIT_MESSAGE" value="tabbed and header shrinks to all" />
+    <MESSAGE value="soups.html repaired" />
+    <MESSAGE value="pasta.html repaired" />
+    <MESSAGE value="rum brandy repaired" />
+    <option name="LAST_COMMIT_MESSAGE" value="rum brandy repaired" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
@@ -648,10 +707,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="dock-window-2/0.23.1680.1027@0.23.1680.1027" timestamp="1590688155390" />
-    <state x="538" y="157" width="673" height="735" key="find.popup" timestamp="1592343640769">
+    <state x="538" y="157" width="673" height="735" key="find.popup" timestamp="1592414630716">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="538" y="157" width="673" height="735" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1592343640769" />
+    <state x="538" y="157" width="673" height="735" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1592414630716" />
     <state x="543" y="245" key="git4idea.branch.GitSmartOperationDialog" timestamp="1590909869891">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
