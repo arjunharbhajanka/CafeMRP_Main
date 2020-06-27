@@ -107,6 +107,7 @@
 
     $('.hero__categories ul').slideUp(400);
     $('.dropdown').on('click', function () {
+        $(this).toggleClass('when_droped');
         //$(this).parent().parent().css('background-color', 'red');
         $(this).parent().find('.after').toggleClass('rotated');
         $('.hero__categories ul').slideUp(400);
@@ -820,6 +821,7 @@
         DEBUG && console.log(price);
         DEBUG && console.log(price * newVal);
 
+
         $.ajax({
             type: 'POST',
             url: "php/qty.php",
@@ -833,6 +835,28 @@
             }
 
         });
+        if (newVal == 0) {
+
+            $.ajax({
+                type: 'POST',
+                url: "php/qty_zero.php",
+                data: {name: itemName, qty: newVal, tableNo: tableNumber, price: price, amount: price * newVal},
+                success: function (result) {
+                    DEBUG && console.log("new qty is " + newVal);
+                    DEBUG && console.log("new qty is " + price);
+                    DEBUG && console.log("new qty is " + newVal);
+
+                    console.log(result);
+                }
+
+            });
+
+            $button.parent().parent().parent().find('.pro-qty').hide();
+            $button.parent().parent().parent().find('.add').show();
+            $button.parent().parent().parent().find('.add_drop').show();
+            newVal = 1;
+        }
+        console.log(newVal)
         $button.parent().find('input').val(newVal);
     });
 
