@@ -15,8 +15,8 @@
 
 
 
-    $(window).on("scroll touchmove", function () {
-        $('#header_nav').toggleClass('tiny', $('.main_menu').scrollTop() > 20);
+    $(window).on("scroll touchmove click", function () {
+        $('#header_nav').toggleClass('tiny', $('.main_menu').scrollTop() > 10);
     });
 
     var DEBUG = false;
@@ -108,7 +108,7 @@
     $('.hero__categories ul').slideUp(400);
     $('.dropdown').on('click', function () {
         //$(this).parent().parent().css('background-color', 'red');
-        $(this).parent().find('.after').css('background-color', 'blue');
+        $(this).parent().find('.after').toggleClass('rotated');
         $('.hero__categories ul').slideUp(400);
         if($(this).parent().find('ul').is(":hidden")) {
             $(this).parent().find('ul').slideToggle(400);
@@ -271,7 +271,7 @@
         data: {name: item},
         success: function (data) {
             DEBUG && console.log("TAX IS\n\n\n\n\n" + data);
-          tax = data;
+            tax = data;
 
         }
     });
@@ -443,7 +443,7 @@
                         $itemName .parent().find('.show_item').hide();
                     }
 
-                     //$("h6:contains("+ itemName +")").parent().css('background-color', 'green');
+                    //$("h6:contains("+ itemName +")").parent().css('background-color', 'green');
                 }
 
             }
@@ -833,9 +833,7 @@
             }
 
         });
-        $button.parent().find('input').hide();
         $button.parent().find('input').val(newVal);
-        $button.parent().find('input').slideDown();
     });
 
 //     var proQty_drop = $('.po-qty_drop');
@@ -1082,8 +1080,8 @@
 
                 var tax_items = $('.tax_items');
 
-                    var prev = "<li style='border-bottom: 1px solid #ebebeb;'><div  class='name'>" + "Previous Order" + "</div><span class='pr'> ₹ " + sum.toFixed(2) + "</span></li>";
-                    tax_items.append(prev);
+                var prev = "<li style='border-bottom: 1px solid #ebebeb;'><div  class='name'>" + "Previous Order" + "</div><span class='pr'> ₹ " + sum.toFixed(2) + "</span></li>";
+                tax_items.append(prev);
             } else {
                 sessionStorage.setItem("prev", 0);
             }
@@ -1105,7 +1103,7 @@
         sessionStorage.setItem("final_total", (sessionStorage.getItem("total")*1+sessionStorage.getItem("gst")*2 + sessionStorage.getItem("service_charge")*1 + sessionStorage.getItem("vat")*1));
         checkout_items.parent().find('.checkout__order__subtotal').find('span').html(" ₹ " + (sessionStorage.getItem("total")*1).toFixed(2));
         checkout_items.parent().find('.checkout__order__total').find('span').html(" ₹ " + (sessionStorage.getItem("final_total")*1 + sessionStorage.getItem("prev")*1).toFixed(2));
-       }, 1000);
+    }, 1000);
 
 
 

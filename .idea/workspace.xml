@@ -26,10 +26,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="rum brandy repaired">
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="All headers and footers improved">
+      <change afterPath="$PROJECT_DIR$/img/black_back.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Source/draught_beer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Source/draught_beer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Super_5.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backup/main_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/backup/main_menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beer_pint.html" beforeDir="false" afterPath="$PROJECT_DIR$/beer_pint.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/beer_pint_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/beer_pint_man.html" afterDir="false" />
@@ -45,12 +45,16 @@
       <change beforePath="$PROJECT_DIR$/draught_beer_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/draught_beer_man.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dropdown_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/dropdown_test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/iced_tea_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/iced_tea_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/img/black_back.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/img/black_back.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/international.html" beforeDir="false" afterPath="$PROJECT_DIR$/international.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/international_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/international_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liqueurs.html" beforeDir="false" afterPath="$PROJECT_DIR$/liqueurs.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liqueurs_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/liqueurs_man.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_course.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_course.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main_course_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_course_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mocktails.html" beforeDir="false" afterPath="$PROJECT_DIR$/mocktails.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mocktails_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/mocktails_man.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/oriental.html" beforeDir="false" afterPath="$PROJECT_DIR$/oriental.html" afterDir="false" />
@@ -177,14 +181,9 @@
       <workItem from="1591807503270" duration="214000" />
       <workItem from="1591808049636" duration="29739000" />
       <workItem from="1592005437860" duration="17049000" />
-      <workItem from="1592100842052" duration="27029000" />
-    </task>
-    <task id="LOCAL-00011" summary="hides according to db values">
-      <created>1590404618209</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1590404618210</updated>
+      <workItem from="1592100842052" duration="33007000" />
+      <workItem from="1592946475440" duration="69000" />
+      <workItem from="1593033722603" duration="4655000" />
     </task>
     <task id="LOCAL-00012" summary="Changes price according to the database.">
       <created>1590409148204</created>
@@ -522,7 +521,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592412600069</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="every thing repaired">
+      <created>1592416622661</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1592416622661</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -574,9 +580,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="liqueurs_man.html done" />
-    <MESSAGE value="quenchers_man.html and rum_brandy_man.html done." />
-    <MESSAGE value="shakes_man.html done" />
     <MESSAGE value="cocktails example done" />
     <MESSAGE value="shots_man.html done" />
     <MESSAGE value="wines_man.html done" />
@@ -599,7 +602,10 @@
     <MESSAGE value="soups.html repaired" />
     <MESSAGE value="pasta.html repaired" />
     <MESSAGE value="rum brandy repaired" />
-    <option name="LAST_COMMIT_MESSAGE" value="rum brandy repaired" />
+    <MESSAGE value="every thing repaired" />
+    <MESSAGE value="main_menu.html header" />
+    <MESSAGE value="All headers and footers improved" />
+    <option name="LAST_COMMIT_MESSAGE" value="All headers and footers improved" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
@@ -707,10 +713,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="dock-window-2/0.23.1680.1027@0.23.1680.1027" timestamp="1590688155390" />
-    <state x="538" y="157" width="673" height="735" key="find.popup" timestamp="1592414630716">
+    <state x="538" y="171" width="673" height="735" key="find.popup" timestamp="1593036972787">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="538" y="157" width="673" height="735" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1592414630716" />
+    <state x="538" y="171" width="673" height="735" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1593036972787" />
     <state x="543" y="245" key="git4idea.branch.GitSmartOperationDialog" timestamp="1590909869891">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
