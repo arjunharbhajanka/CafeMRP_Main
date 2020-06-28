@@ -47,9 +47,8 @@ body {
 
 .main_menu {
 	background-color: #fff;
-	margin-top: 50px;
-	padding-top: 130px;
-	height: calc(100% - 120px);
+	padding-top: 170px;
+	height: calc(100% - 70px);
 	overflow: scroll;
 }
 
@@ -110,6 +109,7 @@ span {
 img {
 	max-width: 100%;
 	margin-right: 5px;
+	border-radius: 6px;
 }
 
 input:focus,
@@ -117,6 +117,10 @@ select:focus,
 button:focus,
 textarea:focus {
 	outline: none;
+}
+
+h6 img {
+	border-radius: 1px;
 }
 
 a:hover,
@@ -130,6 +134,12 @@ ul,
 ol {
 	padding: 0;
 	margin: 0;
+}
+.rotated {
+	transform: rotate(-90deg);
+	transition: all 500ms;
+	font-size: 26px;
+	font-weight: 600;
 }
 
 /*---------------------
@@ -167,6 +177,7 @@ ol {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: top center;
+	background-color: #2b2b2b;
 }
 
 .spad {
@@ -238,6 +249,11 @@ li .spad {
 	background: #2b2b2b;
 	border: none;
 	cursor: pointer;
+	border-radius: 6px;
+
+}
+.site-btn:hover, .site-btn:after {
+	background-color: #777;
 }
 
 /* Preloder */
@@ -627,10 +643,11 @@ li .spad {
 }
 
 .hero__categories {
+	margin-bottom: 30px;
+	left: 33%;
+	width: 120px;
+	transition: all 400ms;
 	position: relative;
-	max-width: 250px;
-	padding-top: 20px;
-	padding-bottom: 20px;
 }
 .dropdown_item {
 	border: 1px solid #ebebeb;
@@ -642,6 +659,7 @@ li .spad {
 	width: max-content;
 	padding: 3px 16px 3px;
 	font-weight: 500;
+	border-radius: 6px;
 }
 .blank {
 	position: relative;
@@ -670,6 +688,8 @@ li .spad {
 	position: relative;
 	padding: 10px 25px 10px 40px;
 	cursor: pointer;
+	border-radius: 6px;
+	transition: all 500ms;
 }
 
 .hero__categories__all i {
@@ -684,6 +704,11 @@ li .spad {
 	color: #ffffff;
 }
 
+.when_droped {
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
 .after {
 	position: absolute;
 	right: 18px;
@@ -692,6 +717,7 @@ li .spad {
 	font-family: "ElegantIcons";
 	font-size: 18px;
 	color: #ffffff;
+	transition: all 500ms;
 }
 
 .hero__categories ul {
@@ -699,7 +725,9 @@ li .spad {
 	border: 1px solid #ebebeb;
 	padding-left: 20px;
 	padding-top: 10px;
-	padding-bottom: 12px;
+	border-bottom-right-radius: 6px;
+	background-color: #fafafa;
+	border-bottom-left-radius: 6px;
 }
 
 .hero__categories ul li {
@@ -1171,13 +1199,19 @@ li .spad {
 	width: 120px;
 	line-height: 35px;
 	display: inline-block;
-	position: relative;
+	border-radius: 6px;
 	text-align: center;
-	background: #ffffff;
+	background: #2b2b2b;
 	margin-bottom: 2px;
 	font-weight: 600;
 	font-size: 16px;
-
+	color: #fff;
+}
+.add_drop:hover {
+	background-color: #777;
+}
+.add:hover {
+	background-color: #777;
 }
 
 .menu_pic {
@@ -1194,16 +1228,15 @@ b, strong {
 	width: 120px;
 	line-height: 35px;
 	display: inline-block;
-	position: relative;
+	border-radius: 6px;
 	text-align: center;
-	background: #ffffff;
+	background: #2b2b2b;
 	margin-bottom: 2px;
 	font-weight: 600;
 	font-size: 16px;
-
+	color: #fff;
 }
 .item_indrop {
-	border-top: 1px solid #ebebeb;
 	border-bottom: 1px solid #ebebeb;
 	position: relative;
 	right: 10px;
@@ -1903,39 +1936,46 @@ iframe {
 
 .pro-qty {
 
-    border: 1px solid #ebebeb;
 	width: 120px;
 	height: 35px;
 	display: inline-block;
 	position: relative;
 	text-align: center;
-	background: #ffffff;
 	margin-bottom: 2px;
 }
 
 .pro-qty input {
-	height: 100%;
+	height: 32px;
 	width: 100%;
 	font-size: 14px;
 	color: #6f6f6f;
-	width: 30px;
+	width: 37px;
 	border: none;
 	background: #ffffff;
 	text-align: center;
+	margin-left: 6px;
+	margin-right: 6px;
+	border: 1px solid lightgray;
+	border-radius: 6px;
+	position: relative;
+	bottom: 3px;
 }
 
 .pro-qty .qtybtn {
 	width: 20px;
 	font-size: 20px;
-	color: #6f6f6f;
+	color: #fff;
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
+	background-color: #2b2b2b;
+	width: 29px;
+	padding: 2px;
+	border-radius: 6px;
 }
 
 .pro-qty_drop {
 
-	border: 1px solid #ebebeb;
 	width: 100px;
 	height: 30px;
 	display: inline-block;
@@ -1946,23 +1986,33 @@ iframe {
 }
 
 .pro-qty_drop input {
-	height: 100%;
+	height: 32px;
 	width: 100%;
-	font-size: 12px;
+	font-size: 14px;
 	color: #6f6f6f;
-	width: 30px;
+	width: 37px;
 	border: none;
 	background: #ffffff;
 	text-align: center;
+	margin-left: 6px;
+	margin-right: 6px;
+	border: 1px solid lightgray;
+	border-radius: 6px;
+	position: relative;
+	bottom: 3px;
 }
 
 .pro-qty_drop .qtybtn {
-	width: 160px;
-	font-size: 16px;
-	color: #6f6f6f;
+	width: 20px;
+	font-size: 20px;
+	color: #fff;
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
+	background-color: #2b2b2b;
+	width: 29px;
+	padding: 2px;
+	border-radius: 6px;
 }
 
 .product__details__tab {
@@ -2349,7 +2399,16 @@ iframe {
 
 
 .qtybtn1 {
-	position:relative;
+	position: relative;
+	padding-left: 5px;
+	background: #2b2b2b;
+	padding-right: 5px;
+	color: #fff;
+	height: 22px;
+	display: inline-grid;
+	width: 21px;
+	align-content: center;
+	border-radius: 4px;
 }
 .qtybtn1:after {
 	content:'';
@@ -2429,6 +2488,7 @@ iframe {
 
 .checkout__order .checkout__order__products span {
 	float: right;
+	font-weight: bold;
 }
 
 .checkout__order ul {
@@ -3752,18 +3812,21 @@ table.greenTable tfoot .links a{
 }
 
 .header {
-	width:100%;
-	height:150px;
-	background: #26b;
+	width: 100%;
+	height: 150px;
+	background: #2b2b2b;
+	background-image: none;
 	color: #fff;
-	position:fixed;
-	top:0;
-	left:0;
-	transition: font-size 500ms, height 500ms, background 500ms, padding-bottom 400ms;
+	position: fixed;
+	top: 0;
+	left: 0;
+	transition: font-size 500ms, height 250ms, background 500ms, padding-bottom 400ms;
+	position: absolute;
+	z-index: 4;
 }
 .header.tiny {
 	height:30px;
-	background: #aaa;
+	background: rgba(0,0,0,0.75);
 	padding-top: 40px;
 	padding-bottom: 10px;
 }
@@ -3774,8 +3837,16 @@ table.greenTable tfoot .links a{
 	padding-left: 10px;
 	padding-right: 10px;
 	border-radius: 10px;
+	color: black;
+	font-size: 13px;
 }
 .tab_bar {
 	display: flex;
 	background-color: #fefefe;
+	border-top: solid 1px #80808063;
+	padding-top: 5px;
+}
+.larger {
+	width: 230px;
+	left: 10%;
 }

@@ -107,12 +107,18 @@
 
     $('.hero__categories ul').slideUp(400);
     $('.dropdown').on('click', function () {
-        $(this).toggleClass('when_droped');
+
+
+
         //$(this).parent().parent().css('background-color', 'red');
         $(this).parent().find('.after').toggleClass('rotated');
         $('.hero__categories ul').slideUp(400);
+        $('.dropdown').removeClass('when_droped');
+        $('.hero__categories').removeClass('larger')
         if($(this).parent().find('ul').is(":hidden")) {
             $(this).parent().find('ul').slideToggle(400);
+            $(this).parent().toggleClass('larger');
+            $(this).toggleClass('when_droped');
         }
     });
 
