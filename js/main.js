@@ -337,10 +337,10 @@
                                 price.parent().find('input').val(data);
                                 //price.html("₹ " + data);
                                 price.parent().find('.add_drop').hide();
-                                price.parent().find('.pro-qty').show();
+                                price.parent().find('.pro-qty').fadeIn();
 
                                 price.parent().parent().parent().slideDown(400);
-                                // proQty.show();
+                                // proQty.fadeIn();
                                 DEBUG && console.log("changing " + itemName);
                                 //proQty.find('input').css('background-color', 'blue');
 
@@ -393,7 +393,7 @@
                     if (data == "") {
                         DEBUG && console.log("not cahnging" + itemName);
 
-                        price.parent().find('.add').show();
+                        price.parent().find('.add').fadeIn();
                         price.parent().find('.pro-qty').hide();
 
                     } else {
@@ -404,8 +404,8 @@
 
                             //price.html("₹ " + data);
                             price.parent().find('.add').hide();
-                            price.parent().find('.pro-qty').show();
-                            // proQty.show();
+                            price.parent().find('.pro-qty').fadeIn();
+                            // proQty.fadeIn();
                             DEBUG && console.log("changing " + itemName);
                             //proQty.find('input').css('background-color', 'blue');
                         }
@@ -474,7 +474,7 @@
             }
         });
         $(this).hide();
-        $(this).parent().find('.show_item').show();
+        $(this).parent().find('.show_item').fadeIn();
 
 
     });
@@ -504,7 +504,7 @@
             }
         });
         $(this).hide();
-        $(this).parent().find('.hide_item').show();
+        $(this).parent().find('.hide_item').fadeIn();
 
 
     });
@@ -712,7 +712,7 @@
 
         })
         $(this).hide();
-        $(this).parent().find('.pro-qty').show();
+        $(this).parent().find('.pro-qty').fadeIn();
 
 
         ////window.alert(temp);
@@ -749,7 +749,7 @@
 
         })
         $(this).hide();
-        $(this).parent().find('.pro-qty').show();
+        $(this).parent().find('.pro-qty').fadeIn();
 
 
         ////window.alert(temp);
@@ -852,8 +852,8 @@
             });
 
             $button.parent().parent().parent().find('.pro-qty').hide();
-            $button.parent().parent().parent().find('.add').show();
-            $button.parent().parent().parent().find('.add_drop').show();
+            $button.parent().parent().parent().find('.add').fadeIn();
+            $button.parent().parent().parent().find('.add_drop').fadeIn();
             newVal = 1;
         }
         console.log(newVal)
@@ -958,9 +958,15 @@
                     "float: right;\n" +
                     "line-height: 5;' class=\"quantity\">\n" +
                     "                                    <div class=\"pro-qty\" style='width: 75px; align-self: center; line-height: 2; '>\n" +
-                    "<span style='font-size: 12px; padding: 0px;' class=\"dec qtybtn1\">-</span>" +
-                    "                                        <input style='font-size: 12px;  padding: 0px display: inline;' type=\"submit\" value=\""+ values[i]['qty'] +"\" disabled=\"disabled\">\n" +
-                    "<span style='font-size: 12px;  padding: 0px;' class=\"inc qtybtn1\">+</span>" +
+                    "<span style='font-size: 12px;' class=\"dec qtybtn1\">-</span>" +
+                    "                                        <input style='font-size: 12px;\n" +
+                    "height: 25px;\n" +
+                    "margin: 0px;\n" +
+                    "width: 25px;\n" +
+                    "position: relative;\n" +
+                    "top: 0px;" +
+                    "color: #000;' type=\"submit\" value=\""+ values[i]['qty'] +"\" disabled=\"disabled\">\n" +
+                    "<span style='font-size: 12px;' class=\"inc qtybtn1\">+</span>" +
                     "                                    </div>\n" +
                     "                                </div>" +
                     "</li>";
@@ -1012,7 +1018,7 @@
                 "            });\n" +
                 "" +
                 "$('.place_order').hide();" +
-                "$('.retotal').show();" +
+                "$('.retotal').fadeIn();" +
                 "\n" +
                 "            $button.parent().find('input').val(newVal);\n" +
                 "        });\n" +
