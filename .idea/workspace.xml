@@ -25,11 +25,16 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="favicon created and applied to table number page">
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="minor aesthetic changes">
+      <change afterPath="$PROJECT_DIR$/js/menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scroll_test.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/beer_pint.html" beforeDir="false" afterPath="$PROJECT_DIR$/beer_pint.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soups.html" beforeDir="false" afterPath="$PROJECT_DIR$/soups.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/soups_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/soups_man.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/display_orders.html" beforeDir="false" afterPath="$PROJECT_DIR$/display_orders.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,14 +126,8 @@
       <workItem from="1592005437860" duration="17049000" />
       <workItem from="1592100842052" duration="33007000" />
       <workItem from="1592946475440" duration="69000" />
-      <workItem from="1593033722603" duration="22823000" />
-    </task>
-    <task id="LOCAL-00018" summary="dropdown working with live prices.">
-      <created>1590499853623</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1590499853624</updated>
+      <workItem from="1593033722603" duration="26395000" />
+      <workItem from="1593462498612" duration="5530000" />
     </task>
     <task id="LOCAL-00019" summary="Draught beer page created with dropdowns and live prices">
       <created>1590516387266</created>
@@ -466,7 +465,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593389864604</updated>
     </task>
-    <option name="localTasksCounter" value="67" />
+    <task id="LOCAL-00067" summary="minor aesthetic changes">
+      <created>1593444493794</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1593444493794</updated>
+    </task>
+    <option name="localTasksCounter" value="68" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -497,7 +503,19 @@
         </entry>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="Abhi" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -506,7 +524,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Shows taxes" />
     <MESSAGE value="Previous order repaired" />
     <MESSAGE value="checkout.html repaired" />
     <MESSAGE value="Enter button works on index.html" />
@@ -531,7 +548,8 @@
     <MESSAGE value="checkout changes" />
     <MESSAGE value="unified buttons" />
     <MESSAGE value="favicon created and applied to table number page" />
-    <option name="LAST_COMMIT_MESSAGE" value="favicon created and applied to table number page" />
+    <MESSAGE value="minor aesthetic changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor aesthetic changes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
@@ -639,10 +657,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="dock-window-2/0.23.1680.1027@0.23.1680.1027" timestamp="1590688155390" />
-    <state x="538" y="171" width="673" height="735" key="find.popup" timestamp="1593443430275">
+    <state x="538" y="171" width="673" height="735" key="find.popup" timestamp="1593468163183">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="538" y="171" width="673" height="735" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1593443430275" />
+    <state x="538" y="171" width="673" height="735" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1593468163183" />
     <state x="543" y="245" key="git4idea.branch.GitSmartOperationDialog" timestamp="1590909869891">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

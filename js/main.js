@@ -16,7 +16,7 @@
 
 
     $(window).on("scroll touchmove click", function () {
-        $('#header_nav').toggleClass('tiny', $('.main_menu').scrollTop() > 10);
+        $('#header_nav').toggleClass('tiny', $(document).scrollTop() > 10);
     });
 
     var DEBUG = false;
@@ -241,6 +241,9 @@
 	--------------------- */
 
     var proQty = $('.pro-qty');
+
+    $('.temp_menu').hide();
+
     //proQty.parent().parent().parent().find('.itemName').text();
 
     // var temp = "Cream of Mushroom"
@@ -867,6 +870,37 @@
         $button.parent().find('input').val(newVal);
     });
 
+
+    var menu_btn = $('.menu_btn');
+    menu_btn.on('click', function () {
+
+        $('.temp_menu').fadeToggle();
+        $('.main_menu').toggleClass('blurred');
+        $('.header').toggleClass('blurred');
+        $('.main_body').toggleClass('no-scroll')
+
+
+    });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //     var proQty_drop = $('.po-qty_drop');
 //     proQty_drop.hide();
 //
@@ -972,7 +1006,8 @@
                     "width: 25px;\n" +
                     "position: relative;\n" +
                     "top: 0px;" +
-                    "color: #000;' type=\"submit\" value=\""+ values[i]['qty'] +"\" disabled=\"disabled\">\n" +
+                    "padding: 0px;" +
+                    ": #000;' type=\"submit\" value=\""+ values[i]['qty'] +"\" disabled=\"disabled\">\n" +
                     "<span style='font-size: 12px;' class=\"inc qtybtn1\">+</span>" +
                     "                                    </div>\n" +
                     "                                </div>" +
