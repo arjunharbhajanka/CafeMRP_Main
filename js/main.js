@@ -111,11 +111,12 @@
 
 
         //$(this).parent().parent().css('background-color', 'red');
-        $(this).parent().find('.after').toggleClass('rotated');
+        $('.dropdown').parent().find('.after').removeClass('rotated');
         $('.hero__categories ul').slideUp(400);
         $('.dropdown').removeClass('when_droped');
         $('.hero__categories').removeClass('larger')
         if($(this).parent().find('ul').is(":hidden")) {
+            $(this).parent().find('.after').toggleClass('rotated');
             $(this).parent().find('ul').slideToggle(400);
             $(this).parent().toggleClass('larger');
             $(this).toggleClass('when_droped');

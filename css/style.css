@@ -135,12 +135,6 @@ ol {
 	padding: 0;
 	margin: 0;
 }
-.rotated {
-	transform: rotate(-90deg);
-	transition: all 500ms;
-	font-size: 26px;
-	font-weight: 600;
-}
 
 /*---------------------
   Helper CSS
@@ -908,6 +902,13 @@ li .spad {
 	-webkit-transform: translateY(-35px);
 	background: #ffffff;
 }
+.rotated {
+	transform: rotate(-180deg);
+	transition: all 500ms;
+	font-size: 26px;
+	font-weight: 600;
+}
+
 
 .categories__slider.owl-carousel .owl-nav button.owl-next {
 	left: auto;

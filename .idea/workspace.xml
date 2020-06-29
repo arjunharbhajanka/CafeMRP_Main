@@ -25,27 +25,19 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="checkout changes">
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="unified buttons">
+      <change afterPath="$PROJECT_DIR$/android-chrome-192x192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apple-touch-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/browserconfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/favicon-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/favicon-32x32.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mstile-150x150.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/safari-pinned-tab.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/site.webmanifest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Source/draught_beer.html" beforeDir="false" afterPath="$PROJECT_DIR$/Source/draught_beer.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draught_beer.html" beforeDir="false" afterPath="$PROJECT_DIR$/draught_beer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draught_beer_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/draught_beer_man.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pitcher_tower.html" beforeDir="false" afterPath="$PROJECT_DIR$/pitcher_tower.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pitcher_tower_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/pitcher_tower_man.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single_malt.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_malt.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single_malt_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_malt_man.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starters_n.html" beforeDir="false" afterPath="$PROJECT_DIR$/starters_n.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starters_n_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/starters_n_man.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starters_v.html" beforeDir="false" afterPath="$PROJECT_DIR$/starters_v.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/starters_v_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/starters_v_man.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodka_gin.html" beforeDir="false" afterPath="$PROJECT_DIR$/vodka_gin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodka_gin_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/vodka_gin_man.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whiskey.html" beforeDir="false" afterPath="$PROJECT_DIR$/whiskey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whiskey_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/whiskey_man.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wines.html" beforeDir="false" afterPath="$PROJECT_DIR$/wines.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wines_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/wines_man.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -137,14 +129,7 @@
       <workItem from="1592005437860" duration="17049000" />
       <workItem from="1592100842052" duration="33007000" />
       <workItem from="1592946475440" duration="69000" />
-      <workItem from="1593033722603" duration="19403000" />
-    </task>
-    <task id="LOCAL-00016" summary="EVERY THING WORKING part 2">
-      <created>1590440324688</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1590440324688</updated>
+      <workItem from="1593033722603" duration="21001000" />
     </task>
     <task id="LOCAL-00017" summary="dropdown working with live prices.">
       <created>1590499382766</created>
@@ -482,7 +467,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593303445475</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="unified buttons">
+      <created>1593349275914</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1593349275915</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -522,7 +514,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="starters_v.html repaired." />
     <MESSAGE value="Dropdown fixed." />
     <MESSAGE value="Shows taxes" />
     <MESSAGE value="Previous order repaired" />
@@ -547,7 +538,8 @@
     <MESSAGE value="dropdown menus redone" />
     <MESSAGE value="brings back add button when qty is 0" />
     <MESSAGE value="checkout changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkout changes" />
+    <MESSAGE value="unified buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="unified buttons" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
