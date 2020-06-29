@@ -25,19 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="unified buttons">
-      <change afterPath="$PROJECT_DIR$/android-chrome-192x192.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apple-touch-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/browserconfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/favicon-16x16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/favicon-32x32.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mstile-150x150.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/safari-pinned-tab.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/site.webmanifest" afterDir="false" />
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="favicon created and applied to table number page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soups.html" beforeDir="false" afterPath="$PROJECT_DIR$/soups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/soups_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/soups_man.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -129,14 +121,7 @@
       <workItem from="1592005437860" duration="17049000" />
       <workItem from="1592100842052" duration="33007000" />
       <workItem from="1592946475440" duration="69000" />
-      <workItem from="1593033722603" duration="21001000" />
-    </task>
-    <task id="LOCAL-00017" summary="dropdown working with live prices.">
-      <created>1590499382766</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1590499382766</updated>
+      <workItem from="1593033722603" duration="22823000" />
     </task>
     <task id="LOCAL-00018" summary="dropdown working with live prices.">
       <created>1590499853623</created>
@@ -474,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593349275915</updated>
     </task>
-    <option name="localTasksCounter" value="66" />
+    <task id="LOCAL-00066" summary="favicon created and applied to table number page">
+      <created>1593389864603</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1593389864604</updated>
+    </task>
+    <option name="localTasksCounter" value="67" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -514,7 +506,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Dropdown fixed." />
     <MESSAGE value="Shows taxes" />
     <MESSAGE value="Previous order repaired" />
     <MESSAGE value="checkout.html repaired" />
@@ -539,7 +530,8 @@
     <MESSAGE value="brings back add button when qty is 0" />
     <MESSAGE value="checkout changes" />
     <MESSAGE value="unified buttons" />
-    <option name="LAST_COMMIT_MESSAGE" value="unified buttons" />
+    <MESSAGE value="favicon created and applied to table number page" />
+    <option name="LAST_COMMIT_MESSAGE" value="favicon created and applied to table number page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
@@ -647,10 +639,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="dock-window-2/0.23.1680.1027@0.23.1680.1027" timestamp="1590688155390" />
-    <state x="538" y="171" width="673" height="735" key="find.popup" timestamp="1593305483697">
+    <state x="538" y="171" width="673" height="735" key="find.popup" timestamp="1593443430275">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="538" y="171" width="673" height="735" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1593305483697" />
+    <state x="538" y="171" width="673" height="735" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1593443430275" />
     <state x="543" y="245" key="git4idea.branch.GitSmartOperationDialog" timestamp="1590909869891">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
