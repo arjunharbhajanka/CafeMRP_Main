@@ -3930,6 +3930,9 @@ table.greenTable tfoot .links a{
 	background-color: #fefefe;
 	border-top: solid 1px #80808063;
 	padding-top: 5px;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
 .larger {
 	width: 230px;

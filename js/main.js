@@ -16,7 +16,7 @@
 
 
     $(window).on("scroll touchmove click", function () {
-        $('#header_nav').toggleClass('tiny', $(document).scrollTop() > 10);
+        $('#header_nav').toggleClass('tiny',(( $(document).scrollTop() > 10) || ($('.main_menu').scrollTop() > 10))) ;
     });
 
     var DEBUG = false;
