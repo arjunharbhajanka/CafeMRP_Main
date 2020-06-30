@@ -25,17 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="fixes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draught_beer_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/draught_beer_man.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pitcher_tower_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/pitcher_tower_man.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/single_malt_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/single_malt_man.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodka_gin.html" beforeDir="false" afterPath="$PROJECT_DIR$/vodka_gin.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vodka_gin_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/vodka_gin_man.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whiskey.html" beforeDir="false" afterPath="$PROJECT_DIR$/whiskey.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whiskey_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/whiskey_man.html" afterDir="false" />
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="dropdown fixed">
+      <change beforePath="$PROJECT_DIR$/draught_beer.html" beforeDir="false" afterPath="$PROJECT_DIR$/draught_beer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -128,14 +119,7 @@
       <workItem from="1592100842052" duration="33007000" />
       <workItem from="1592946475440" duration="69000" />
       <workItem from="1593033722603" duration="26395000" />
-      <workItem from="1593462498612" duration="12031000" />
-    </task>
-    <task id="LOCAL-00022" summary="Deletes order from cafe_orders after checkout.">
-      <created>1590565941411</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1590565941411</updated>
+      <workItem from="1593462498612" duration="12306000" />
     </task>
     <task id="LOCAL-00023" summary="quantity and retotal button added at check out.">
       <created>1590597791352</created>
@@ -473,7 +457,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593479612350</updated>
     </task>
-    <option name="localTasksCounter" value="71" />
+    <task id="LOCAL-00071" summary="dropdown fixed">
+      <created>1593482448543</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1593482448543</updated>
+    </task>
+    <option name="localTasksCounter" value="72" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -525,7 +516,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="main_menu.html redesigned and minor improvements overall" />
     <MESSAGE value="collapsible main menu" />
     <MESSAGE value="changed back to normal" />
     <MESSAGE value="done.html made" />
@@ -550,7 +540,8 @@
     <MESSAGE value="making menu" />
     <MESSAGE value="temp menu made and places everywhere" />
     <MESSAGE value="fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixes" />
+    <MESSAGE value="dropdown fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="dropdown fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
@@ -662,10 +653,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="dock-window-2/0.23.1680.1027@0.23.1680.1027" timestamp="1590688155390" />
-    <state x="538" y="171" width="673" height="735" key="find.popup" timestamp="1593479813246">
+    <state x="538" y="171" width="673" height="735" key="find.popup" timestamp="1593482481517">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="538" y="171" width="673" height="735" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1593479813246" />
+    <state x="538" y="171" width="673" height="735" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1593482481517" />
     <state x="543" y="245" key="git4idea.branch.GitSmartOperationDialog" timestamp="1590909869891">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
