@@ -26,7 +26,7 @@
     --------------------*/
     $(window).on('load', function () {
         $(".loader").fadeOut();
-        $("#preloder").delay(300).fadeOut("slow");
+        $("#preloder").delay(100).fadeOut("fast");
 
         /*------------------
             Gallery filter
@@ -874,10 +874,10 @@
     var menu_btn = $('.menu_btn');
     menu_btn.on('click', function () {
 
-        $('.temp_menu').fadeToggle();
+        $('.temp_menu').fadeToggle(100);
         $('.main_menu').toggleClass('blurred');
         $('.header').toggleClass('blurred');
-        $('.main_body').toggleClass('no-scroll')
+        $('.noscroll').toggleClass('no_scroll')
 
 
     });
