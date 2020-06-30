@@ -350,6 +350,10 @@
                                 price.parent().find('.pro-qty').fadeIn();
 
                                 price.parent().parent().parent().slideDown(400);
+                                price.parent().parent().parent().parent().find('.after').toggleClass('rotated');
+                                //$(this).parent().find('ul').slideToggle(400);
+                                price.parent().parent().parent().parent().toggleClass('larger');
+                                price.parent().parent().parent().parent().find('.dropdown').toggleClass('when_droped');
                                 // proQty.fadeIn();
                                 DEBUG && console.log("changing " + itemName);
                                 //proQty.find('input').css('background-color', 'blue');
@@ -881,6 +885,17 @@
 
 
     });
+
+    $('.main_menu').on('click', function () {
+
+        if($('.main_menu').hasClass('blurred')) {
+            $('.temp_menu').fadeToggle(100);
+            $('.main_menu').toggleClass('blurred');
+            $('.header').toggleClass('blurred');
+            $('.noscroll').toggleClass('no_scroll')
+        }
+    })
+
 
 
 

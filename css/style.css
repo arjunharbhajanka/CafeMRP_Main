@@ -2027,8 +2027,10 @@ iframe {
 .menu_tab {
 	position: fixed;
 	bottom: 20px;
-	width: 100%;
+	width: calc(65%);
 	z-index: 500;
+	float: right;
+	margin-left: 35%;
 }
 
 .pro-qty .qtybtn {
@@ -3315,6 +3317,16 @@ table.greenTable tfoot .links a{
 	letter-spacing: 2px;
 }
 
+.menu_btn:after {
+	content:'';
+	position:absolute;
+	top:-15px; bottom:-15px;
+	left:-7px; right:-15px;
+}
+.menu_btn {
+	position: relative;
+}
+
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 
 @media only screen and (min-width: 1200px) {
@@ -3404,6 +3416,9 @@ table.greenTable tfoot .links a{
 	.header .container {
 		position: relative;
 	}
+
+
+
 	.humberger__menu__wrapper {
 		width: 300px;
 		background: #ffffff;
@@ -3921,9 +3936,9 @@ table.greenTable tfoot .links a{
 }
 
 .temp_menu {
-	width: 65%;
+	width: 100%;
 	/*! float: right; */
-	margin-left: calc(35% - 14px);
+	margin-left: calc(-14px);
 	height: 50vh;
 	overflow: scroll;
 	overflow-x: hidden;
