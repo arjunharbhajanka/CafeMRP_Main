@@ -26,7 +26,7 @@ try{
     //echo "YAYYYY";
     fwrite($f, "\npoint 2\n");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("SELECT * FROM cafe_orders where table_no = $tableNo and qty <> 0");
+    $stmt = $conn->prepare("SELECT * FROM cafe_orders where table_no LIKE '$tableNo' and qty <> 0");
     $stmt->execute();
     fwrite($f, "\npoint 3\n");
     fwrite($f, "\npoint 4\n");

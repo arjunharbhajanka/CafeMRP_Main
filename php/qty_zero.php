@@ -21,7 +21,7 @@ try{
     echo "YAYYYY";
     fwrite($f, "\npoint 2\n");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("DELETE FROM cafe_orders where table_no = $tableNo and  item_name like '$name'");
+    $stmt = $conn->prepare("DELETE FROM cafe_orders where table_no LIKE '$tableNo' and  item_name like '$name'");
     $stmt->execute();
 }
 catch(PDOException$e) {

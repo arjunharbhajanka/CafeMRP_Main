@@ -60,18 +60,23 @@ body {
 	margin-top: -20px;
 }
 
-.menu_tab span {
-	padding-left: 20px;
-	background-color: #2b2b2b;
-	padding: 5px 30px;
-	/*! padding-left: 20px; */
-	color: #fff;
-	font-size: 14px;
-	border-radius: 40px;
-	float: right;
-	margin-right: 10px;
-	box-shadow: 0 0 3px #000;
+.menu_ico {
+	color: white;
+	font-family: "ElegantIcons";
 }
+
+/*.menu_tab span {*/
+/*	padding-left: 20px;*/
+/*	background-color: #2b2b2b;*/
+/*	padding: 5px 30px;*/
+/*	!*! padding-left: 20px; *!*/
+/*	color: #fff;*/
+/*	font-size: 14px;*/
+/*	border-radius: 40px;*/
+/*	float: right;*/
+/*	margin-right: 10px;*/
+/*	box-shadow: 0 0 3px #000;*/
+/*}*/
 
 h1,
 h2,
@@ -755,6 +760,51 @@ li .spad {
 	transition: all 600ms;
 	box-shadow: 0 0 6px #000;
 	z-index: 500;
+}
+
+.nice-select .option {
+	cursor: pointer;
+	font-weight: 400;
+	line-height: 40px;
+	list-style: none;
+	min-height: 40px;
+	outline: none;
+	padding-left: 18px;
+	padding-right: 29px;
+	text-align: center;
+	-webkit-transition: all 0.2s;
+	transition: all 0.2s; }
+
+.nice-select .list {
+	background-color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+	box-sizing: border-box;
+	margin-top: 4px;
+	opacity: 0;
+	overflow: hidden;
+	padding: 0;
+	pointer-events: none;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	-webkit-transform-origin: 50% 0;
+	-ms-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-transform: scale(0.75) translateY(-21px);
+	-ms-transform: scale(0.75) translateY(-21px);
+	transform: scale(0.75) translateY(-21px);
+	-webkit-transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+	transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+	z-index: 9;
+	height: 36vh;
+	overflow: scroll;
+}
+
+.table_no_sec {
+	display: grid;
+	justify-items: center;
+	align-items: center;
 }
 
 .cart.site-btn.move_up {
@@ -3358,6 +3408,16 @@ table.greenTable tfoot .links a{
 }
 .menu_btn {
 	position: relative;
+		padding-left: 20px;
+		background-color: #2b2b2b;
+		padding: 5px 30px;
+		padding-left: 20px;
+		color: #fff;
+		font-size: 14px;
+		border-radius: 40px;
+		float: right;
+		margin-right: 10px;
+		box-shadow: 0 0 3px #000;
 }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/

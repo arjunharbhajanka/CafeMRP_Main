@@ -27,9 +27,9 @@ try{
     //echo "YAYYYY";
     fwrite($f, "\npoint 2\n");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("insert into orders_final select s_no, item_name, qty, table_no, price_per_item, amount from cafe_orders where table_no = $tableNo and qty <> 0;
-                                      insert into display_orders select s_no, item_name, qty, table_no, price_per_item, amount from cafe_orders where table_no = $tableNo and qty <> 0;
-                                      insert into prev_totals_1 (table_no, total) VALUES ($tableNo, $total)");
+    $stmt = $conn->prepare("insert into orders_final select s_no, item_name, qty, table_no, price_per_item, amount from cafe_orders where table_no LIKE '$tableNo' and qty <> 0;
+                                      insert into display_orders select s_no, item_name, qty, table_no, price_per_item, amount from cafe_orders where table_no LIKE '$tableNo' and qty <> 0;
+                                      insert into prev_totals_1 (table_no, total) VALUES ('$tableNo', $total)");
     $stmt->execute();
     fwrite($f, "\npoint 3\n");
     fwrite($f, "\npoint 4\n");

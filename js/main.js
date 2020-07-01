@@ -629,60 +629,66 @@
 
     button.on('click', function () {
 
-        var no = tableNo.val();
-        //var tableNumber = document.querySelector('.tableNo').value;
-        sessionStorage.setItem("tableNumber", no);
-        //window.alert("hi");
 
 
-
-        $.ajax({
-            type: 'POST',
-            url: "php/check_table.php",
-            data: {tableNo: no},
-            success: function (result) {
-                //window.alert(result);
-                if (result == "") {
-
-
-                    //window.alert("no order");
-                    window.location.assign("http://3.23.241.214/main_menu.html");
+        var no = $(".tableNo option:selected").val();
+        DEBUG && console.log("Tale number is " + no);
+        if (no == "Select Table Number") {
+            window.alert("Please Select a Table Number First")
+        }
+         else {
+            //var tableNumber = document.querySelector('.tableNo').value;
+            sessionStorage.setItem("tableNumber", no);
+            //window.alert("hi");
 
 
-                }
-                else {
-
-                    if (confirm('             DO YOU WANT TO START A NEW ORDER?\n\n\nAn incomplete order already exists for this table, \n\nPress CANCEL to complete that order or OKAY  to start a new order')) {
-                        //alert('Thanks for confirming');
-
-                        $.ajax({
-                            type: 'POST',
-                            url: "php/delete_old.php",
-                            data: {tableNo: no},
-                            success: function (result) {
-                                DEBUG && console.log(result);
-                                //window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
-                                window.location.assign("http://3.23.241.214/main_menu.html");
+            $.ajax({
+                type: 'POST',
+                url: "php/check_table.php",
+                data: {tableNo: no},
+                success: function (result) {
+                    //window.alert(result);
+                    if (result == "") {
 
 
-                            }
-
-                        });
+                        //window.alert("no order");
+                        window.location.assign("http://3.23.241.214/main_menu.html");
 
 
                     } else {
-                        //alert('Why did you press cancel? You should have confirmed');
-                        window.location.assign("http://3.23.241.214/main_menu.html");
+
+                        if (confirm('             DO YOU WANT TO START A NEW ORDER?\n\n\nAn incomplete order already exists for this table, \n\nPress CANCEL to complete that order or OKAY  to start a new order')) {
+                            //alert('Thanks for confirming');
+
+                            $.ajax({
+                                type: 'POST',
+                                url: "php/delete_old.php",
+                                data: {tableNo: no},
+                                success: function (result) {
+                                    DEBUG && console.log(result);
+                                    //window.alert("Thank you for placeing your order for ₹ " + sessionStorage.getItem("total"));
+                                    window.location.assign("http://3.23.241.214/main_menu.html");
+
+
+                                }
+
+                            });
+
+
+                        } else {
+                            //alert('Why did you press cancel? You should have confirmed');
+                            window.location.assign("http://3.23.241.214/main_menu.html");
+                        }
+                        //window.alert("ORDER EXISTS");
+                        DEBUG && console.log(result);
                     }
-                    //window.alert("ORDER EXISTS");
-                    DEBUG && console.log(result);
+
+
                 }
 
 
-            }
-
-
-        });
+            });
+        }
         //window.alert("end");
 
 
@@ -888,6 +894,13 @@
     menu_btn.on('click', function () {
 
         $('.temp_menu').fadeToggle(100);
+        $('.menu_btn').toggleClass('close_menu')
+        if ($('.menu_btn').hasClass('close_menu')) {
+            $('.close_menu').html("Close");
+        }
+        else {
+            $('.menu_btn').html("Menu");
+        }
         $('.main_menu').toggleClass('blurred');
         $('.header').toggleClass('blurred');
         $('.noscroll').toggleClass('no_scroll')
@@ -900,6 +913,14 @@
 
         if($('.main_menu').hasClass('blurred')) {
             $('.temp_menu').fadeToggle(100);
+            $('.menu_btn').toggleClass('close_menu')
+            if ($('.menu_btn').hasClass('close_menu')) {
+                $('.close_menu').html("Close");
+            }
+            else {
+                $('.menu_btn').html("Menu");
+            }
+            $('.close_menu').html("Close");
             $('.main_menu').toggleClass('blurred');
             $('.header').toggleClass('blurred');
             $('.noscroll').toggleClass('no_scroll')

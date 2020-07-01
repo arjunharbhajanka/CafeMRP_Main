@@ -22,7 +22,7 @@ try{
     echo "YAYYYY";
     fwrite($f, "\npoint 2\n");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    $stmt = $conn->prepare("UPDATE cafe_orders set qty = $qty, amount = $amount where table_no = $tableNo and item_name like '$name'");
+    $stmt = $conn->prepare("UPDATE cafe_orders set qty = $qty, amount = $amount where table_no LIKE '$tableNo' and item_name like '$name'");
     $stmt->execute();
 }
 catch(PDOException$e) {

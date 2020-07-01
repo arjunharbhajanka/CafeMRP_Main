@@ -25,10 +25,25 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="cart icon added">
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="cart fixed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/liqueurs.html" beforeDir="false" afterPath="$PROJECT_DIR$/liqueurs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/check_qty.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/check_qty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/check_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/check_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/delete_old.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/delete_old.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/order_complete.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/order_complete.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/place_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/place_order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/prev_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/prev_order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/qty.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/qty.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/qty_checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/qty_checkout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/qty_zero.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/qty_zero.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/remove_table_final.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/remove_table_final.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/table_contents.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/table_contents.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/test.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,9 +99,9 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="database.data.extractors.current.id" value="Excel (xlsx)" />
     <property name="javascript.nodejs.core.library.configured.version" value="14.3.0" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/fonts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/php" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="aws" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -124,14 +139,7 @@
       <workItem from="1593033722603" duration="26395000" />
       <workItem from="1593462498612" duration="14276000" />
       <workItem from="1593529593604" duration="5792000" />
-      <workItem from="1593561300302" duration="2356000" />
-    </task>
-    <task id="LOCAL-00026" summary="Beer pint fully functioning">
-      <created>1590687221984</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1590687221984</updated>
+      <workItem from="1593561300302" duration="9924000" />
     </task>
     <task id="LOCAL-00027" summary="draught_beer_man.html working.&#10;draught_beer hid show working.">
       <created>1590694111993</created>
@@ -469,7 +477,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593563514488</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="cart fixed">
+      <created>1593579663339</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1593579663341</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -521,7 +536,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="food man pages completed" />
     <MESSAGE value="all man pages done" />
     <MESSAGE value="tabbed and header shrinks" />
     <MESSAGE value="tabbed and header shrinks to all" />
@@ -546,7 +560,8 @@
     <MESSAGE value="button spacing fixed" />
     <MESSAGE value="everything in place" />
     <MESSAGE value="cart icon added" />
-    <option name="LAST_COMMIT_MESSAGE" value="cart icon added" />
+    <MESSAGE value="cart fixed" />
+    <option name="LAST_COMMIT_MESSAGE" value="cart fixed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
@@ -578,6 +593,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="578" y="276" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1593476499986" />
+    <state x="759" y="441" key="FileChooserDialogImpl" timestamp="1593625415787">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="759" y="441" key="FileChooserDialogImpl/0.0.1680.1050@0.0.1680.1050" timestamp="1593625415787" />
     <state width="1126" height="268" key="GridCell.Tab.0.bottom" timestamp="1591917012798">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -610,10 +629,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="659" y="585" key="NewPhpFileDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1593275227143" />
-    <state x="341" y="175" key="SettingsEditor" timestamp="1590847953598">
-      <screen x="0" y="23" width="1680" height="1027" />
+    <state x="341" y="155" key="SettingsEditor" timestamp="1593623224804">
+      <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1590847854545" />
+    <state x="341" y="155" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1593623224804" />
     <state x="341" y="175" key="SettingsEditor/0.23.1680.1027@0.23.1680.1027" timestamp="1590847953598" />
     <state x="570" y="275" width="540" height="524" key="StructurePopup" timestamp="1591888044265">
       <screen x="0" y="0" width="1680" height="1050" />
@@ -637,10 +656,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="578" y="337" key="com.intellij.database.dbimport.ImportUtil.ChooseTargetDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1591217223425" />
-    <state x="279" y="353" width="825" height="552" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1591888871842">
+    <state x="279" y="353" width="825" height="552" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1593624500872">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="279" y="353" width="825" height="552" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1591888871842" />
+    <state x="279" y="353" width="825" height="552" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1593624500872" />
     <state x="0" y="170" width="1345" height="643" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1590437982897">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -658,10 +677,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="dock-window-2/0.23.1680.1027@0.23.1680.1027" timestamp="1590688155390" />
-    <state x="538" y="171" width="673" height="735" key="find.popup" timestamp="1593482481517">
+    <state x="635" y="315" width="673" height="735" key="find.popup" timestamp="1593625470373">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="538" y="171" width="673" height="735" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1593482481517" />
+    <state x="635" y="315" width="673" height="735" key="find.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1593625470373" />
     <state x="543" y="245" key="git4idea.branch.GitSmartOperationDialog" timestamp="1590909869891">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
