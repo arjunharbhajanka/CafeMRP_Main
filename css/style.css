@@ -746,6 +746,19 @@ li .spad {
 	margin-right: 15px;
 	padding: 3px 20px;
 	/*! font-weight: ; */
+	position: fixed;
+	top: 185px;
+	right: 0px;
+	border-radius: 100px;
+	width: 20%;
+	text-align: center;
+	transition: all 600ms;
+	box-shadow: 0 0 6px #000;
+	z-index: 500;
+}
+
+.cart.site-btn.move_up {
+	top: 70px;
 }
 button {
 	background-color: transparent;

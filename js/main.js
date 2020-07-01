@@ -16,12 +16,13 @@
 
 
     $(window).on("scroll touchmove click", function () {
-        $('#header_nav').toggleClass('tiny',(( $(document).scrollTop() > 10) || ($('.main_menucg').scrollTop() > 10))) ;
+        $('#header_nav').toggleClass('tiny',(( $(document).scrollTop() > 10) || ($('.main_menu').scrollTop() > 10))) ;
+        $('.cart.site-btn').toggleClass('move_up',(( $(document).scrollTop() > 10) || ($('.main_menu').scrollTop() > 10))) ;
     });
 
     var DEBUG = false;
 
-    $( "a:contains('Go Back')" )
+
     $( "a:contains('Go Back')" ).parent().append('<a href="checkout.html" class="cart site-btn"></a>');
     $( "a:contains('Go Back')" ).parent().css("width","100%");
     $( "a:contains('Go Back')" ).css("float","left");
@@ -890,6 +891,7 @@
         $('.main_menu').toggleClass('blurred');
         $('.header').toggleClass('blurred');
         $('.noscroll').toggleClass('no_scroll')
+        $(this).css("box-shadow", "0 0 8px #000")
 
 
     });

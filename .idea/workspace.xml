@@ -25,20 +25,10 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="everything in place">
-      <change afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/glyphicons-halflings-regular.svg" afterDir="false" />
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="cart icon added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/bootstrap.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draught_beer.html" beforeDir="false" afterPath="$PROJECT_DIR$/draught_beer.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/draught_beer_man.html" beforeDir="false" afterPath="$PROJECT_DIR$/draught_beer_man.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scroll_test.html" beforeDir="false" afterPath="$PROJECT_DIR$/scroll_test.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,14 +124,7 @@
       <workItem from="1593033722603" duration="26395000" />
       <workItem from="1593462498612" duration="14276000" />
       <workItem from="1593529593604" duration="5792000" />
-      <workItem from="1593561300302" duration="114000" />
-    </task>
-    <task id="LOCAL-00025" summary="pitchers and towers fully functioning">
-      <created>1590686008105</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1590686008105</updated>
+      <workItem from="1593561300302" duration="2356000" />
     </task>
     <task id="LOCAL-00026" summary="Beer pint fully functioning">
       <created>1590687221984</created>
@@ -479,7 +462,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593484663696</updated>
     </task>
-    <option name="localTasksCounter" value="74" />
+    <task id="LOCAL-00074" summary="cart icon added">
+      <created>1593563514488</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1593563514488</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -531,7 +521,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="done.html made" />
     <MESSAGE value="food man pages completed" />
     <MESSAGE value="all man pages done" />
     <MESSAGE value="tabbed and header shrinks" />
@@ -556,7 +545,8 @@
     <MESSAGE value="dropdown fixed" />
     <MESSAGE value="button spacing fixed" />
     <MESSAGE value="everything in place" />
-    <option name="LAST_COMMIT_MESSAGE" value="everything in place" />
+    <MESSAGE value="cart icon added" />
+    <option name="LAST_COMMIT_MESSAGE" value="cart icon added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
