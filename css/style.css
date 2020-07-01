@@ -732,11 +732,31 @@ li .spad {
 	border-bottom-right-radius: 0px;
 }
 
+@font-face {
+	font-family: "fontawesome-webfont";
+	src: url("../fonts/fontawesome-webfont.eot");
+	src: url("../fonts/fontawesome-webfont.woff") format("woff"),
+	url("../fonts/fontawesome-webfont.otf") format("opentype"),
+	url("../fonts/fontawesome-webfont.svg#filename") format("svg");
+}
+.cart.site-btn {
+	font-family: "fontawesome-webfont";
+	font-size: 29px;
+	float: right;
+	margin-right: 15px;
+	padding: 3px 20px;
+	/*! font-weight: ; */
+}
+button {
+	background-color: transparent;
+}
+
+
 .after {
 	position: absolute;
 	right: 18px;
 	top: 9px;
-	content: "3";
+	content: "";
 	font-family: "ElegantIcons";
 	font-size: 18px;
 	color: #ffffff;
