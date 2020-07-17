@@ -25,25 +25,14 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="cart fixed">
+    <list default="true" id="82dba5ea-a223-408c-96f2-4789e9618f31" name="Default Changelist" comment="Dropdown table selector">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checkout.html" beforeDir="false" afterPath="$PROJECT_DIR$/checkout.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/liqueurs.html" beforeDir="false" afterPath="$PROJECT_DIR$/liqueurs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/check_qty.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/check_qty.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/check_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/check_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/checkout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/delete_old.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/delete_old.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/order_complete.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/order_complete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/place_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/place_order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/prev_order.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/prev_order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/qty.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/qty.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/qty_checkout.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/qty_checkout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/qty_zero.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/qty_zero.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/remove_table_final.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/remove_table_final.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/table_contents.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/table_contents.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/php/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/main_menu.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,14 +128,10 @@
       <workItem from="1593033722603" duration="26395000" />
       <workItem from="1593462498612" duration="14276000" />
       <workItem from="1593529593604" duration="5792000" />
-      <workItem from="1593561300302" duration="9924000" />
-    </task>
-    <task id="LOCAL-00027" summary="draught_beer_man.html working.&#10;draught_beer hid show working.">
-      <created>1590694111993</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1590694111993</updated>
+      <workItem from="1593561300302" duration="10624000" />
+      <workItem from="1593749366721" duration="1267000" />
+      <workItem from="1594980240363" duration="3806000" />
+      <workItem from="1595014018766" duration="2759000" />
     </task>
     <task id="LOCAL-00028" summary="Now saves order to display_orders as well.">
       <created>1590761999083</created>
@@ -484,7 +469,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593579663341</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Dropdown table selector">
+      <created>1593633765407</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1593633765408</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -536,7 +528,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="all man pages done" />
     <MESSAGE value="tabbed and header shrinks" />
     <MESSAGE value="tabbed and header shrinks to all" />
     <MESSAGE value="soups.html repaired" />
@@ -561,7 +552,8 @@
     <MESSAGE value="everything in place" />
     <MESSAGE value="cart icon added" />
     <MESSAGE value="cart fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="cart fixed" />
+    <MESSAGE value="Dropdown table selector" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dropdown table selector" />
   </component>
   <component name="WindowStateProjectService">
     <state x="440" y="190" key="#Deployment" timestamp="1590846387976">
@@ -685,9 +677,9 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="543" y="245" key="git4idea.branch.GitSmartOperationDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1590909869891" />
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1593479921198">
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup" timestamp="1594986847511">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1593479921198" />
+    <state x="505" y="233" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1594986847511" />
   </component>
 </project>

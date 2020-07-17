@@ -891,6 +891,7 @@
 
 
     var menu_btn = $('.menu_btn');
+    menu_btn.html("<span class=\"menu_ico\">a</span><span class=\"menu_text\">Menu</span>");
     menu_btn.on('click', function () {
 
         $('.temp_menu').fadeToggle(100);
@@ -899,7 +900,7 @@
             $('.close_menu').html("Close");
         }
         else {
-            $('.menu_btn').html("Menu");
+            $('.menu_btn').html("<span class=\"menu_ico\">a</span><span class=\"menu_text\">Menu</span>");
         }
         $('.main_menu').toggleClass('blurred');
         $('.header').toggleClass('blurred');
@@ -918,7 +919,7 @@
                 $('.close_menu').html("Close");
             }
             else {
-                $('.menu_btn').html("Menu");
+                $('.menu_btn').html("<span class=\"menu_ico\">a</span><span class=\"menu_text\">Menu</span>");
             }
             $('.close_menu').html("Close");
             $('.main_menu').toggleClass('blurred');
