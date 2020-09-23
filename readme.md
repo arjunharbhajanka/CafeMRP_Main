@@ -4,8 +4,7 @@
  
 ###  This was an amazing experience for us. We gained a lot of new skills while doing this and it took a lot of brainstorming to get to our final product. After we finished writing the code we tried to make our interface more beautiful and simple. 
 
-### Below is the link to our website. This is just a replica of our system and the backend here is not optimized. Just select any table number and proceed
+### Below is the link to our website. This is just a replica of our system and the backend here is not optimized. Just select any table number and proceed. The website is optimized for phone usage and you might feel there are some visual glitches if you try to access it using a PC
 http://3.23.241.214/
 
 ## BY - Abhi Sharma, Arjun Harbhajanka and Shivam Bairoliya
- 
